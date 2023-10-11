@@ -48,5 +48,6 @@
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="img\" />
   </ItemGroup>
 </Project>
