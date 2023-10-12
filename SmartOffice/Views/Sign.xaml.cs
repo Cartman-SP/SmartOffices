@@ -29,8 +29,9 @@ namespace SmartOffice.Views
 
             if (user != null)
             {
-                App.CurrentUser = user; 
-
+                App.CurrentUser = user;
+                Application.Current.Properties["IsLoggedIn"] = true;
+                await Application.Current.SavePropertiesAsync();
                 await Navigation.PushAsync(new MainPage());
             }
 

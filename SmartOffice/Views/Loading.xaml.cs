@@ -20,9 +20,19 @@ namespace SmartOffice.Views
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-
             await Task.Delay(2000);
+            /*
+            if (Application.Current.Properties.ContainsKey("IsLoggedIn")&& (bool)Application.Current.Properties["IsLoggedIn"])
+            {
+                await Navigation.PushAsync(new MainPage());
+            }
+            else
+            {
+                await Navigation.PushAsync(new Login());
+            }
+            Что бы при перезапуске приложения пользователю не пришлось авторизовываться по новой*/ 
             await Navigation.PushAsync(new Login());
+
         }
 
     }

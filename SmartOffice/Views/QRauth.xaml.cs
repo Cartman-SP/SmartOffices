@@ -16,5 +16,16 @@ namespace SmartOffice.Views
         {
             InitializeComponent();
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            var userId = "ВашUserID";
+            var currentTime = DateTime.UtcNow.ToString("o");
+            var textToEncode = $"{userId}|{currentTime}";
+
+            barcodeImageView.BarcodeValue = textToEncode;
+        }
     }
 }

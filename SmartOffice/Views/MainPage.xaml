@@ -24,7 +24,7 @@
             <Label Text="Добрый день, Иван!" TextColor="#FFFFFF" FontSize="18" AbsoluteLayout.LayoutBounds="25, 130"/>
 
             <!--основная навигация-->
-            <ImageButton Source="https://i.ibb.co/ydCnHtB/qr-code-2.png" Padding="16,16,16,16" CornerRadius="20" BackgroundColor="DarkCyan" AbsoluteLayout.LayoutBounds="25, 190, 65, 65">
+            <ImageButton Clicked="OnQRauth" Source="https://i.ibb.co/ydCnHtB/qr-code-2.png" Padding="16,16,16,16" CornerRadius="20" BackgroundColor="DarkCyan" AbsoluteLayout.LayoutBounds="25, 190, 65, 65">
                 <ImageButton.Background>
                     <LinearGradientBrush StartPoint="0.2,0" EndPoint="0.8,1">
                         <GradientStop Color="#02FFA4" Offset="0.0" />
