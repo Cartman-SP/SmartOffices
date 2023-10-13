@@ -40,7 +40,7 @@ namespace SmartOffice.Views
 
         protected override void OnAppearing()
         {
-           Qrr.Source = GenerateQRCode(Convert.ToString(App.CurrentUser.Id)).Source;
+            qrCodeImage.Source = GenerateQRCode("1").Source;
         }
 
     }
