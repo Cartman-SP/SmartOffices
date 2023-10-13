@@ -2,11 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartOffice.Views.Profile">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label x:Name="Username" Text="Я гей я чмо, я беру в рот"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout>
+        <Image x:Name="UserProfileImage" Source="default_profile_image.png" />
+        <Button Text="Изменить изображение" Clicked="ChangeImage_Clicked" />
+        <Entry Placeholder="Имя" x:Name="nameEntry" />
+        <Entry Placeholder="Фамилия" x:Name="surnameEntry" />
+        <Entry Placeholder="Электронная почта" x:Name="emailEntry" />
+        <Entry Placeholder="Номер телефона" x:Name="phoneEntry" />
+        <Button Text="Сохранить" Clicked="SaveButton_Clicked" />
+    </StackLayout>
 </ContentPage>

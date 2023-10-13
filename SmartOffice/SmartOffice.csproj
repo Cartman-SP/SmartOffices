@@ -12,6 +12,7 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />  
     <PackageReference Include="ZXing.Net" Version="0.16.9" />  
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
+    <PackageReference Include="Xam.Plugin.Media" Version="6.0.2" />
   </ItemGroup>
 
   <ItemGroup>
