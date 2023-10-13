@@ -4,6 +4,6 @@
              x:Class="SmartOffice.Views.QRauth">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        
+        <Image x:Name="Qrr"></Image>
     </StackLayout>
 </ContentPage>
