@@ -25,7 +25,7 @@ namespace SmartOffice.Views
             var currentTime = DateTime.UtcNow.ToString("o");
             var textToEncode = $"{userId}|{currentTime}";
 
-            barcodeImageView.BarcodeValue = textToEncode;
+
         }
     }
 }

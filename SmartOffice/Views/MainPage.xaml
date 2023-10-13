@@ -3,48 +3,71 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartOffice.Views.MainPage"
-             NavigationPage.HasBackButton="False">
- 
-    <ScrollView>
-        <AbsoluteLayout>
-            <AbsoluteLayout.Background>
-                <LinearGradientBrush StartPoint="0.2,0" EndPoint="0.7,1">
-                    <GradientStop Color="#1b1b1b" Offset="0.0" />
-                    <GradientStop Color="#112D57" Offset="0.6" />
-                    <GradientStop Color="#005A40" Offset="1.8" />
-                </LinearGradientBrush>
-            </AbsoluteLayout.Background>
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
 
-            <!--навбар-->
-            <ImageButton Source="https://i.ibb.co/hX1tqNg/free-icon-notification-107822-2.png" BorderColor="#02DDAD" BackgroundColor="#00ffffff" BorderWidth="2" Padding="10,10,10,10" CornerRadius="10" AbsoluteLayout.LayoutBounds="25, 15, 40, 40"/>
-            <ImageButton Source="https://i.ibb.co/brxWfQX/user-21-4.png" Padding="10,10,10,10" BorderColor="#02DDAD" BackgroundColor="#00ffffff" BorderWidth="2" CornerRadius="10" AbsoluteLayout.LayoutBounds="328, 15, 40, 40"/>
-            
-            <!--Приветствие-->
+    <StackLayout HorizontalOptions="FillAndExpand">
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.3,1">
+                <GradientStop Color="#1b1b1b" Offset="0.4" />
+                <GradientStop Color="#112D57" Offset="0.6" />
+                <GradientStop Color="#005A40" Offset="2.3" />
+            </LinearGradientBrush>
+        </StackLayout.Background>
+
+        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="25, 25, 25, 0" BackgroundColor="Transparent">
+            <ImageButton HorizontalOptions="Start" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://i.ibb.co/hX1tqNg/free-icon-notification-107822-2.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
+            <ImageButton HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://i.ibb.co/brxWfQX/user-21-4.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
+        </StackLayout>
+
+        <!--Приветствие-->
+        <StackLayout Margin="25, 25, 25, 0">
             <Label Text="Мой офис" TextColor="#FFFFFF" FontSize="25" AbsoluteLayout.LayoutBounds="25, 90" FontAttributes="Bold"/>
             <Label Text="Добрый день, Иван!" TextColor="#FFFFFF" FontSize="18" AbsoluteLayout.LayoutBounds="25, 130"/>
+        </StackLayout>
 
-            <!--основная навигация-->
-            <ImageButton Clicked="OnQRauth" Source="https://i.ibb.co/ydCnHtB/qr-code-2.png" Padding="16,16,16,16" CornerRadius="20" BackgroundColor="DarkCyan" AbsoluteLayout.LayoutBounds="25, 190, 65, 65">
-                <ImageButton.Background>
-                    <LinearGradientBrush StartPoint="0.2,0" EndPoint="0.8,1">
-                        <GradientStop Color="#02FFA4" Offset="0.0" />
-                        <GradientStop Color="#0016E0" Offset="1" />
-                    </LinearGradientBrush>
-                </ImageButton.Background>
-            </ImageButton>
-            <Label Text="Вход" TextColor="#FFFFFF" FontSize="14" AbsoluteLayout.LayoutBounds="42, 255"/>
-            <ImageButton Source="https://i.ibb.co/cg5z0CR/icon-3483590-edited-2.png" Padding="3,3,3,3" CornerRadius="20" BackgroundColor="#3A3A3A" AbsoluteLayout.LayoutBounds="120, 190, 65, 65"/>
-            <Label Text="Помещения" TextColor="#FFFFFF" FontSize="14" AbsoluteLayout.LayoutBounds="115,255"/>
-            <ImageButton Source="https://i.ibb.co/Kb3pFyW/reservation-2.png" Padding="10,10,10,10" BackgroundColor="#3A3A3A" CornerRadius="20" AbsoluteLayout.LayoutBounds="215, 190, 65, 65"/>
+        <!--главное меню-->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" Margin="25, 25, 25, 0" Spacing="10">
+            <StackLayout>
+                <ImageButton Clicked="OnQRauth" Source="" CornerRadius="20" BackgroundColor="DarkCyan" WidthRequest="77" HeightRequest="77">
+                    <ImageButton.Background>
+                        <LinearGradientBrush StartPoint="0.2,0" EndPoint="0.8,1">
+                            <GradientStop Color="#02FFA4" Offset="0.0" />
+                            <GradientStop Color="#0016E0" Offset="1" />
+                        </LinearGradientBrush>
+                    </ImageButton.Background>
+                </ImageButton>
+                <Label Text="Вход" TextColor="#FFFFFF" FontSize="14" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout>
+                <ImageButton Source="" CornerRadius="20" BackgroundColor="#3A3A3A" WidthRequest="77" HeightRequest="77"/>
+                <Label Text="Помещения" TextColor="#FFFFFF" FontSize="14"/>
+            </StackLayout>
+            <StackLayout>
+                <ImageButton Source="" CornerRadius="20" BackgroundColor="#3A3A3A" WidthRequest="77" HeightRequest="77"/>
+                <Label Text="Бронь" TextColor="#FFFFFF" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout>
+                <ImageButton Source="" CornerRadius="20" BackgroundColor="#3A3A3A" WidthRequest="77" HeightRequest="77"/>
+                <Label Text="Помощь" TextColor="#FFFFFF" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </StackLayout>
 
-            <Label Text="Бронь" TextColor="#FFFFFF" AbsoluteLayout.LayoutBounds="228,255"/>
-            <ImageButton Source="https://i.ibb.co/0KRymck/faq-2.png" Padding="11,11,11,11" CornerRadius="20" BackgroundColor="#3A3A3A" AbsoluteLayout.LayoutBounds="307, 190, 65, 65"/>
-            <Label Text="Помощь" TextColor="#FFFFFF" AbsoluteLayout.LayoutBounds="314,255"/>
+        <!--объявления шапка-->
+        <StackLayout Margin="25, 25, 25, 0">
             <Label Text="Объявления" TextColor="#FFFFFF" FontSize="25" AbsoluteLayout.LayoutBounds="25, 300" FontAttributes="Bold"/>
             <Line X1="0" X2="340" Y1="0" Y2="1" Margin="10,10,10,10" BackgroundColor="#1f1f1f" AbsoluteLayout.LayoutBounds="15, 330"/>
+        </StackLayout>
 
-            <Button IsEnabled="False" Text="" CornerRadius="20" BackgroundColor="#3a3a3a" Padding="220,80,120,120" AbsoluteLayout.LayoutBounds="25, 375"/>
-            <Button IsEnabled="False" Text="" CornerRadius="20" BackgroundColor="#3a3a3a" Padding="120,80,220,120" AbsoluteLayout.LayoutBounds="25, 610"/>
-        </AbsoluteLayout>
-    </ScrollView>
+        <Frame CornerRadius="20" Padding="0" BackgroundColor="Transparent">
+            <CarouselView x:Name="imageCarousel" WidthRequest="200" HeightRequest="281" Margin="25, 0, 25, 0">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageButton Source="{Binding ImageSource}" Aspect="AspectFill" CornerRadius="20"/>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+        </Frame>
+
+    </StackLayout>
 </ContentPage>

@@ -15,6 +15,15 @@ namespace SmartOffice.Views
         public MainPage()
         {
             InitializeComponent();
+            var carouselItems = new List<CarouselItem>
+            {
+                new CarouselItem { ImageSource = "https://avatars.mds.yandex.net/i?id=91743fdd0c5306a3103e9e5b15d14dc7d6e73bb8-10934180-images-thumbs&n=13" },
+                new CarouselItem { ImageSource = "https://i.artfile.ru/2560x1600_1175140_%5Bwww.ArtFile.ru%5D.jpg" },
+                new CarouselItem { ImageSource = "https://i.pinimg.com/originals/ed/76/5b/ed765be802204933f04f710dbc96c9df.jpg" }
+            };
+
+            imageCarousel.ItemsSource = carouselItems;
+
         }
         private async void OnNotify(object sender, EventArgs e)
         {
@@ -41,4 +50,11 @@ namespace SmartOffice.Views
             await Navigation.PushAsync(new Help());
         }
     }
+    public class CarouselItem
+    {
+        public string ImageSource { get; set; }
+    }
+
+
+
 }
