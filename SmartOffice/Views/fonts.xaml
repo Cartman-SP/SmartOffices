@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms">
+    <OnPlatform x:TypeArguments="x:String" x:Key="Fonter">
+        <On Platform="Android" Value="Montserrat-variablefont_wght.ttf"/>
+        <On Platform="iOS" Value="Montserrat-variablefont_wght.ttf" />
+        <On Platform="UWP" Value="Montserrat-variablefont_wght.ttf.ttf#Montserrat-variablefont_wght" />
+    </OnPlatform>
+</ResourceDictionary>

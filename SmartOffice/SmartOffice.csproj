@@ -7,12 +7,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\FlyoutPage1.xaml.cs" />
+    <Compile Remove="Views\FlyoutPage1Detail.xaml.cs" />
+    <Compile Remove="Views\FlyoutPage1Flyout.xaml.cs" />
+    <Compile Remove="Views\FlyoutPage1FlyoutMenuItem.cs" />
+    <Compile Remove="Views\fonts.xaml.cs" />
+    <Compile Remove="Views\Page1.xaml.cs" />
+    <Compile Remove="Views\Resource1.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\FlyoutPage1.xaml" />
+    <EmbeddedResource Remove="Views\FlyoutPage1Detail.xaml" />
+    <EmbeddedResource Remove="Views\FlyoutPage1Flyout.xaml" />
+    <EmbeddedResource Remove="Views\fonts.xaml" />
+    <EmbeddedResource Remove="Views\Page1.xaml" />
+    <EmbeddedResource Remove="Views\Resource1.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />  
     <PackageReference Include="ZXing.Net" Version="0.16.9" />  
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
     <PackageReference Include="Xam.Plugin.Media" Version="6.0.2" />
+    <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />  
+    <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -52,5 +73,6 @@
     <Folder Include="Services\" />
     <Folder Include="ViewModels\" />
     <Folder Include="img\" />
+    <Folder Include="Views\Новая папка\" />
   </ItemGroup>
 </Project>

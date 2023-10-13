@@ -1,9 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartOffice.Views.QRauth">
+             x:Class="SmartOffice.Views.QRauth"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
 
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        
+    <StackLayout BackgroundColor="#1B1B1B">
+        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="25, 25, 25, 0" BackgroundColor="Transparent">
+            <ImageButton Clicked="OnMain" HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
+        </StackLayout>
+        <StackLayout Padding="25">
+            <Label Text="Вход" TextColor="White" FontSize="30"/>
+            <Label Text="Поднесите QR-код к сканеру на турнекете" TextColor="White" FontSize="20"/>
+        </StackLayout>
+        <Image></Image>
     </StackLayout>
 </ContentPage>
