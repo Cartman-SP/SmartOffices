@@ -40,15 +40,15 @@
                 <Label Text="Вход" TextColor="#FFFFFF" FontSize="14" HorizontalTextAlignment="Center"/>
             </StackLayout>
             <StackLayout>
-                <ImageButton Source="" CornerRadius="20" BackgroundColor="#3A3A3A" WidthRequest="77" HeightRequest="77"/>
+                <ImageButton Clicked="OnLocation" Source="" CornerRadius="20" BackgroundColor="#3A3A3A" WidthRequest="77" HeightRequest="77"/>
                 <Label Text="Помещения" TextColor="#FFFFFF" FontSize="14"/>
             </StackLayout>
             <StackLayout>
-                <ImageButton Source="" CornerRadius="20" BackgroundColor="#3A3A3A" WidthRequest="77" HeightRequest="77"/>
+                <ImageButton Clicked="OnRent" Source="" CornerRadius="20" BackgroundColor="#3A3A3A" WidthRequest="77" HeightRequest="77"/>
                 <Label Text="Бронь" TextColor="#FFFFFF" HorizontalTextAlignment="Center"/>
             </StackLayout>
             <StackLayout>
-                <ImageButton Source="" CornerRadius="20" BackgroundColor="#3A3A3A" WidthRequest="77" HeightRequest="77"/>
+                <ImageButton Clicked="OnHelp" Source="" CornerRadius="20" BackgroundColor="#3A3A3A" WidthRequest="77" HeightRequest="77"/>
                 <Label Text="Помощь" TextColor="#FFFFFF" HorizontalTextAlignment="Center"/>
             </StackLayout>
         </StackLayout>

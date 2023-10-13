@@ -17,9 +17,9 @@ namespace SmartOffice.Views
             InitializeComponent();
             var carouselItems = new List<CarouselItem>
             {
-                new CarouselItem { ImageSource = "https://avatars.mds.yandex.net/i?id=91743fdd0c5306a3103e9e5b15d14dc7d6e73bb8-10934180-images-thumbs&n=13" },
+                new CarouselItem { ImageSource = "https://avatars.mds.yandex.net/i?id=f62e3591eb2b823056f532e88b2eb60890c9d4bf-9052192-images-thumbs&n=13" },
                 new CarouselItem { ImageSource = "https://avatars.mds.yandex.net/i?id=aa4aa525c6b9cafe23ddf51eeff33078fdfd2a4c-9843030-images-thumbs&n=13" },
-                new CarouselItem { ImageSource = "https://i.pinimg.com/originals/ed/76/5b/ed765be802204933f04f710dbc96c9df.jpg" }
+                new CarouselItem { ImageSource = "https://avatars.mds.yandex.net/i?id=c06f4a3bc130dee88a1e39024acf9a330b0f9b7b-5232019-images-thumbs&n=13" }
             };
 
             imageCarousel.ItemsSource = carouselItems;
