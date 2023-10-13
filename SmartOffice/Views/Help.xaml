@@ -1,12 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartOffice.Views.Help">
+             x:Class="SmartOffice.Views.Help"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+            <StackLayout Padding="40,70" BackgroundColor="#1b1b1b">
+                <ImageButton HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://i.ibb.co/crgmvWY/17047-2.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
+                <Label Text="Помощь" FontSize="24" TextColor="#ffffff" Margin="0, 10" FontAttributes="Bold"/>
+                <Label Text="FAQ" FontSize="20" TextColor="#ffffff" />
+                <Label Text="1. Как пользоваться приложением?" FontSize="18" TextColor="#ffffff" />
+                <Label Text="Ответ на вопрос о том, как пользоваться приложением, здесь..." FontSize="16" TextColor="#ffffff" />
+
+                <Label Text="2. Как забронировать место?" FontSize="18" TextColor="#ffffff" />
+                <Label Text="Ответ на вопрос о том, как забронировать место, здесь..." FontSize="16" TextColor="#ffffff" />
+
+                <Label Text="3. Как использовать умные гаджеты в помещении?" FontSize="18" TextColor="#ffffff" />
+                <Label Text="Ответ на вопрос о том, как использовать умные гаджеты в помещении, здесь..." FontSize="16" TextColor="#ffffff" />
+
+                <Label Text="4. Как войти в офис?" FontSize="18" TextColor="#ffffff" />
+                <Label Text="Ответ на вопрос о том, как войти в офис, здесь..." FontSize="16" TextColor="#ffffff" />
+            </StackLayout>
     </ContentPage.Content>
 </ContentPage>

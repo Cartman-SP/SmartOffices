@@ -31,7 +31,7 @@ namespace SmartOffice.Views
                 await Navigation.PushAsync(new Login());
             }
             Что бы при перезапуске приложения пользователю не пришлось авторизовываться по новой*/ 
-            await Navigation.PushAsync(new Profile());
+            await Navigation.PushAsync(new MainPage());
 
         }
 
