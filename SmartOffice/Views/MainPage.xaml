@@ -54,7 +54,7 @@
         </StackLayout>
 
         <!--объявления шапка-->
-        <StackLayout Margin="25, 25, 25, 0">
+        <StackLayout Margin="25, 25, 25, 25">
             <Label Text="Объявления" TextColor="#FFFFFF" FontSize="25" AbsoluteLayout.LayoutBounds="25, 300" FontAttributes="Bold"/>
         </StackLayout>
 
