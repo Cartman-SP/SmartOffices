@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v13.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -60,6 +59,9 @@
     <PackageReference Include="ZXing.Net.Mobile">
       <Version>2.4.1</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>6.0.2</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -94,7 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SmartOffice\SmartOffice.csproj">
-      <Project>{85C973C8-8550-487E-8EA2-4F876CA3F3D7}</Project>
+      <Project>{4AEA2653-B223-4A3B-AA3B-2DB3D4914303}</Project>
       <Name>SmartOffice</Name>
     </ProjectReference>
   </ItemGroup>
