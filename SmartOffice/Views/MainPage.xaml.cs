@@ -15,6 +15,7 @@ namespace SmartOffice.Views
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
         private async void OnNotify(object sender, EventArgs e)
         {
