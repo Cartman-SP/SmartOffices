@@ -56,7 +56,6 @@
         <!--объявления шапка-->
         <StackLayout Margin="25, 25, 25, 0">
             <Label Text="Объявления" TextColor="#FFFFFF" FontSize="25" AbsoluteLayout.LayoutBounds="25, 300" FontAttributes="Bold"/>
-            <Line X1="0" X2="340" Y1="0" Y2="1" Margin="10,10,10,10" BackgroundColor="#1f1f1f" AbsoluteLayout.LayoutBounds="15, 330"/>
         </StackLayout>
 
         <Frame CornerRadius="20" Padding="0" BackgroundColor="Transparent">
