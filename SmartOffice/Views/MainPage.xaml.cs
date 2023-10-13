@@ -15,6 +15,7 @@ namespace SmartOffice.Views
         public MainPage()
         {
             InitializeComponent();
+
             var carouselItems = new List<CarouselItem>
             {
                 new CarouselItem { ImageSource = "https://avatars.mds.yandex.net/i?id=f62e3591eb2b823056f532e88b2eb60890c9d4bf-9052192-images-thumbs&n=13" },
@@ -23,6 +24,9 @@ namespace SmartOffice.Views
             };
 
             imageCarousel.ItemsSource = carouselItems;
+
+
+            NavigationPage.SetHasNavigationBar(this, false);
 
         }
         private async void OnNotify(object sender, EventArgs e)

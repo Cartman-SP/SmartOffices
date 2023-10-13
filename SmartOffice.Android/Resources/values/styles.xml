@@ -14,5 +14,7 @@
     <!-- colorAccent is used as the default value for colorControlActivated
          which is used to tint widgets -->
     <!--<item name="colorAccent">#FF4081</item>-->
+	<item name="android:statusBarColor">@android:color/transparent</item>
+	<item name="android:windowTranslucentStatus">true</item>
   </style>
 </resources>
