@@ -30,6 +30,12 @@ namespace SmartOffice.Views
                 VerticalOptions = Xamarin.Forms.LayoutOptions.FillAndExpand,
             };
 
+
+        }
+        private async void OnMain(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+
             barcode.BarcodeFormat = ZXing.BarcodeFormat.QR_CODE;
             barcode.BarcodeOptions.Width = 300;
             barcode.BarcodeOptions.Height = 300;

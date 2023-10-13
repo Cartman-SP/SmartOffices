@@ -1,12 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartOffice.Views.Sign">
+             x:Class="SmartOffice.Views.Sign"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">   
     <ContentPage.Content>
-        <StackLayout>
-            <Entry x:Name="usernameEntry" Placeholder="Логин"/>
-            <Entry x:Name="passwordEntry" Placeholder="Пароль" IsPassword="True" />
-            <Button Text="Login" Clicked="OnLoginClicked" />
+        <StackLayout Padding="40" BackgroundColor="#1B1B1B" VerticalOptions="Fill">
+            <StackLayout Margin="0, 80, 0, 0">
+                <Image Source="https://static.tildacdn.com/tild3265-3434-4261-a239-393731363431/casual-life-3d-man-w.png" HeightRequest="205" WidthRequest="214"/>
+                <Label HeightRequest="137" WidthRequest="230" Text="SMARTOFFICE" HorizontalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" FontSize="60" TextColor="White"/>
+                <Label Text="Каждый офис может быть умным" HorizontalOptions="Center" TextColor="White"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://likedrom.com/images/reseticon.png" HeightRequest="24" WidthRequest="24" VerticalOptions="CenterAndExpand"/>
+                    <Entry HorizontalOptions="FillAndExpand" x:Name="usernameEntry" Placeholder="Логин" PlaceholderColor="#02DDAD" TextColor="White"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://likedrom.com/images/reseticon.png" HeightRequest="24" WidthRequest="24" VerticalOptions="CenterAndExpand"/>
+                    <Entry x:Name="passwordEntry" HorizontalOptions="FillAndExpand" Placeholder="Пароль" PlaceholderColor="#02DDAD" IsPassword="True" TextColor="White"/>
+                </StackLayout>
+
+                
+                <Button Text="Войти" Clicked="OnLoginClicked" CornerRadius="20" HeightRequest="41" WidthRequest="326" BorderWidth="2" Margin="0, 20, 0, 0">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0.2,0" EndPoint="1.7,1">
+                            <GradientStop Color="#02DDAD" Offset="-0.3" />
+                            <GradientStop Color="#0016E0" Offset="0.7" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
