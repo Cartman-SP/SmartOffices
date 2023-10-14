@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartOffice.Views.YeelightPage">
+    <StackLayout Margin="10,40">
+        <Label Text="IP-адрес Yeelight ленты:" />
+        <Entry x:Name="IPAddressEntry" Placeholder="Введите IP-адрес" />
+        <Button Text="Включить" Clicked="TurnOnButton_Clicked" />
+        <Button Text="Выключить" Clicked="TurnOffButton_Clicked" />
+        <Button Text="Изменить цвет" Clicked="ChangeColorButton_Clicked" />
+        <Button Text="Изменить яркость" Clicked="ChangeBrightnessButton_Clicked" />
+    </StackLayout>
+</ContentPage>
