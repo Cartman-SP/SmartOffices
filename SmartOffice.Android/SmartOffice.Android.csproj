@@ -64,6 +64,8 @@
     </PackageReference>
     <PackageReference Include="YeelightAPI">
       <Version>1.10.2</Version>
+    </PackageReference>
+
     <PackageReference Include="ZXing.Net.Mobile.Forms">
       <Version>2.4.1</Version>
     </PackageReference>

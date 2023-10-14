@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartOffice.Views.Help"
+             x:Class="SmartOffice.Views.Location"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
 
         <StackLayout BackgroundColor="#1b1b1b">
             <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="25, 50, 25, 0" BackgroundColor="Transparent">
-                <ImageButton Clicked="OnMain" HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
+                <ImageButton HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
             </StackLayout>
             <StackLayout Padding="25">
                 <Label Text="Помещения" TextColor="White" FontSize="30"/>
