@@ -15,7 +15,7 @@
             </LinearGradientBrush>
         </StackLayout.Background>
 
-        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="25, 25, 25, 0" BackgroundColor="Transparent">
+        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="25, 50, 25, 0" BackgroundColor="Transparent">
             <ImageButton HorizontalOptions="Start" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://i.ibb.co/hX1tqNg/free-icon-notification-107822-2.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
             <ImageButton HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://i.ibb.co/brxWfQX/user-21-4.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
         </StackLayout>
