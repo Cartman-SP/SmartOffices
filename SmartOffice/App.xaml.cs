@@ -12,6 +12,10 @@ namespace SmartOffice
         public App()
         {
             InitializeComponent();
+
+            var regularFont = Font.SystemFontOfSize(20);
+            var boldFont = Font.SystemFontOfSize(20, FontAttributes.Bold);
+
             MainPage = new NavigationPage(new Loading());
         }
 

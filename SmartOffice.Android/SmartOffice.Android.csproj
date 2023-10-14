@@ -65,7 +65,6 @@
     <PackageReference Include="YeelightAPI">
       <Version>1.10.2</Version>
     </PackageReference>
-
     <PackageReference Include="ZXing.Net.Mobile.Forms">
       <Version>2.4.1</Version>
     </PackageReference>
@@ -81,6 +80,8 @@
     <Content Include="Properties\AndroidManifest.xml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
+    <AndroidResource Include="Resources\Fonts\Montserrat_Bold.ttf" />
+    <AndroidResource Include="Resources\Fonts\Montserrat_Regular.ttf" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\styles.xml" />

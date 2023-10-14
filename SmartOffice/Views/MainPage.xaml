@@ -22,7 +22,7 @@
 
         <!--Приветствие-->
         <StackLayout Margin="25, 25, 25, 0">
-            <Label Text="Мой офис" TextColor="#FFFFFF" FontSize="25" AbsoluteLayout.LayoutBounds="25, 90" FontAttributes="Bold"/>
+            <Label FontFamily="MontserratRegular" Text="Мой офис" TextColor="#FFFFFF" FontSize="25" AbsoluteLayout.LayoutBounds="25, 90" FontAttributes="Bold"/>
             <Label Text="Добрый день, Иван!" TextColor="#FFFFFF" FontSize="18" AbsoluteLayout.LayoutBounds="25, 130"/>
         </StackLayout>
 
