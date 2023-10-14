@@ -62,6 +62,9 @@
     <PackageReference Include="Xam.Plugin.Media">
       <Version>6.0.2</Version>
     </PackageReference>
+    <PackageReference Include="YeelightAPI">
+      <Version>1.10.2</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />

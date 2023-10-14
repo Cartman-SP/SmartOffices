@@ -32,9 +32,7 @@ namespace SmartOffice.Views
             }
             Что бы при перезапуске приложения пользователю не пришлось авторизовываться по новой*/ 
 
-            await Navigation.PushAsync(new MainPage());
-
-            await Navigation.PushAsync(new QRauth());
+            await Navigation.PushAsync(new YeelightPage());
 
         }
 
