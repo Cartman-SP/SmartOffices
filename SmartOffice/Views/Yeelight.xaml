@@ -5,9 +5,18 @@
     <StackLayout Margin="10,40">
         <Label Text="IP-адрес Yeelight ленты:" />
         <Entry x:Name="IPAddressEntry" Placeholder="Введите IP-адрес" />
-        <Button Text="Включить" Clicked="TurnOnButton_Clicked" />
-        <Button Text="Выключить" Clicked="TurnOffButton_Clicked" />
-        <Button Text="Изменить цвет" Clicked="ChangeColorButton_Clicked" />
-        <Button Text="Изменить яркость" Clicked="ChangeBrightnessButton_Clicked" />
+        <Switch x:Name="PowerSwitch" Toggled="PowerSwitch_Toggled" />
+        <Button Text="Поток цветов" Clicked="StartColorFlow_Clicked" />
+        <Button Text="Красный" Clicked="SetColorRed_Clicked" />
+        <Button Text="Оранжевый" Clicked="SetColorOrange_Clicked" />
+        <Button Text="Желтый" Clicked="SetColorYellow_Clicked" />
+        <Button Text="Зеленый" Clicked="SetColorGreen_Clicked" />
+        <Button Text="Голубой" Clicked="SetColorBlue_Clicked" />
+        <Button Text="Фиолетовый" Clicked="SetColorPurple_Clicked" />
+        <Button Text="20%" Clicked="SetBrightness20_Clicked" />
+        <Button Text="40%" Clicked="SetBrightness40_Clicked" />
+        <Button Text="60%" Clicked="SetBrightness60_Clicked" />
+        <Button Text="80%" Clicked="SetBrightness80_Clicked" />
+        <Button Text="100%" Clicked="SetBrightness100_Clicked" />
     </StackLayout>
 </ContentPage>
