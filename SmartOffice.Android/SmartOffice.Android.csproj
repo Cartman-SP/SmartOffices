@@ -80,8 +80,8 @@
     <Content Include="Properties\AndroidManifest.xml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <AndroidResource Include="Resources\Fonts\Montserrat_Bold.ttf" />
-    <AndroidResource Include="Resources\Fonts\Montserrat_Regular.ttf" />
+    <EmbeddedResource Include="Resources\fonts\Montserrat_Bold.ttf" />
+    <EmbeddedResource Include="Resources\fonts\Montserrat_Regular.ttf" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\styles.xml" />

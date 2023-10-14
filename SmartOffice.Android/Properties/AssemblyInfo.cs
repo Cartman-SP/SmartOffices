@@ -16,7 +16,7 @@ using Xamarin.Forms;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
-[assembly: ExportFont("fonts/Montserrat_Regular.ttf", Alias = "MontserratRegular")]
+[assembly: ExportFont("fonts/Montserrat_Regular.ttf", Alias = "1")]
 [assembly: ExportFont("fonts/Montserrat_Bold.ttf", Alias = "MontserratBold")]
 
 

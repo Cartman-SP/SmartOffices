@@ -6,7 +6,10 @@
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
 
+
+
     <StackLayout HorizontalOptions="FillAndExpand">
+
         <StackLayout.Background>
             <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.3,1">
                 <GradientStop Color="#1b1b1b" Offset="0.4" />
@@ -22,8 +25,8 @@
 
         <!--Приветствие-->
         <StackLayout Margin="25, 25, 25, 0">
-            <Label FontFamily="MontserratRegular" Text="Мой офис" TextColor="#FFFFFF" FontSize="25" AbsoluteLayout.LayoutBounds="25, 90" FontAttributes="Bold"/>
-            <Label Text="Добрый день, Иван!" TextColor="#FFFFFF" FontSize="18" AbsoluteLayout.LayoutBounds="25, 130"/>
+            <Label FontFamily="MontserratBold" Text="Мой офис" TextColor="#FFFFFF" FontSize="25"/>
+            <Label Text="Добрый день, Иван!" TextColor="#FFFFFF" FontSize="18"/>
         </StackLayout>
 
         <!--главное меню-->
@@ -55,7 +58,7 @@
 
         <!--объявления шапка-->
         <StackLayout Margin="25, 25, 25, 25">
-            <Label Text="Объявления" TextColor="#FFFFFF" FontSize="25" AbsoluteLayout.LayoutBounds="25, 300" FontAttributes="Bold"/>
+            <Label Text="Объявления" TextColor="#FFFFFF" FontSize="25"/>
         </StackLayout>
 
         <Frame CornerRadius="20" Padding="0" BackgroundColor="Transparent">
