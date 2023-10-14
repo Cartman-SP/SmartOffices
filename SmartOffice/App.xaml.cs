@@ -4,6 +4,9 @@ using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+[assembly: ExportFont("Montserrat_Regular.ttf", Alias = "MontserratRegular")]
+[assembly: ExportFont("Montserrat_Bold.ttf", Alias = "MontserratBold")]
+
 namespace SmartOffice
 {
     public partial class App : Application
