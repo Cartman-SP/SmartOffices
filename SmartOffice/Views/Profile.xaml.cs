@@ -13,8 +13,6 @@ namespace SmartOffice.Views
             InitializeComponent();
         }
 
-
-
         private async void ChangeImage_Clicked(object sender, EventArgs e)
         {
             // Здесь добавьте код для выбора нового изображения и установки его в элемент Image (UserProfileImage)
@@ -50,6 +48,11 @@ namespace SmartOffice.Views
             // Здесь вы можете сохранить новые данные в переменные или отправить на сервер, в зависимости от вашей логики.
             // Здесь будет отправляться запрос на сервер
             DisplayAlert("Успех", "Профиль успешно обновлен", "ОК");
+        }
+
+        private async void OnMain(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
         }
     }
 }
