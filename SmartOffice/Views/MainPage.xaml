@@ -58,7 +58,7 @@
 
         <!--объявления шапка-->
         <StackLayout Margin="25, 25, 25, 25">
-            <Label Text="Объявления" TextColor="#FFFFFF" FontSize="25"/>
+            <Label FontFamily="MontserratBold" Text="Объявления" TextColor="#FFFFFF" FontSize="25"/>
         </StackLayout>
 
         <Frame CornerRadius="20" Padding="0" BackgroundColor="Transparent">
