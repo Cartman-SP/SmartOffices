@@ -16,5 +16,9 @@ namespace SmartOffice.Views
         {
             InitializeComponent();
         }
+        private async void OnMain(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
     }
 }
