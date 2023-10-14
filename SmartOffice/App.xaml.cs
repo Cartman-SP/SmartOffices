@@ -1,8 +1,6 @@
 ﻿using SmartOffice.Models;
 using SmartOffice.Views;
-using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace SmartOffice
 {
