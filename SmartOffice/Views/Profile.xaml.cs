@@ -39,16 +39,16 @@ namespace SmartOffice.Views
             }
         }
 
-        private void SaveButton_Clicked(object sender, EventArgs e)
-        {
-            string name = nameEntry.Text;
-            string surname = surnameEntry.Text;
-            string email = emailEntry.Text;
-            string phone = phoneEntry.Text;
-            // Здесь вы можете сохранить новые данные в переменные или отправить на сервер, в зависимости от вашей логики.
-            // Здесь будет отправляться запрос на сервер
-            DisplayAlert("Успех", "Профиль успешно обновлен", "ОК");
-        }
+        //private void SaveButton_Clicked(object sender, EventArgs e)
+        //{
+        //    string name = nameEntry.Text;
+        //    string surname = surnameEntry.Text;
+        //    string email = emailEntry.Text;
+        //    string phone = phoneEntry.Text;
+        //    // Здесь вы можете сохранить новые данные в переменные или отправить на сервер, в зависимости от вашей логики.
+        //    // Здесь будет отправляться запрос на сервер
+        //    DisplayAlert("Успех", "Профиль успешно обновлен", "ОК");
+        //}
 
         private async void OnMain(object sender, EventArgs e)
         {
