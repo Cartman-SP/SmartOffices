@@ -1,13 +1,94 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartOffice.Views.YeelightPage">
-    <StackLayout Margin="10,40">
+             x:Class="SmartOffice.Views.YeelightPage"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout BackgroundColor="#1B1B1B">
+        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="25, 50, 25, 0" BackgroundColor="Transparent">
+            <ImageButton HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://ltdfoto.ru/images/2023/10/14/icon-cross.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
+        </StackLayout>
+        <StackLayout Padding="25">
+            <Label FontFamily="MontserratBold" Text="Кабинет 202" TextColor="White" FontSize="30"/>
+            <!--<Label FontFamily="MontserratRegular" Text="Поднесите QR-код к сканеру на турнекете" TextColor="White" FontSize="20"/>-->
+        </StackLayout>
+
+        <Frame Padding="0" BackgroundColor="#3A3A3A" Margin="25, 0, 25, 25" CornerRadius="20" HorizontalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal" Padding="15" Spacing="0">
+                
+                <StackLayout HorizontalOptions="StartAndExpand">
+                    <Frame BackgroundColor="#4F4F4F" Padding="5" CornerRadius="20" HorizontalOptions="StartAndExpand">
+                        <Image HeightRequest="15" WidthRequest="15" HorizontalOptions="StartAndExpand" Source="https://ltdfoto.ru/images/2023/10/15/icon-temperature.png"/>
+                    </Frame>
+                    <Label TextColor="White" FontFamily="MontserratRegular" Text="Температура" FontSize="10"/>
+                    <Label TextColor="White" FontFamily="MontserratBold" Text="23 C" FontSize="15"/>
+                </StackLayout>
+                <BoxView WidthRequest="1" HeightRequest="70" BackgroundColor="#525252" />
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Frame BackgroundColor="#4F4F4F" Padding="5" CornerRadius="20" HorizontalOptions="StartAndExpand">
+                        <Image HeightRequest="15" WidthRequest="15" HorizontalOptions="StartAndExpand" Source="https://ltdfoto.ru/images/2023/10/15/icon-water.png"/>
+                    </Frame>
+                    <Label TextColor="White" FontFamily="MontserratRegular" Text="Влажность" FontSize="10"/>
+                    <Label TextColor="White" FontFamily="MontserratBold" Text="45 %" FontSize="15"/>
+                </StackLayout>
+                <BoxView WidthRequest="1" HeightRequest="70" BackgroundColor="#525252" />
+                <StackLayout HorizontalOptions="EndAndExpand" Margin="0, 0, 25, 0">
+                    <Frame BackgroundColor="#4F4F4F" Padding="5" CornerRadius="20" HorizontalOptions="StartAndExpand">
+                        <Image HeightRequest="15" WidthRequest="15" HorizontalOptions="StartAndExpand" Source="https://ltdfoto.ru/images/2023/10/15/icon-sun.png"/>
+                    </Frame>
+                    <Label TextColor="White" FontFamily="MontserratRegular" Text="Освещение" FontSize="10"/>
+                    <Label TextColor="White" FontFamily="MontserratBold" Text="30 %" FontSize="15"/>
+                </StackLayout>
+                
+            </StackLayout>
+        </Frame>
+    
+        <StackLayout Padding="25">
+            <Label FontFamily="MontserratBold" Text="Устройства" TextColor="White" FontSize="30"/>
+            <!--<Label FontFamily="MontserratRegular" Text="Поднесите QR-код к сканеру на турнекете" TextColor="White" FontSize="20"/>-->
+            <BoxView HorizontalOptions="Fill" HeightRequest="1" BackgroundColor="#3D3D3D"/>
+        </StackLayout>
+
+        <Frame Margin="25, 0, 25, 0" CornerRadius="20" Padding="0">
+            <StackLayout>
+                <StackLayout BackgroundColor="#3A3A3A" Padding="15">
+                    <StackLayout Orientation="Horizontal">
+                        <Image HeightRequest="15" Source="https://ltdfoto.ru/images/2023/10/15/icon-sun.png"/>
+                        <Label TextColor="White" Margin="10, 0, 0, 0" VerticalOptions="Center" FontFamily="MontserratRegular" FontSize="13" Text="Xiaomi Yeelight Smart LED"/>
+                        <Switch HorizontalOptions="EndAndExpand" x:Name="PowerSwitch" Toggled="PowerSwitch_Toggled"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="Яркость:" FontSize="15" FontFamily="MonserrtaRegular" TextColor="white"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Button VerticalOptions="Center" BackgroundColor="#4F4F4F" FontFamily="MontserratRegular" FontSize="10" CornerRadius="20" HeightRequest="30" WidthRequest="55" Text="20%" Clicked="SetBrightness20_Clicked" />
+                            <Button VerticalOptions="Center" BackgroundColor="#4F4F4F" FontFamily="MontserratRegular" FontSize="10" CornerRadius="20" HeightRequest="30" WidthRequest="55" Text="40%" Clicked="SetBrightness40_Clicked" />
+                            <Button VerticalOptions="Center" BackgroundColor="#4F4F4F" FontFamily="MontserratRegular" FontSize="10" CornerRadius="20" HeightRequest="30" WidthRequest="55" Text="60%" Clicked="SetBrightness60_Clicked" />
+                            <Button VerticalOptions="Center" BackgroundColor="#4F4F4F" FontFamily="MontserratRegular" FontSize="10" CornerRadius="20" HeightRequest="30" WidthRequest="55" Text="80%" Clicked="SetBrightness80_Clicked" />
+                            <Button VerticalOptions="Center" BackgroundColor="#4F4F4F" FontFamily="MontserratRegular" FontSize="10" CornerRadius="20" HeightRequest="30" WidthRequest="55" Text="100%" Clicked="SetBrightness100_Clicked" />
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Label Text="Цвет:" FontSize="15" FontFamily="MonserrtaRegular" TextColor="white"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Button Clicked="SetColorRed_Clicked" BackgroundColor="red" HeightRequest="20" WidthRequest="20" CornerRadius="20"/>
+                            <Button Clicked="SetColorYellow_Clicked" BackgroundColor="Yellow" HeightRequest="20" WidthRequest="20" CornerRadius="20"/>
+                            <Button Clicked="SetColorOrange_Clicked" BackgroundColor="Orange" HeightRequest="20" WidthRequest="20" CornerRadius="20"/>
+                            <Button Clicked="SetColorGreen_Clicked" BackgroundColor="LightGreen" HeightRequest="20" WidthRequest="20" CornerRadius="20"/>
+                            <Button Clicked="SetColorPurple_Clicked" BackgroundColor="Purple" HeightRequest="20" WidthRequest="20" CornerRadius="20"/>
+                            <Button Clicked="SetColorBlue_Clicked" BackgroundColor="Blue" HeightRequest="20" WidthRequest="20" CornerRadius="20"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+
+            </StackLayout>
+        </Frame>
+        
         <Label Text="IP-адрес Yeelight ленты:" />
         <Entry x:Name="IPAddressEntry" Placeholder="Введите IP-адрес" />
-        <Button Text="Включить" Clicked="TurnOnButton_Clicked" />
-        <Button Text="Выключить" Clicked="TurnOffButton_Clicked" />
-        <Button Text="Изменить цвет" Clicked="ChangeColorButton_Clicked" />
-        <Button Text="Изменить яркость" Clicked="ChangeBrightnessButton_Clicked" />
+
     </StackLayout>
+    
 </ContentPage>

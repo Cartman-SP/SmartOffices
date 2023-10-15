@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Новая папка1\**" />
+    <Compile Remove="Новая папка\**" />
+    <EmbeddedResource Remove="Новая папка1\**" />
+    <EmbeddedResource Remove="Новая папка\**" />
+    <None Remove="Новая папка1\**" />
+    <None Remove="Новая папка\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Views\FlyoutPage1.xaml.cs" />
     <Compile Remove="Views\FlyoutPage1Detail.xaml.cs" />
     <Compile Remove="Views\FlyoutPage1Flyout.xaml.cs" />
@@ -23,6 +32,16 @@
     <EmbeddedResource Remove="Views\fonts.xaml" />
     <EmbeddedResource Remove="Views\Page1.xaml" />
     <EmbeddedResource Remove="Views\Resource1.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\Montserrat_Bold.ttf" />
+    <None Remove="Fonts\Montserrat_Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\Montserrat_Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat_Regular.ttf" />
   </ItemGroup>
 
   <ItemGroup>

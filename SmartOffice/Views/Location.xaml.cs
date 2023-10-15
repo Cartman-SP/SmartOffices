@@ -21,5 +21,10 @@ namespace SmartOffice.Views
         {
             await Navigation.PushAsync(new MainPage());
         }
+        private async void OnLight(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new YeelightPage());
+        }
+        
     }
 }

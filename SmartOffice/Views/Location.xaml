@@ -10,11 +10,11 @@
                 <ImageButton Clicked="OnMain" HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://ltdfoto.ru/images/2023/10/14/icon-cross.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
             </StackLayout>
             <StackLayout Padding="25">
-                <Label Text="Помещения" TextColor="White" FontSize="30"/>
-                <Label Text="Выберете помещение для изменения рабочей среды" TextColor="White" FontSize="20"/>
+                <Label FontFamily="MontserratBold" Text="Помещения" TextColor="White" FontSize="30"/>
+                <Label FontFamily="MontserratRegular" Text="Выберете помещение для изменения рабочей среды" TextColor="White" FontSize="20"/>
             </StackLayout>
 
-            <Button CornerRadius="20" Margin="25, 0, 25, 10" FontSize="13" TextColor="white" Text="Кабинет 201" BackgroundColor="#3A3A3A" HeightRequest="83" WidthRequest="365"></Button>
+            <Button FontFamily="MontserratRegular" Clicked="OnLight" CornerRadius="20" Margin="25, 0, 25, 10" FontSize="13" TextColor="white" Text="Кабинет 201" BackgroundColor="#3A3A3A" HeightRequest="83" WidthRequest="365"></Button>
 
         </StackLayout>
     </ContentPage.Content>
