@@ -9,7 +9,7 @@
             <StackLayout VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand">
                 <Label Text="Developed by" TextColor="white" FontSize="10" FontFamily="MontserratRegular" HorizontalOptions="CenterAndExpand" />
-                <Image HeightRequest="200" Source="https://ltdfoto.ru/images/2023/10/15/Logo-white-text.png" HorizontalOptions="CenterAndExpand"/>
+                <Image HeightRequest="200" Source="https://i.ibb.co/qBqksp5/Logo-white-text.png" HorizontalOptions="CenterAndExpand"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

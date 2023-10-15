@@ -7,7 +7,7 @@
 
         <StackLayout BackgroundColor="#1b1b1b">
             <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="25, 50, 25, 0" BackgroundColor="Transparent">
-                <ImageButton Clicked="OnMain" HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://ltdfoto.ru/images/2023/10/14/icon-cross.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
+                <ImageButton Clicked="OnMain" HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://i.ibb.co/pQKNg93/icon-cross.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
             </StackLayout>
             <StackLayout Padding="25">
                 <Label FontFamily="MontserratBold" Text="Помещения" TextColor="White" FontSize="30"/>
