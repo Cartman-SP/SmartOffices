@@ -2,29 +2,19 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Class="SmartOffice.Views.MainPage"
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
 
-    <StackLayout HorizontalOptions="FillAndExpand">
-        <StackLayout.Background>
-            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.3,1">
-                <GradientStop Color="#1b1b1b" Offset="0.4" />
-                <GradientStop Color="#112D57" Offset="0.6" />
-                <GradientStop Color="#005A40" Offset="2.3" />
-            </LinearGradientBrush>
-        </StackLayout.Background>
-
-        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="25, 50, 25, 0" BackgroundColor="Transparent">
-            <ImageButton Clicked="OnNotify" HorizontalOptions="Start" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://i.ibb.co/T84RRYc/icon-bell.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
-            <ImageButton Clicked="OnProfile" HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://i.ibb.co/n0YG9TL/icon-user.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
-        </StackLayout>
-
-        <!--Приветствие-->
-        <StackLayout Margin="25, 25, 25, 0">
-            <Label FontFamily="MontserratBold" Text="Мой офис" TextColor="#FFFFFF" FontSize="25"/>
-            <Label FontFamily="MontserratRegular" Text="Добрый день, Иван!" TextColor="#FFFFFF" FontSize="18"/>
-        </StackLayout>
+    <StackLayout HorizontalOptions="FillAndExpand" BackgroundColor="white">
+        <yummy:PancakeView BackgroundColor="#FFD447" CornerRadius="0, 0, 50, 50" Padding="0, 0, 0, 230">
+            <StackLayout HorizontalOptions="Fill" Orientation="Horizontal" Margin="25, 50, 25, 0" BackgroundColor="Transparent">
+                <Label Text="Hello, John!" FontSize="30" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
+                <ImageButton Source="" BackgroundColor="red" WidthRequest="40" HeightRequest="40" HorizontalOptions="EndAndExpand"/>
+                <ImageButton Clicked="OnProfile" BackgroundColor="blue" HorizontalOptions="End" HeightRequest="40" WidthRequest="40" CornerRadius="200"/>
+            </StackLayout>
+        </yummy:PancakeView>
 
         <!--главное меню-->
         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" Margin="25, 25, 25, 0" Spacing="10">
