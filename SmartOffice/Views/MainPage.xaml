@@ -9,7 +9,7 @@
     <ScrollView>
         <StackLayout BackgroundColor="white">
             <StackLayout>
-                <yummy:PancakeView BackgroundColor="#FFF2C7" CornerRadius="0, 0, 50, 50" Padding="0, 0, 0, 20">
+                <yummy:PancakeView BackgroundColor="#FFF2C7" CornerRadius="0, 0, 50, 50" Padding="0, 0, 0, 30">
                     <StackLayout>
                         <StackLayout>
                             <yummy:PancakeView BackgroundColor="#FFD447" CornerRadius="0, 0, 50, 50" Padding="0, 0, 0, 300">
@@ -47,7 +47,7 @@
                 </yummy:PancakeView>
                 <StackLayout HorizontalOptions="Fill" Orientation="Horizontal" Margin="25, 10, 25, 0" BackgroundColor="Transparent">
                     <Label Text="News"  FontSize="30" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
-                    <Label Text="All" FontSize="15" VerticalTextAlignment="Center" Padding="0, 6, 0, 0" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
+                    <!--<Label Text="All" FontSize="15" VerticalTextAlignment="Center" Padding="0, 6, 0, 0" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>-->
                 </StackLayout>
                 <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal" Margin="25, 10, 25, 40" HeightRequest="200">
                     <StackLayout Orientation="Horizontal" Padding="0, 0, 0, 20">
