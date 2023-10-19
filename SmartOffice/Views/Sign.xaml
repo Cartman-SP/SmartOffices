@@ -3,34 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartOffice.Views.Sign"
              NavigationPage.HasBackButton="False"
-             NavigationPage.HasNavigationBar="False">   
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout Padding="40" BackgroundColor="#1B1B1B" VerticalOptions="Fill">
-            <StackLayout Margin="0, 80, 0, 0">
-                <Image Source="https://static.tildacdn.com/tild3265-3434-4261-a239-393731363431/casual-life-3d-man-w.png" HeightRequest="205" WidthRequest="214"/>
-                <Label HeightRequest="137" WidthRequest="230" Text="SMARTOFFICE" HorizontalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" FontSize="60" TextColor="White"/>
-                <Label Text="Каждый офис может быть умным" HorizontalOptions="Center" TextColor="White"/>
-            </StackLayout>
-            <StackLayout VerticalOptions="EndAndExpand">
-                <StackLayout Orientation="Horizontal">
-                    <Image Source="https://likedrom.com/images/reseticon.png" HeightRequest="24" WidthRequest="24" VerticalOptions="CenterAndExpand"/>
-                    <Entry HorizontalOptions="FillAndExpand" x:Name="usernameEntry" Placeholder="Логин" PlaceholderColor="#02DDAD" TextColor="White"/>
+        <StackLayout BackgroundColor="#FFD447" VerticalOptions="Fill">
+                <StackLayout Margin="80, 60, 60, 60" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+                    <Image Source="https://gas-kvas.com/uploads/posts/2023-02/1677049871_gas-kvas-com-p-risunki-na-temu-ofis-37.png"/>
                 </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <Image Source="https://likedrom.com/images/reseticon.png" HeightRequest="24" WidthRequest="24" VerticalOptions="CenterAndExpand"/>
-                    <Entry x:Name="passwordEntry" HorizontalOptions="FillAndExpand" Placeholder="Пароль" PlaceholderColor="#02DDAD" IsPassword="True" TextColor="White"/>
+                <StackLayout VerticalOptions="EndAndExpand">
+                    <Label Text="SMART OFFICE" HorizontalOptions="Center" FontSize="30" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
+                    <Label Text="Every office can be smart!" HorizontalOptions="Center" FontSize="20" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
                 </StackLayout>
-
-                
-                <Button Text="Войти" Clicked="OnLoginClicked" CornerRadius="20" HeightRequest="41" WidthRequest="326" BorderWidth="2" Margin="0, 20, 0, 0">
-                    <Button.Background>
-                        <LinearGradientBrush StartPoint="0.2,0" EndPoint="1.7,1">
-                            <GradientStop Color="#02DDAD" Offset="-0.3" />
-                            <GradientStop Color="#0016E0" Offset="0.7" />
-                        </LinearGradientBrush>
-                    </Button.Background>
-                </Button>
-            </StackLayout>
+                <StackLayout VerticalOptions="End" Padding="40">
+                    <StackLayout Orientation="Horizontal">
+                    <Image Source="https://cdn.onlinewebfonts.com/svg/img_568657.png" HeightRequest="18" WidthRequest="18" VerticalOptions="CenterAndExpand"/>
+                    <Entry HorizontalOptions="FillAndExpand" x:Name="usernameEntry" Placeholder="Login" FontFamily="MontserratRegular" PlaceholderColor="#1F1F1F" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                    <Image Source="https://cdn1.iconfinder.com/data/icons/tools-65/100/tool-25-1024.png" HeightRequest="18" WidthRequest="18" VerticalOptions="CenterAndExpand"/>
+                    <Entry x:Name="passwordEntry" HorizontalOptions="FillAndExpand" Placeholder="Password" FontFamily="MontserratRegular" PlaceholderColor="#1F1F1F" IsPassword="True" TextColor="White"/>
+                    </StackLayout>
+                <Button Text="Login" FontFamily="MontserratRegular" Clicked="OnLoginClicked" BackgroundColor="#1F1F1F" CornerRadius="20" HeightRequest="41" Margin="0, 20, 0, 0"/>
+                </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
