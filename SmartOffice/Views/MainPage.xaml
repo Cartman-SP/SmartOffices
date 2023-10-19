@@ -23,7 +23,7 @@
                     <Label Margin="25, 10, 25, 0" Text="My office" FontSize="30" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
                     <StackLayout Orientation="Horizontal" Margin="25, -5, 25, 0">
                         <Image Source="https://i.ibb.co/Hq2JtHD/icon-location.png" WidthRequest="15"/>
-                        <Label  Text="Vadkovskiy st. Main office" VerticalTextAlignment="Center" FontFamily="MontserratRegular" TextColor="#498C8A"/>
+                        <Label Text="Vadkovskiy st. Main office" VerticalTextAlignment="Center" FontFamily="MontserratRegular" TextColor="#498C8A"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" Margin="25, 25, 25, 0" Spacing="10">
                         <StackLayout>
@@ -45,7 +45,11 @@
                     </StackLayout>
                 </StackLayout>
             </yummy:PancakeView>
-            
+            <StackLayout HorizontalOptions="Fill" Orientation="Horizontal" Margin="25, 10, 25, 0" BackgroundColor="Transparent">
+                <Label Text="News"  FontSize="30" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
+                <Label Text="All" FontSize="15" VerticalTextAlignment="Center" Padding="0, 6, 0, 0" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
+            </StackLayout>
+
         </StackLayout>
 
         <StackLayout Margin="25, 25, 25, 25">
