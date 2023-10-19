@@ -44,7 +44,7 @@
                     </StackLayout>
                 </Frame>
                 <StackLayout>
-                    <Button HorizontalOptions="CenterAndExpand" Text="Log out" HeightRequest="20" TextColor="red" BackgroundColor="Transparent" FontFamily="MontserratRegular"/>
+                    <Button HorizontalOptions="CenterAndExpand" Text="Log out" HeightRequest="20" TextColor="red" FontFamily="MontserratRegular"/>
                 </StackLayout>
             </StackLayout>
             
