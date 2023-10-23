@@ -6,7 +6,7 @@
              x:Class="SmartOffice.Views.MainPage"
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
-    <ScrollView>
+    <ScrollView VerticalScrollBarVisibility="Never">
         <StackLayout BackgroundColor="white">
             <StackLayout>
                 <yummy:PancakeView BackgroundColor="#FFF2C7" CornerRadius="0, 0, 50, 50" Padding="0, 0, 0, 30">
