@@ -25,5 +25,28 @@ namespace SmartOffice.Views
         {
             await Navigation.PushAsync(new YeelightPage());
         }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            if (!this.popuplayout.IsVisible)
+            {
+                this.popuplayout.IsVisible = !this.popuplayout.IsVisible;
+                await Task.WhenAny<bool>
+                  (
+                    this.popuplayout.TranslateTo(0, 0, easing: Easing.SinIn)
+                  );
+                
+
+            }
+            else
+            {
+                
+                await Task.WhenAny<bool>
+                  (
+                    this.popuplayout.TranslateTo(0, 500, easing: Easing.SinOut)
+                  );
+                this.popuplayout.IsVisible = !this.popuplayout.IsVisible;
+            }
+        }
     }
 }
