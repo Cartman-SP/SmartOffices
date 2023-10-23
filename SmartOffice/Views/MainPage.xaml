@@ -25,21 +25,21 @@
                             <Image Source="https://i.ibb.co/Hq2JtHD/icon-location.png" WidthRequest="15"/>
                             <Label Text="Vadkovskiy st. Main office" VerticalTextAlignment="Center" FontFamily="MontserratRegular" TextColor="#498C8A"/>
                         </StackLayout>
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" Margin="25, 25, 25, 0" Spacing="10">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" Margin="25, 25, 25, 0" Spacing="20">
                             <StackLayout>
-                                <ImageButton Clicked="OnQRauth" Padding="20" Source="https://i.ibb.co/ydCnHtB/qr-code-2.png" CornerRadius="30" BackgroundColor="#498C8A" WidthRequest="77" HeightRequest="77"/>
+                                <ImageButton Clicked="OnQRauth" Padding="20" Source="https://i.ibb.co/ydCnHtB/qr-code-2.png" CornerRadius="30" BackgroundColor="#498C8A" WidthRequest="70" HeightRequest="70"/>
                                 <Label FontFamily="MontserratRegular" Text="Enter" TextColor="#AAAAAA" FontSize="14" HorizontalTextAlignment="Center"/>
                             </StackLayout>
                             <StackLayout>
-                                <ImageButton Clicked="OnLocation" Padding="10" Source="https://i.ibb.co/cg5z0CR/icon-3483590-edited-2.png" CornerRadius="30" BackgroundColor="#498C8A" WidthRequest="77" HeightRequest="77"/>
-                                <Label FontFamily="MontserratRegular" Text="Rooms" TextColor="#AAAAAA" FontSize="14" HorizontalTextAlignment="Center"/>
+                                <ImageButton Clicked="OnLocation" Padding="10" Source="https://i.ibb.co/cg5z0CR/icon-3483590-edited-2.png" CornerRadius="30" BackgroundColor="#498C8A" WidthRequest="70" HeightRequest="70"/>
+                                <Label FontFamily="MontserratRegular" Text="Map" TextColor="#AAAAAA" FontSize="14" HorizontalTextAlignment="Center"/>
                             </StackLayout>
                             <StackLayout>
-                                <ImageButton Clicked="OnRent" Padding="15" Source="https://i.ibb.co/Kb3pFyW/reservation-2.png" CornerRadius="30" BackgroundColor="#498C8A" WidthRequest="77" HeightRequest="77"/>
+                                <ImageButton Clicked="OnRent" Padding="15" Source="https://i.ibb.co/Kb3pFyW/reservation-2.png" CornerRadius="30" BackgroundColor="#498C8A" WidthRequest="70" HeightRequest="70"/>
                                 <Label FontFamily="MontserratRegular" Text="Booking" TextColor="#AAAAAA" HorizontalTextAlignment="Center"/>
                             </StackLayout>
                             <StackLayout>
-                                <ImageButton Clicked="OnHelp" Padding="17" Source="https://i.ibb.co/0KRymck/faq-2.png" CornerRadius="30" BackgroundColor="#498C8A" WidthRequest="77" HeightRequest="77"/>
+                                <ImageButton Clicked="OnHelp" Padding="17" Source="https://i.ibb.co/0KRymck/faq-2.png" CornerRadius="30" BackgroundColor="#498C8A" WidthRequest="70" HeightRequest="70"/>
                                 <Label FontFamily="MontserratRegular" Text="Help" TextColor="#AAAAAA" HorizontalTextAlignment="Center"/>
                             </StackLayout>
                         </StackLayout>

@@ -22,7 +22,7 @@
                     <Image Source="https://cdn1.iconfinder.com/data/icons/tools-65/100/tool-25-1024.png" HeightRequest="18" WidthRequest="18" VerticalOptions="CenterAndExpand"/>
                     <Entry x:Name="passwordEntry" HorizontalOptions="FillAndExpand" Placeholder="Password" FontFamily="MontserratRegular" PlaceholderColor="#1F1F1F" IsPassword="True" TextColor="White"/>
                     </StackLayout>
-                <Button Text="Login" FontFamily="MontserratRegular" Clicked="OnLoginClicked" BackgroundColor="#1F1F1F" CornerRadius="20" HeightRequest="41" Margin="0, 20, 0, 0"/>
+                <Button HorizontalOptions="CenterAndExpand" Text="Login" FontFamily="MontserratRegular" Clicked="OnLoginClicked" BackgroundColor="#1F1F1F" CornerRadius="30" HeightRequest="55" WidthRequest="166" Margin="0, 20, 0, 0"/>
                 </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -1,21 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Class="SmartOffice.Views.Location"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-
-        <StackLayout BackgroundColor="#FFD447">
-            <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="25, 50, 25, 0" BackgroundColor="Transparent">
-                <ImageButton Clicked="OnMain" HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://i.ibb.co/pQKNg93/icon-cross.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
+        <StackLayout>
+            <StackLayout>
+                <StackLayout>
+                    <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="25, 50, 25, 0">
+                        <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="25" Source="https://cdn.onlinewebfonts.com/svg/img_439489.png"/>
+                        <Label Margin="0, 0, 0, 0" Text="Map" HorizontalOptions="CenterAndExpand" FontSize="30" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
+                    </Grid>
+                </StackLayout>
             </StackLayout>
-            <StackLayout Padding="25">
-                <Label FontFamily="MontserratBold" Text="Помещения" TextColor="White" FontSize="30"/>
-                <Label FontFamily="MontserratRegular" Text="Выберете помещение для изменения рабочей среды" TextColor="White" FontSize="20"/>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <yummy:PancakeView CornerRadius="50, 50, 0, 0" Padding="25, 30, 25, 0" HeightRequest="500" x:Name="DraggableContainer" BackgroundColor="LightGray">
+                    <StackLayout>
+                        <StackLayout>
+                            <Label Text="Main room" FontSize="30" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="White"/>
+                        </StackLayout>
+                        <ScrollView Padding="0, 0, 0, 100" VerticalOptions="StartAndExpand" BackgroundColor="blue" VerticalScrollBarVisibility="Never">
+                            <StackLayout>
+                                <StackLayout>
+                                    <Frame CornerRadius="30" HeightRequest="50">
+                                        <Label Text="sample text"/>
+                                    </Frame>
+                                </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                </yummy:PancakeView>
             </StackLayout>
-
-            <Button FontFamily="MontserratRegular" Clicked="OnLight" CornerRadius="20" Margin="25, 0, 25, 10" FontSize="13" TextColor="white" Text="Кабинет 201" BackgroundColor="#3A3A3A" HeightRequest="83" WidthRequest="365"></Button>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
