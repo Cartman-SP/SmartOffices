@@ -4,7 +4,7 @@
              x:Class="SmartOffice.Views.Login"
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
-    
+
     <ContentPage.Content>
         <StackLayout BackgroundColor="#FFD447" VerticalOptions="Fill">
             <StackLayout Margin="80, 60, 60, 60" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
