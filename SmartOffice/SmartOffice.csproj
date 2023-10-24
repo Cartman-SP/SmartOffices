@@ -34,6 +34,8 @@
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />  
     <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
     <PackageReference Include="YeelightAPI" Version="1.10.2" />
+    <PackageReference Include="Microcharts.Forms" Version="0.9.5.9" />
+    <PackageReference Include="Microcharts" Version="0.9.5.9" />
   </ItemGroup>
 
   <ItemGroup>

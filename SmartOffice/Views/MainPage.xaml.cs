@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +14,7 @@ namespace SmartOffice.Views
         public MainPage()
         {
             InitializeComponent();
+<<<<<<< Updated upstream
 
             var carouselItems = new List<CarouselItem>
             {
@@ -26,6 +26,8 @@ namespace SmartOffice.Views
             imageCarousel.ItemsSource = carouselItems;
 
 
+=======
+>>>>>>> Stashed changes
             NavigationPage.SetHasNavigationBar(this, false);
 
         }
@@ -62,3 +64,4 @@ namespace SmartOffice.Views
 
 
 }
+
