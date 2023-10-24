@@ -43,7 +43,7 @@ namespace SmartOffice.Views
                 
                 await Task.WhenAny<bool>
                   (
-                    this.popuplayout.TranslateTo(0, 500, easing: Easing.SinOut)
+                    this.popuplayout.TranslateTo(0, 500, easing: Easing.SinIn)
                   );
                 this.popuplayout.IsVisible = !this.popuplayout.IsVisible;
             }
