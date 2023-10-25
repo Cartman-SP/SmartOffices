@@ -1,23 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Class="SmartOffice.Views.Help"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-
-        <StackLayout BackgroundColor="#1b1b1b">
-            <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="25, 50, 25, 0" BackgroundColor="Transparent">
-                <ImageButton Clicked="OnMain" HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://i.ibb.co/pQKNg93/icon-cross.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
+        <StackLayout BackgroundColor="white">
+            <StackLayout>
+                <yummy:PancakeView BackgroundColor="#FFD447" CornerRadius="0, 0, 50, 50" Padding="0, 0, 0, 30">
+                    <StackLayout>
+                        <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="25, 50, 25, 0">
+                            <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="35" Source="https://i.ibb.co/t83tc15/icon-cross.png"/>
+                            <Label Margin="0, 0, 0, 0" Text="Help" HorizontalOptions="CenterAndExpand" FontSize="30" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
+                        </Grid>
+                    </StackLayout>
+                </yummy:PancakeView>
             </StackLayout>
-            <StackLayout Padding="25">
-                <Label FontFamily="MontserratBold" Text="Помощь" TextColor="White" FontSize="30"/>
-                <Label FontFamily="MontserratRegular" Text="FAQ" TextColor="White" FontSize="20"/>
+            <StackLayout>
+                <StackLayout Padding="25">
+                    <Label Text="Hoe to use the app?" FontSize="15" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
+                    <StackLayout>
+                        <Frame Padding="20, 10, 20, 10" CornerRadius="20" HeightRequest="15" HasShadow="False" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
+                            <StackLayout Orientation="Horizontal">
+                                <Label FontSize="10" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Text="Sample text" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame Padding="20, 10, 20, 10" CornerRadius="20" HeightRequest="15" HasShadow="False" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
+                            <StackLayout Orientation="Horizontal">
+                                <Label FontSize="10" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Text="Sample text" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame Padding="20, 10, 20, 10" CornerRadius="20" HeightRequest="15" HasShadow="False" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
+                            <StackLayout Orientation="Horizontal">
+                                <Label FontSize="10" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Text="Sample text" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
+                            </StackLayout>
+                        </Frame>
+                        <StackLayout>
+                            <Button HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" Text="Log out" HeightRequest="20" TextColor="Red" FontFamily="MontserratRegular"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <Label Text="Other" FontSize="15" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
+                    <StackLayout>
+                        <Frame Padding="20, 10, 20, 10" CornerRadius="20" HeightRequest="15" HasShadow="False" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
+                            <StackLayout Orientation="Horizontal">
+                                <Label FontSize="10" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Text="Sample text" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame Padding="20, 10, 20, 10" CornerRadius="20" HeightRequest="15" HasShadow="False" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
+                            <StackLayout Orientation="Horizontal">
+                                <Label FontSize="10" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Text="Sample text" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame Padding="20, 10, 20, 10" CornerRadius="20" HeightRequest="15" HasShadow="False" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
+                            <StackLayout Orientation="Horizontal">
+                                <Label FontSize="10" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Text="Sample text" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
+                            </StackLayout>
+                        </Frame>
+                        <StackLayout>
+                            <Button HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" Text="Log out" HeightRequest="20" TextColor="Red" FontFamily="MontserratRegular"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
             </StackLayout>
-
-            <Button FontFamily="MontserratRegular" CornerRadius="20" Margin="25, 0, 25, 10" FontSize="13" TextColor="white" Text="Как забронировать место?" BackgroundColor="#3A3A3A" HeightRequest="40" WidthRequest="365"/>
-            <Button FontFamily="MontserratRegular" CornerRadius="20" Margin="25, 0, 25, 10" FontSize="13" TextColor="white" Text="Как войти в офис?" BackgroundColor="#3A3A3A" HeightRequest="40" WidthRequest="365"/>
-            <Button FontFamily="MontserratRegular" CornerRadius="20" Margin="25, 0, 25, 10" FontSize="13" TextColor="white" Text="Задать свой вопрос" BackgroundColor="#3A3A3A" HeightRequest="40" WidthRequest="365"/>
-        
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

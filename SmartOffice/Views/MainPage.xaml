@@ -6,6 +6,7 @@
              x:Class="SmartOffice.Views.MainPage"
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
+    
     <ScrollView VerticalScrollBarVisibility="Never">
         <StackLayout BackgroundColor="white">
             <StackLayout>

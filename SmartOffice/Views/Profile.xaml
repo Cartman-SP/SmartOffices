@@ -25,19 +25,19 @@
         </StackLayout>
         <ScrollView Orientation="Vertical" VerticalScrollBarVisibility="Never" Padding="25, 10, 25, 0">
             <StackLayout>
-                <Frame CornerRadius="20" HeightRequest="20" HasShadow="True" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
+                <Frame CornerRadius="20" HeightRequest="20" HasShadow="False" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
                     <StackLayout Orientation="Horizontal">
                         <Label VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Text="Password" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
                         <Image HeightRequest="20" Source="https://i.ibb.co/D1H7gSs/icon-lock.png" BackgroundColor="Transparent" HorizontalOptions="End"/>
                     </StackLayout>
                 </Frame>
-                <Frame CornerRadius="20" HeightRequest="20" HasShadow="True" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
+                <Frame CornerRadius="20" HeightRequest="20" HasShadow="False" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
                     <StackLayout Orientation="Horizontal">
                         <Label VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Text="Phone number" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
                         <Image HeightRequest="20" Source="https://i.ibb.co/N1p2TJx/icon-phone.png" BackgroundColor="Transparent" HorizontalOptions="End"/>
                     </StackLayout>
                 </Frame>
-                <Frame CornerRadius="20" HeightRequest="20" HasShadow="True" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
+                <Frame CornerRadius="20" HeightRequest="20" HasShadow="False" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
                     <StackLayout Orientation="Horizontal">
                         <Label VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Text="Settings" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
                         <Image HeightRequest="20" Source="https://i.ibb.co/x7DxNtP/icon-settings.png" BackgroundColor="Transparent" HorizontalOptions="End"/>
