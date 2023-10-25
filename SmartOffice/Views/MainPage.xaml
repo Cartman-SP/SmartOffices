@@ -61,6 +61,12 @@
                         <Frame CornerRadius="30" WidthRequest="120" HasShadow="False" HeightRequest="210" BackgroundColor="White" Padding="0" BorderColor="#DEDEDE">
                             <Label Text="{Binding Text}"/>
                         </Frame>
+                        <Frame CornerRadius="30" WidthRequest="120" HasShadow="False" HeightRequest="210" BackgroundColor="White" Padding="0" BorderColor="#DEDEDE">
+                            <Label Text="{Binding Text}"/>
+                        </Frame>
+                        <Frame CornerRadius="30" WidthRequest="120" HasShadow="False" HeightRequest="210" BackgroundColor="White" Padding="0" BorderColor="#DEDEDE">
+                            <Label Text="{Binding Text}"/>
+                        </Frame>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
