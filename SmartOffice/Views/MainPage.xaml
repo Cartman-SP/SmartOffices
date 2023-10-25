@@ -26,20 +26,20 @@
                             <Image Source="https://i.ibb.co/Hq2JtHD/icon-location.png" WidthRequest="15"/>
                             <Label Text="Vadkovskiy st. Main office" VerticalTextAlignment="Center" FontFamily="MontserratRegular" TextColor="#498C8A"/>
                         </StackLayout>
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" Margin="25, 25, 25, 0" Spacing="20">
-                            <StackLayout>
+                        <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" Margin="25, 25, 25, 0">
+                            <StackLayout HorizontalOptions="CenterAndExpand">
                                 <ImageButton Clicked="OnQRauth" Padding="20" Source="https://i.ibb.co/sm0cXCz/icon-qr.png" CornerRadius="30" BackgroundColor="#498C8A" WidthRequest="70" HeightRequest="70"/>
                                 <Label FontFamily="MontserratRegular" Text="Enter" TextColor="#AAAAAA" FontSize="14" HorizontalTextAlignment="Center"/>
                             </StackLayout>
-                            <StackLayout>
+                            <StackLayout HorizontalOptions="CenterAndExpand">
                                 <ImageButton Clicked="OnLocation" Padding="20" Source="https://i.ibb.co/8jjSBDz/icon-map.png" CornerRadius="30" BackgroundColor="#498C8A" WidthRequest="70" HeightRequest="70"/>
                                 <Label FontFamily="MontserratRegular" Text="Map" TextColor="#AAAAAA" FontSize="14" HorizontalTextAlignment="Center"/>
                             </StackLayout>
-                            <StackLayout>
+                            <StackLayout HorizontalOptions="CenterAndExpand">
                                 <ImageButton Clicked="OnRent" Padding="20" Source="https://i.ibb.co/7y4NnVj/icon-booking.png" CornerRadius="30" BackgroundColor="#498C8A" WidthRequest="70" HeightRequest="70"/>
                                 <Label FontFamily="MontserratRegular" Text="Booking" TextColor="#AAAAAA" HorizontalTextAlignment="Center"/>
                             </StackLayout>
-                            <StackLayout>
+                            <StackLayout HorizontalOptions="CenterAndExpand">
                                 <ImageButton Clicked="OnHelp" Padding="20" Source="https://i.ibb.co/RzWyYzS/icon-help.png" CornerRadius="30" BackgroundColor="#498C8A" WidthRequest="70" HeightRequest="70"/>
                                 <Label FontFamily="MontserratRegular" Text="Help" TextColor="#AAAAAA" HorizontalTextAlignment="Center"/>
                             </StackLayout>
