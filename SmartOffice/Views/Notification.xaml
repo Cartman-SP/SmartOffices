@@ -1,12 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartOffice.Views.Notification">
+             x:Class="SmartOffice.Views.Notification"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="White">
+            <StackLayout>
+                <StackLayout>
+                    <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="25, 50, 25, 0">
+                        <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/t83tc15/icon-cross.png"/>
+                        <Label Margin="0, 0, 0, 0" Text="Notification" HorizontalOptions="CenterAndExpand" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

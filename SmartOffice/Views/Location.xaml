@@ -5,12 +5,12 @@
              x:Class="SmartOffice.Views.Location"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="White">
             <StackLayout>
                 <StackLayout>
                     <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="25, 50, 25, 0">
-                        <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="35" Source="https://i.ibb.co/t83tc15/icon-cross.png"/>
-                        <Label Margin="0, 0, 0, 0" Text="Map" HorizontalOptions="CenterAndExpand" FontSize="30" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
+                        <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/t83tc15/icon-cross.png"/>
+                        <Label Margin="0, 0, 0, 0" Text="Map" HorizontalOptions="CenterAndExpand" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
                     </Grid>
                 </StackLayout>
             </StackLayout>

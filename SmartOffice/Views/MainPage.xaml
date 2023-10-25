@@ -15,13 +15,13 @@
                         <StackLayout>
                             <yummy:PancakeView BackgroundColor="#FFD447" CornerRadius="0, 0, 50, 50" Padding="0, 0, 0, 300">
                                 <StackLayout HorizontalOptions="Fill" Orientation="Horizontal" Margin="25, 50, 25, 0" BackgroundColor="Transparent">
-                                    <Label Text="Hello, John!" FontSize="30" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
-                                    <ImageButton Source="https://i.ibb.co/z5TJZ18/icon-bell.png" Padding="5" BackgroundColor="Transparent" WidthRequest="40" HeightRequest="40" HorizontalOptions="EndAndExpand"/>
+                                    <Label Text="Hello, John!" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
+                                    <ImageButton Clicked="OnNotify" Source="https://i.ibb.co/z5TJZ18/icon-bell.png" Padding="5" BackgroundColor="Transparent" WidthRequest="40" HeightRequest="40" HorizontalOptions="EndAndExpand"/>
                                     <ImageButton Clicked="OnProfile" Padding="-20" Source="https://steamuserimages-a.akamaihd.net/ugc/2018221770499435904/9C42462E7EBC1634A838B2B891EA1E7C579D1363/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" BackgroundColor="blue" HorizontalOptions="End" HeightRequest="40" WidthRequest="40" CornerRadius="200"/>
                                 </StackLayout>
                             </yummy:PancakeView>
                         </StackLayout>
-                        <Label Margin="25, 10, 25, 0" Text="My office" FontSize="30" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
+                        <Label Margin="25, 10, 25, 0" Text="My office" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
                         <StackLayout Orientation="Horizontal" Margin="25, -5, 25, 0">
                             <Image Source="https://i.ibb.co/Hq2JtHD/icon-location.png" WidthRequest="15"/>
                             <Label Text="Vadkovskiy st. Main office" VerticalTextAlignment="Center" FontFamily="MontserratRegular" TextColor="#498C8A"/>
@@ -47,7 +47,7 @@
                     </StackLayout>
                 </yummy:PancakeView>
                 <StackLayout HorizontalOptions="Fill" Orientation="Horizontal" Margin="25, 10, 25, 0" BackgroundColor="Transparent">
-                    <Label Text="News"  FontSize="30" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
+                    <Label Text="News"  FontSize="25" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
                     <!--<Label Text="All" FontSize="15" VerticalTextAlignment="Center" Padding="0, 6, 0, 0" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>-->
                 </StackLayout>
                 <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal" Margin="25, 10, 25, 40" HeightRequest="200">

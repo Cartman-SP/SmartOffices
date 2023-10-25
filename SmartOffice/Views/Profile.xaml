@@ -7,40 +7,40 @@
              NavigationPage.HasNavigationBar="False">
     <StackLayout BackgroundColor="white">
         <StackLayout>
-            <yummy:PancakeView BackgroundColor="#FFD447" CornerRadius="0, 0, 50, 50" Padding="0, 0, 0, 30">
+            <yummy:PancakeView BackgroundColor="#FFD447" CornerRadius="0, 0, 50, 50" Padding="0, 0, 0, 20">
                 <StackLayout>
                     <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="25, 50, 25, 0">
-                        <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="35" Source="https://i.ibb.co/t83tc15/icon-cross.png"/>
-                        <Label Margin="0, 0, 0, 0" Text="Profile" HorizontalOptions="CenterAndExpand" FontSize="30" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
+                        <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/t83tc15/icon-cross.png"/>
+                        <Label Margin="0, 0, 0, 0" Text="Profile" HorizontalOptions="CenterAndExpand" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
                     </Grid>
                     <StackLayout Margin="0, 30, 0, 0">
-                        <ImageButton HorizontalOptions="CenterAndExpand" Padding="-50" Source="https://steamuserimages-a.akamaihd.net/ugc/2018221770499435904/9C42462E7EBC1634A838B2B891EA1E7C579D1363/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" BackgroundColor="blue" HeightRequest="130" WidthRequest="130" CornerRadius="200"/>
+                        <ImageButton HorizontalOptions="CenterAndExpand" Padding="-50" Source="https://steamuserimages-a.akamaihd.net/ugc/2018221770499435904/9C42462E7EBC1634A838B2B891EA1E7C579D1363/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" BackgroundColor="blue" HeightRequest="100" WidthRequest="100" CornerRadius="200"/>
                         <Label Text="John G-Man" HorizontalOptions="CenterAndExpand" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
                     </StackLayout>
                 </StackLayout>
             </yummy:PancakeView>
         </StackLayout>
         <StackLayout>
-            <Label Margin="25, 10, 25, 0" Text="Personal" FontSize="30" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
+            <Label Margin="25, 10, 25, 0" Text="Personal" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
         </StackLayout>
         <ScrollView Orientation="Vertical" VerticalScrollBarVisibility="Never" Padding="25, 10, 25, 0">
             <StackLayout>
-                <Frame CornerRadius="20" HeightRequest="20" HasShadow="False" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
+                <Frame Padding="20, 10, 20, 10" CornerRadius="20" HeightRequest="20" HasShadow="False" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
                     <StackLayout Orientation="Horizontal">
-                        <Label VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Text="Password" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
-                        <Image HeightRequest="20" Source="https://i.ibb.co/D1H7gSs/icon-lock.png" BackgroundColor="Transparent" HorizontalOptions="End"/>
+                        <Label FontSize="10" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Text="Password" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
+                        <Image HeightRequest="15" Source="https://i.ibb.co/D1H7gSs/icon-lock.png" BackgroundColor="Transparent" HorizontalOptions="End"/>
                     </StackLayout>
                 </Frame>
-                <Frame CornerRadius="20" HeightRequest="20" HasShadow="False" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
+                <Frame Padding="20, 10, 20, 10" CornerRadius="20" HeightRequest="20" HasShadow="False" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
                     <StackLayout Orientation="Horizontal">
-                        <Label VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Text="Phone number" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
-                        <Image HeightRequest="20" Source="https://i.ibb.co/N1p2TJx/icon-phone.png" BackgroundColor="Transparent" HorizontalOptions="End"/>
+                        <Label FontSize="10" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Text="Phone number" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
+                        <Image HeightRequest="15" Source="https://i.ibb.co/N1p2TJx/icon-phone.png" BackgroundColor="Transparent" HorizontalOptions="End"/>
                     </StackLayout>
                 </Frame>
-                <Frame CornerRadius="20" HeightRequest="20" HasShadow="False" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
+                <Frame Padding="20, 10, 20, 10" CornerRadius="20" HeightRequest="20" HasShadow="False" BorderColor="#DEDEDE" Margin="4, 0, 4, 6">
                     <StackLayout Orientation="Horizontal">
-                        <Label VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Text="Settings" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
-                        <Image HeightRequest="20" Source="https://i.ibb.co/x7DxNtP/icon-settings.png" BackgroundColor="Transparent" HorizontalOptions="End"/>
+                        <Label FontSize="10" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Text="Settings" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
+                        <Image HeightRequest="15" Source="https://i.ibb.co/x7DxNtP/icon-settings.png" BackgroundColor="Transparent" HorizontalOptions="End"/>
                     </StackLayout>
                 </Frame>
                 <StackLayout>
