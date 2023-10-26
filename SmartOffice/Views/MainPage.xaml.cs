@@ -16,22 +16,43 @@ namespace SmartOffice.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : ContentPage
     {
-        List<Entry> entries = new List<Entry>
+        List<Entry> now = new List<Entry>
         {
-            new Entry(10)
+            new Entry(7)
             {
-                Color = SKColor.Parse("#498C8A"),
-                Label = "sample",
+                Color = SKColor.Parse("#ffffff"),
+                Label = "9:00",
+                ValueLabel = "7",
             },
-            new Entry(20)
+            new Entry(9)
             {
-                Color = SKColor.Parse("#498C8A"),
-                Label = "sample",
+                Color = SKColor.Parse("#ffffff"),
+                Label = "10:00",
+                ValueLabel = "9",
             },
-            new Entry(5)
+            new Entry(6)
             {
-                Color = SKColor.Parse("#498C8A"),
-                Label = "sample",
+                Color = SKColor.Parse("#ffffff"),
+                Label = "11:00",
+                ValueLabel = "6",
+            },
+            new Entry(18)
+            {
+                Color = SKColor.Parse("#ffffff"),
+                Label = "12:00",
+                ValueLabel = "18",
+            },
+            new Entry(0)
+            {
+                Color = SKColor.Parse("#ffffff"),
+                Label = "13:00",
+                ValueLabel = "0",
+            },
+            new Entry(12)
+            {
+                Color = SKColor.Parse("#ffffff"),
+                Label = "14:00",
+                ValueLabel = "12",
             }
         };
 
@@ -40,9 +61,9 @@ namespace SmartOffice.Views
             InitializeComponent();
 
             //NavigationPage.SetHasNavigationBar(this, false);
-            MainChart.Chart = new LineChart { Entries = entries };
-
+            MainChart.Chart = new LineChart { Entries = now, LabelTextSize = 30, Typeface = SKTypeface.FromFamilyName("MontserratBold"), BackgroundColor = SKColor.Parse("#00000f00"), LineSize = 7, PointSize = 20, LabelColor = SKColor.Parse("#000000"), LineAreaAlpha = 0 };
         }
+
         private async void OnNotify(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Notification());

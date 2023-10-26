@@ -18,14 +18,14 @@
                                 <StackLayout Margin="25, 50, 25, 0" BackgroundColor="Transparent">
                                     <StackLayout HorizontalOptions="Fill" Orientation="Horizontal" >
                                         <Label Text="Hello, John!" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
-                                        <ImageButton Clicked="OnNotify" Source="https://i.ibb.co/z5TJZ18/icon-bell.png" Padding="5" BackgroundColor="Transparent" WidthRequest="40" HeightRequest="40" HorizontalOptions="EndAndExpand"/>
+                                        <ImageButton Clicked="OnNotify" Source="https://i.ibb.co/2W0rbjL/icon-bell.png" BackgroundColor="Transparent" WidthRequest="25" HorizontalOptions="EndAndExpand"/>
                                         <ImageButton Clicked="OnProfile" Padding="-10" Source="https://media.dayoftheshirt.com/images/shirts/WegKz/redbubble_mike-wazowski-sulivan-face-meme-redbubble_1612841384.large.png" BackgroundColor="blue" HorizontalOptions="End" HeightRequest="40" WidthRequest="40" CornerRadius="200"/>
                                     </StackLayout>
-                                    <StackLayout>
-                                        
+                                    <StackLayout Margin="0, 20, 0, 10">
+                                        <Label Text="Employees in the office:" FontSize="12" FontFamily="MontserratRegular" TextColor="#498C8A"/>
                                     </StackLayout>
                                     <StackLayout>
-                                        <forms:ChartView x:Name="MainChart" HeightRequest="150" BackgroundColor="Transparent"/>
+                                        <forms:ChartView x:Name="MainChart" HeightRequest="200" Margin="-30, 0, -30, 0"/>
                                     </StackLayout>
                                 </StackLayout>
                             </yummy:PancakeView>
