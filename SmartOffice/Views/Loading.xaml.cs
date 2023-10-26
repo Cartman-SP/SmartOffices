@@ -15,8 +15,8 @@ namespace SmartOffice.Views
         public Loading()
         {
             InitializeComponent();
-            FadeInImage(Hedge);
-            PulseImage(Hedge);
+            //FadeInImage(Hedge);
+            //PulseImage(Hedge);
         }
         async void FadeInImage(Image Hedge)
         {
@@ -42,7 +42,7 @@ namespace SmartOffice.Views
         {
             base.OnAppearing();
             
-            await Task.Delay(5000);
+            await Task.Delay(2000);
             /*
             if (Application.Current.Properties.ContainsKey("IsLoggedIn")&& (bool)Application.Current.Properties["IsLoggedIn"])
             {

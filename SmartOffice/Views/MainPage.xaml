@@ -17,7 +17,7 @@
                                 <StackLayout HorizontalOptions="Fill" Orientation="Horizontal" Margin="25, 50, 25, 0" BackgroundColor="Transparent">
                                     <Label Text="Hello, John!" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
                                     <ImageButton Clicked="OnNotify" Source="https://i.ibb.co/z5TJZ18/icon-bell.png" Padding="5" BackgroundColor="Transparent" WidthRequest="40" HeightRequest="40" HorizontalOptions="EndAndExpand"/>
-                                    <ImageButton Clicked="OnProfile" Padding="-20" Source="https://steamuserimages-a.akamaihd.net/ugc/2018221770499435904/9C42462E7EBC1634A838B2B891EA1E7C579D1363/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" BackgroundColor="blue" HorizontalOptions="End" HeightRequest="40" WidthRequest="40" CornerRadius="200"/>
+                                    <ImageButton Clicked="OnProfile" Padding="-10" Source="https://media.dayoftheshirt.com/images/shirts/WegKz/redbubble_mike-wazowski-sulivan-face-meme-redbubble_1612841384.large.png" BackgroundColor="blue" HorizontalOptions="End" HeightRequest="40" WidthRequest="40" CornerRadius="200"/>
                                 </StackLayout>
                             </yummy:PancakeView>
                         </StackLayout>

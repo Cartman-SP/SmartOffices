@@ -14,7 +14,7 @@
                         <Label Margin="0, 0, 0, 0" Text="Profile" HorizontalOptions="CenterAndExpand" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
                     </Grid>
                     <StackLayout Margin="0, 30, 0, 0">
-                        <ImageButton HorizontalOptions="CenterAndExpand" Padding="-50" Source="https://steamuserimages-a.akamaihd.net/ugc/2018221770499435904/9C42462E7EBC1634A838B2B891EA1E7C579D1363/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" BackgroundColor="blue" HeightRequest="100" WidthRequest="100" CornerRadius="200"/>
+                        <ImageButton HorizontalOptions="CenterAndExpand" Padding="-20" Source="https://media.dayoftheshirt.com/images/shirts/WegKz/redbubble_mike-wazowski-sulivan-face-meme-redbubble_1612841384.large.png" BackgroundColor="blue" HeightRequest="100" WidthRequest="100" CornerRadius="200"/>
                         <Label Text="John G-Man" HorizontalOptions="CenterAndExpand" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
                     </StackLayout>
                 </StackLayout>

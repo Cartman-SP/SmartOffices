@@ -16,13 +16,13 @@
                 <StackLayout VerticalOptions="End" Padding="40">
                     <StackLayout Orientation="Horizontal">
                     <Image Source="https://cdn.onlinewebfonts.com/svg/img_568657.png" HeightRequest="18" WidthRequest="18" VerticalOptions="CenterAndExpand"/>
-                    <Entry HorizontalOptions="FillAndExpand" x:Name="usernameEntry" Placeholder="Login" FontFamily="MontserratRegular" PlaceholderColor="#1F1F1F" TextColor="White"/>
+                    <Entry HorizontalOptions="FillAndExpand" x:Name="usernameEntry" Placeholder="Login" FontFamily="MontserratRegular" PlaceholderColor="#1F1F1F" TextColor="Black"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                     <Image Source="https://cdn1.iconfinder.com/data/icons/tools-65/100/tool-25-1024.png" HeightRequest="18" WidthRequest="18" VerticalOptions="CenterAndExpand"/>
                     <Entry x:Name="passwordEntry" HorizontalOptions="FillAndExpand" Placeholder="Password" FontFamily="MontserratRegular" PlaceholderColor="#1F1F1F" IsPassword="True" TextColor="White"/>
                     </StackLayout>
-                <Button HorizontalOptions="CenterAndExpand" Text="Login" FontFamily="MontserratRegular" Clicked="OnLoginClicked" BackgroundColor="#1F1F1F" CornerRadius="30" HeightRequest="55" WidthRequest="166" Margin="0, 20, 0, 0"/>
+                <Button HorizontalOptions="CenterAndExpand" Text="Login" FontFamily="MontserratRegular" Clicked="OnLoginClicked" BackgroundColor="#1F1F1F" CornerRadius="25" HeightRequest="50" WidthRequest="166" Margin="0, 20, 0, 0"/>
                 </StackLayout>
         </StackLayout>
     </ContentPage.Content>
