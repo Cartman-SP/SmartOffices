@@ -116,13 +116,10 @@
                                 </Frame>
                             </StackLayout>
                             <StackLayout Padding="20">
-                                <Frame CornerRadius="20" Padding="0" BackgroundColor="black" HeightRequest="125" HasShadow="False">
+                                <Frame CornerRadius="20" Padding="0" BackgroundColor="black" HasShadow="False">
                                     <StackLayout Padding="15">
                                         <Label Text="Beta 3.0" FontSize="20" FontFamily="MontserratBold" TextColor="#ffffff"/>
                                         <Label Text="New desgin added like MTS" FontSize="10" FontFamily="MontserratRegular" TextColor="#ffffff"/>
-                                        <Frame BackgroundColor="white" Padding="0" HasShadow="False" CornerRadius="10" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand">
-                                            <Label Margin="20, 10, 20, 10" HorizontalOptions="Center" Text="Thanks for developers" FontFamily="MontserratBold" FontSize="10" TextColor="black"/>
-                                        </Frame>
                                     </StackLayout>
                                     <Frame.Background>
                                         <!-- StartPoint defaults to (0,0) -->

@@ -15,8 +15,8 @@
                 <Label Text="Every office can be smart!" HorizontalOptions="Center" FontSize="20" FontFamily="MontserratRegular" TextColor="#ADAFAF"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal" Margin="0, 40, 0, 60" HorizontalOptions="Center" VerticalOptions="End">
-                <Button FontFamily="MontserratRegular" FontSize="15" Text="Help" Clicked="OnMain" BackgroundColor="#2C2F34" TextColor="white" CornerRadius="25" HeightRequest="50" WidthRequest="166"/>
-                <Button FontFamily="MontserratRegular" FontSize="15" Text="Login" BackgroundColor="#FE0034" TextColor="White" Clicked="OnSign" CornerRadius="25" HeightRequest="50" WidthRequest="166"/>
+                <Button FontFamily="MontserratRegular" FontSize="15" Text="Help" Clicked="OnMain" BackgroundColor="#2C2F34" TextColor="white" CornerRadius="20" HeightRequest="50" WidthRequest="166"/>
+                <Button FontFamily="MontserratRegular" FontSize="15" Text="Login" BackgroundColor="#FE0034" TextColor="White" Clicked="OnSign" CornerRadius="20" HeightRequest="50" WidthRequest="166"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
