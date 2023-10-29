@@ -5,14 +5,28 @@
              x:Class="SmartOffice.Views.Location"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
+        
         <StackLayout BackgroundColor="White">
             <StackLayout>
-                <StackLayout>
-                    <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="25, 50, 25, 0">
-                        <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/t83tc15/icon-cross.png"/>
-                        <Label Margin="0, 0, 0, 0" Text="Map" HorizontalOptions="CenterAndExpand" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
-                    </Grid>
-                </StackLayout>
+                <yummy:PancakeView BackgroundColor="black" CornerRadius="0, 0, 20, 20">
+                    <StackLayout>
+                        <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="20, 50, 20, 0">
+                            <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/fHMY1Yx/icon-cross.png"/>
+                            <Label Margin="0, 0, 0, 0" Text="Map" HorizontalOptions="CenterAndExpand" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
+                        </Grid>
+                        <StackLayout BackgroundColor="Transparent" Orientation="Horizontal" Margin="20, 25, 0, 20">
+                            <StackLayout>
+                                <Frame Padding="0" CornerRadius="25" WidthRequest="50" HeightRequest="50">
+                                    <Image Source="https://media.dayoftheshirt.com/images/shirts/WegKz/redbubble_mike-wazowski-sulivan-face-meme-redbubble_1612841384.large.png" BackgroundColor="#191A1C" Aspect="Fill"/>
+                                </Frame>
+                            </StackLayout>
+                            <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
+                                <Label Text="Daniil Shirkin" FontSize="15" FontFamily="MontserratBold" TextColor="#ffffff"/>
+                                <Label Text="Manager" FontSize="12" FontFamily="MontserratRegular" TextColor="#ADAFAF"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </yummy:PancakeView>
             </StackLayout>
             <StackLayout>
                 <Button Text="нажми меня" Clicked="Button_Clicked"/>
