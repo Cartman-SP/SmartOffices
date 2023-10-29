@@ -9,7 +9,7 @@
             <StackLayout>
                 <StackLayout>
                     <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="25, 50, 25, 0">
-                        <ImageButton BackgroundColor="white" Clicked="OnMain" HorizontalOptions="Start" WidthRequest="30" Source=""/>
+                        <ImageButton BackgroundColor="Transparent" Clicked="OnMain" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/fHMY1Yx/icon-cross.png"/>
                         <Label Margin="0, 0, 0, 0" Text="Notifications" HorizontalOptions="CenterAndExpand" FontSize="20" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
                     </Grid>
                 </StackLayout>

@@ -88,5 +88,7 @@ namespace SmartOffice.Views
         {
             await Navigation.PushAsync(new Help());
         }
+
+
     }
 }
