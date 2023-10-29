@@ -6,17 +6,17 @@
              NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#FFD447" VerticalOptions="Fill">
+        <StackLayout BackgroundColor="black" VerticalOptions="Fill">
             <StackLayout Margin="80, 60, 60, 60" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
                 <Image Source="https://gas-kvas.com/uploads/posts/2023-02/1677049871_gas-kvas-com-p-risunki-na-temu-ofis-37.png"/>
             </StackLayout>
             <StackLayout VerticalOptions="EndAndExpand">
-                <Label Text="SMART OFFICE" HorizontalOptions="Center" FontSize="30" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
-                <Label Text="Every office can be smart!" HorizontalOptions="Center" FontSize="20" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
+                <Label Text="SMART OFFICE" HorizontalOptions="Center" FontSize="30" FontFamily="MontserratBold" TextColor="white"/>
+                <Label Text="Every office can be smart!" HorizontalOptions="Center" FontSize="20" FontFamily="MontserratRegular" TextColor="#ADAFAF"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal" Margin="0, 40, 0, 60" HorizontalOptions="Center" VerticalOptions="End">
-                <Button FontFamily="MontserratRegular" Text="Help" Clicked="OnMain" TextColor="#1F1F1F" CornerRadius="25" HeightRequest="50" WidthRequest="166" BackgroundColor="Transparent" BorderWidth="2" BorderColor="#1F1F1F"/>
-                <Button FontFamily="MontserratRegular" Text="Login" BackgroundColor="#1F1F1F" TextColor="White" Clicked="OnSign" CornerRadius="25" HeightRequest="50" WidthRequest="166"/>
+                <Button FontFamily="MontserratRegular" FontSize="15" Text="Help" Clicked="OnMain" BackgroundColor="#2C2F34" TextColor="white" CornerRadius="25" HeightRequest="50" WidthRequest="166"/>
+                <Button FontFamily="MontserratRegular" FontSize="15" Text="Login" BackgroundColor="#FE0034" TextColor="White" Clicked="OnSign" CornerRadius="25" HeightRequest="50" WidthRequest="166"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
