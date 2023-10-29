@@ -11,61 +11,131 @@
     <ScrollView VerticalScrollBarVisibility="Never">
         <StackLayout BackgroundColor="black">
             <StackLayout>
-                <StackLayout Margin="25, 50, 25, 25" BackgroundColor="Transparent">
-                    <StackLayout HorizontalOptions="Fill" Orientation="Horizontal" >
-                        <Label Text="Hello, John!" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#ffffff"/>
+                <StackLayout Margin="20, 50, 0, 25" BackgroundColor="Transparent">
+                    <StackLayout HorizontalOptions="Fill" Orientation="Horizontal" Margin="0, 0, 20, 0">
+                        <Label Text="My office" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#ffffff"/>
                         <ImageButton Clicked="OnNotify" Source="https://i.ibb.co/ftp6G7K/icon-bell.png" BackgroundColor="#191A1C" CornerRadius="30" WidthRequest="30" Padding="6" Margin="0, 10, 0, 10" HorizontalOptions="EndAndExpand"/>
                         <ImageButton Clicked="OnProfile" Source="https://i.ibb.co/x5LM29c/icon-user.png" BackgroundColor="#191A1C" CornerRadius="30" WidthRequest="30" Padding="6" Margin="0, 10, 0, 10"/>
                     </StackLayout>
-                    <StackLayout Margin="0, 20, 0, 10">
+                    <StackLayout>
+                        <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Margin="0, 0, 0, 0">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
+                                    <Image/>
+                                </Frame>
+                                <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
+                                    <Image/>
+                                </Frame>
+                                <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
+                                    <Image/>
+                                </Frame>
+                                <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
+                                    <Image/>
+                                </Frame>
+                                <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
+                                    <Image/>
+                                </Frame>
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="Transparent" Orientation="Horizontal" Margin="0, 25, 0, 0">
+                        <StackLayout>
+                            <Frame Padding="0" CornerRadius="25" WidthRequest="50" HeightRequest="50">
+                                <Image Source="https://media.dayoftheshirt.com/images/shirts/WegKz/redbubble_mike-wazowski-sulivan-face-meme-redbubble_1612841384.large.png" BackgroundColor="#191A1C" Aspect="Fill"/>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
+                            <Label Text="Daniil Shirkin" FontSize="15" FontFamily="MontserratBold" TextColor="#ffffff"/>
+                            <Label Text="Manager" FontSize="12" FontFamily="MontserratRegular" TextColor="#ADAFAF"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <!--<StackLayout Margin="0, 20, 0, 10">
                         <Label Text="Employees in the office:" FontSize="12" FontFamily="MontserratRegular" TextColor="#ADAFAF"/>
                     </StackLayout>
                     <StackLayout>
                         <forms:ChartView x:Name="MainChart" HeightRequest="200" Margin="-30, 0, -30, 0"/>
-                    </StackLayout>
+                    </StackLayout>-->
                 </StackLayout>
-
-                <yummy:PancakeView CornerRadius="20, 20, 0, 0" BackgroundColor="#2C2F34" VerticalOptions="FillAndExpand">
-                    <StackLayout>
+                <StackLayout>
+                    <yummy:PancakeView CornerRadius="20, 20, 0, 0" BackgroundColor="#2C2F34">
                         <StackLayout>
-                            <Label Margin="20, 20, 20, 0" Text="Quick actions" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="White"/>
-                            <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" Margin="10, 20, 10, 0">
-                                <StackLayout HorizontalOptions="CenterAndExpand">
-                                    <ImageButton Clicked="OnQRauth" Padding="20" Source="https://i.ibb.co/sm0cXCz/icon-qr.png" CornerRadius="30" BackgroundColor="#FE0034" WidthRequest="70" HeightRequest="70"/>
-                                    <Label FontFamily="MontserratRegular" Text="Enter" TextColor="#ADAFAF" FontSize="14" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                                <StackLayout HorizontalOptions="CenterAndExpand">
-                                    <ImageButton Clicked="OnLocation" Padding="20" Source="https://i.ibb.co/8jjSBDz/icon-map.png" CornerRadius="30" BackgroundColor="#1C1F24" WidthRequest="70" HeightRequest="70"/>
-                                    <Label FontFamily="MontserratRegular" Text="Map" TextColor="#ADAFAF" FontSize="14" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                                <StackLayout HorizontalOptions="CenterAndExpand">
-                                    <ImageButton Clicked="OnRent" Padding="20" Source="https://i.ibb.co/7y4NnVj/icon-booking.png" CornerRadius="30" BackgroundColor="#1C1F24" WidthRequest="70" HeightRequest="70"/>
-                                    <Label FontFamily="MontserratRegular" Text="Booking" TextColor="#ADAFAF" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                                <StackLayout HorizontalOptions="CenterAndExpand">
-                                    <ImageButton Clicked="OnHelp" Padding="20" Source="https://i.ibb.co/RzWyYzS/icon-help.png" CornerRadius="30" BackgroundColor="#1C1F24" WidthRequest="70" HeightRequest="70"/>
-                                    <Label FontFamily="MontserratRegular" Text="Help" TextColor="#ADAFAF" HorizontalTextAlignment="Center"/>
+                            <StackLayout>
+                                <Label Margin="20, 20, 20, 0" Text="Quick actions" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="White"/>
+                                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" Margin="10, 20, 10, 0">
+                                    <StackLayout HorizontalOptions="CenterAndExpand">
+                                        <ImageButton Clicked="OnQRauth" Padding="20" Source="https://i.ibb.co/sm0cXCz/icon-qr.png" CornerRadius="30" BackgroundColor="#FE0034" WidthRequest="70" HeightRequest="70"/>
+                                        <Label FontFamily="MontserratRegular" Text="Enter" TextColor="#ADAFAF" FontSize="14" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="CenterAndExpand">
+                                        <ImageButton Clicked="OnLocation" Padding="20" Source="https://i.ibb.co/8jjSBDz/icon-map.png" CornerRadius="30" BackgroundColor="#1C1F24" WidthRequest="70" HeightRequest="70"/>
+                                        <Label FontFamily="MontserratRegular" Text="Map" TextColor="#ADAFAF" FontSize="14" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="CenterAndExpand">
+                                        <ImageButton Clicked="OnRent" Padding="20" Source="https://i.ibb.co/7y4NnVj/icon-booking.png" CornerRadius="30" BackgroundColor="#1C1F24" WidthRequest="70" HeightRequest="70"/>
+                                        <Label FontFamily="MontserratRegular" Text="Booking" TextColor="#ADAFAF" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="CenterAndExpand">
+                                        <ImageButton Clicked="OnHelp" Padding="20" Source="https://i.ibb.co/RzWyYzS/icon-help.png" CornerRadius="30" BackgroundColor="#1C1F24" WidthRequest="70" HeightRequest="70"/>
+                                        <Label FontFamily="MontserratRegular" Text="Help" TextColor="#ADAFAF" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
                                 </StackLayout>
                             </StackLayout>
+
+                            <!--office status (нужно, чтобы подгружал текст, кол-во сотрудников всего, кол-во помещений всего из базы)-->
+                            <StackLayout Padding="20, 20, 20, 0">
+                                <Frame CornerRadius="20" Padding="0" BackgroundColor="#1C1F24" HeightRequest="125" HasShadow="False">
+                                    <StackLayout Padding="15">
+                                        <StackLayout Orientation="Horizontal">
+                                            <ImageButton CornerRadius="20" WidthRequest="20" BackgroundColor="Transparent" Source="https://static.tildacdn.com/tild3836-6662-4261-b530-643636323165/Google-Maps-Pin.png"/>
+                                            <Label VerticalOptions="Center" Text="Moscow, Office adress st." FontSize="12" FontFamily="MontserratRegular" TextColor="#ADAFAF"/>
+                                        </StackLayout>
+                                        <StackLayout>
+
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+
+                            <!--banner (нужно, чтобы подгружал текст и фон из базы)-->
+                            <StackLayout Padding="20, 20, 20, 0">
+                                <Frame CornerRadius="20" Padding="0" BackgroundColor="black" HeightRequest="125" HasShadow="False">
+                                    <StackLayout Padding="15">
+                                        <Label Text="Coffee time" FontSize="20" FontFamily="MontserratBold" TextColor="#ffffff"/>
+                                        <Label Text="Order a coffee in app and pick it up" FontSize="10" FontFamily="MontserratRegular" TextColor="#ffffff"/>
+                                        <Frame BackgroundColor="white" Padding="0" HasShadow="False" CornerRadius="10" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand">
+                                            <Label Margin="20, 10, 20, 10" HorizontalOptions="Center" Text="Try it" FontFamily="MontserratBold" FontSize="10" TextColor="black"/>
+                                        </Frame>
+                                    </StackLayout>
+                                    <Frame.Background>
+                                        <!-- StartPoint defaults to (0,0) -->
+                                        <LinearGradientBrush EndPoint="1,0">
+                                            <GradientStop Color="#D3B293" Offset="0.3" />
+                                            <GradientStop Color="#664096" Offset="1.0" />
+                                        </LinearGradientBrush>
+                                    </Frame.Background>
+                                </Frame>
+                            </StackLayout>
+                            <StackLayout Padding="20">
+                                <Frame CornerRadius="20" Padding="0" BackgroundColor="black" HeightRequest="125" HasShadow="False">
+                                    <StackLayout Padding="15">
+                                        <Label Text="Beta 3.0" FontSize="20" FontFamily="MontserratBold" TextColor="#ffffff"/>
+                                        <Label Text="New desgin added like MTS" FontSize="10" FontFamily="MontserratRegular" TextColor="#ffffff"/>
+                                        <Frame BackgroundColor="white" Padding="0" HasShadow="False" CornerRadius="10" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand">
+                                            <Label Margin="20, 10, 20, 10" HorizontalOptions="Center" Text="Thanks for developers" FontFamily="MontserratBold" FontSize="10" TextColor="black"/>
+                                        </Frame>
+                                    </StackLayout>
+                                    <Frame.Background>
+                                        <!-- StartPoint defaults to (0,0) -->
+                                        <LinearGradientBrush EndPoint="1,0">
+                                            <GradientStop Color="#2892CE" Offset="0.1" />
+                                            <GradientStop Color="#FE636D" Offset="1.0" />
+                                        </LinearGradientBrush>
+                                    </Frame.Background>
+                                </Frame>
+                            </StackLayout>
                         </StackLayout>
-
-                        <!--office status (нужно, чтобы подгружал текст, кол-во сотрудников всего, кол-во помещений всего из базы)-->
-                        <StackLayout Padding="20, 20, 20, 0">
-                            <Frame CornerRadius="20" Padding="0" BackgroundColor="#1C1F24" HeightRequest="125" HasShadow="False">
-
-                            </Frame>
-                        </StackLayout>
-
-
-                        <!--banner (нужно, чтобы подгружал текст и фон из базы)-->
-                        <StackLayout Padding="20">
-                            <Frame CornerRadius="20" Padding="0" BackgroundColor="Aqua" HeightRequest="125" HasShadow="False">
-                                
-                            </Frame>
-                        </StackLayout>
-                    </StackLayout>
-                </yummy:PancakeView>
-
+                    </yummy:PancakeView>
+                </StackLayout>
 
                 <!--<StackLayout Orientation="Horizontal" Margin="25, -5, 25, 0">
                     <Image Source="https://i.ibb.co/Hq2JtHD/icon-location.png" WidthRequest="15"/>

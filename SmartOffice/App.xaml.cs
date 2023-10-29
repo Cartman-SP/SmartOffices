@@ -2,8 +2,8 @@
 using SmartOffice.Views;
 using Xamarin.Forms;
 
-[assembly: ExportFont("Montserrat_Regular.ttf", Alias = "MontserratRegular")]
-[assembly: ExportFont("Montserrat_Bold.ttf", Alias = "MontserratBold")]
+[assembly: ExportFont("MTSText-Regular.ttf", Alias = "MontserratRegular")]
+[assembly: ExportFont("MTSText-Bold.ttf", Alias = "MontserratBold")]
 
 namespace SmartOffice
 {

@@ -61,7 +61,7 @@ namespace SmartOffice.Views
             InitializeComponent();
 
             //NavigationPage.SetHasNavigationBar(this, false);
-            MainChart.Chart = new LineChart { Entries = now, LabelTextSize = 30, Typeface = SKTypeface.FromFamilyName("MontserratBold"), BackgroundColor = SKColor.Parse("#00000f00"), LineSize = 7, PointSize = 20, LabelColor = SKColor.Parse("#2C2F34"), LineAreaAlpha = 0 };
+            //MainChart.Chart = new LineChart { Entries = now, LabelTextSize = 30, Typeface = SKTypeface.FromFamilyName("MontserratBold"), BackgroundColor = SKColor.Parse("#00000f00"), LineSize = 7, PointSize = 20, LabelColor = SKColor.Parse("#2C2F34"), LineAreaAlpha = 0 };
         }
 
         private async void OnNotify(object sender, EventArgs e)

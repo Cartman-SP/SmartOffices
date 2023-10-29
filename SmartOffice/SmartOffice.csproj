@@ -37,11 +37,15 @@
   <ItemGroup>
     <None Remove="Fonts\Montserrat_Bold.ttf" />
     <None Remove="Fonts\Montserrat_Regular.ttf" />
+    <None Remove="Fonts\MTSText-Bold.ttf" />
+    <None Remove="Fonts\MTSText-Regular.ttf" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Fonts\Montserrat_Bold.ttf" />
     <EmbeddedResource Include="Fonts\Montserrat_Regular.ttf" />
+    <EmbeddedResource Include="Fonts\MTSText-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\MTSText-Regular.ttf" />
   </ItemGroup>
 
   <ItemGroup>
