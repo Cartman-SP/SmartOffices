@@ -9,7 +9,7 @@
              NavigationPage.HasNavigationBar="False">
 
     <StackLayout BackgroundColor="black">
-        <StackLayout Margin="20, 25, 20, 0" HorizontalOptions="Fill" Orientation="Horizontal">
+        <StackLayout Margin="20, 50, 20, 0" HorizontalOptions="Fill" Orientation="Horizontal">
             <Label Text="My office" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#ffffff"/>
             <ImageButton Clicked="OnNotify" Source="https://i.ibb.co/ftp6G7K/icon-bell.png" BackgroundColor="#191A1C" CornerRadius="30" WidthRequest="30" Padding="6" Margin="0, 10, 0, 10" HorizontalOptions="EndAndExpand"/>
             <ImageButton Clicked="OnProfile" Source="https://i.ibb.co/x5LM29c/icon-user.png" BackgroundColor="#191A1C" CornerRadius="30" WidthRequest="30" Padding="6" Margin="0, 10, 0, 10"/>
