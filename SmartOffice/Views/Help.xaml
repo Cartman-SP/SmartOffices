@@ -13,19 +13,21 @@
                             <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/fHMY1Yx/icon-cross.png"/>
                             <Label Margin="0, 0, 0, 0" Text="Help" HorizontalOptions="CenterAndExpand" FontSize="20" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
                         </Grid>
-                        <StackLayout BackgroundColor="transparent" HorizontalOptions="StartAndExpand" Orientation="Horizontal" Margin="20, 25, 0, 20">
-                            <Entry Placeholder="search" PlaceholderColor="#aaaaaa" BackgroundColor="#2C2F34"/>
+                        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="20, 25, 20, 20">
+                            <Frame Padding="5, -5, 5, -5" BackgroundColor="#2C2F34" HorizontalOptions="FillAndExpand" CornerRadius="20">
+                                <Entry TextColor="white" Placeholder="search" PlaceholderColor="#aaaaaa" BackgroundColor="Transparent" ClearButtonVisibility="WhileEditing"/>
+                            </Frame>
                         </StackLayout>
                     </StackLayout>
                 </yummy:PancakeView>
             </StackLayout>
-            <ScrollView VerticalScrollBarVisibility="Default">
+            <ScrollView VerticalScrollBarVisibility="Default" BackgroundColor="Transparent" VerticalOptions="FillAndExpand">
                 <StackLayout>
                     <StackLayout>
-                        <Frame CornerRadius="20" Padding="20, 30, 20, 30" BackgroundColor="black">
+                        <Frame CornerRadius="20" Padding="20, 20, 20, 30" BackgroundColor="black">
                             <StackLayout>
                                 <StackLayout>
-                                    <Label TextColor="#ADAFAF" Text="HOW TO USE THE APP" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
+                                    <Label TextColor="#ADAFAF" Text="HOW TO USE THE APP?" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
                                 </StackLayout>
                                 <StackLayout Margin="0, 10, 0, 0">
                                     <StackLayout Orientation="Horizontal">
@@ -48,91 +50,35 @@
                             </StackLayout>
                         </Frame>
                     </StackLayout>
-                    <StackLayout>
-                        <Frame CornerRadius="20" Padding="20, 30, 20, 30" BackgroundColor="black">
+                    <StackLayout BackgroundColor="Transparent" VerticalOptions="FillAndExpand">
+                        <yummy:PancakeView VerticalOptions="FillAndExpand" CornerRadius="20, 20, 0, 0" BackgroundColor="black">
                             <StackLayout>
-                                <StackLayout>
-                                    <Label TextColor="#ADAFAF" Text="HOW TO USE THE APP" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
-                                </StackLayout>
-                                <StackLayout Margin="0, 10, 0, 0">
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="Sample text" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
-                                        <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                <Frame CornerRadius="20" Padding="20, 20, 20, 30" BackgroundColor="black">
+                                    <StackLayout>
+                                        <StackLayout>
+                                            <Label TextColor="#ADAFAF" Text="TECHNICAL DIFFICULITES" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
+                                        </StackLayout>
+                                        <StackLayout Margin="0, 10, 0, 0">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="Sample text" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                                <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout Margin="0, 10, 0, 0">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="Sample text" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                                <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout Margin="0, 10, 0, 0">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="Sample text" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                                <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                            </StackLayout>
+                                        </StackLayout>
                                     </StackLayout>
-                                </StackLayout>
-                                <StackLayout Margin="0, 10, 0, 0">
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="Sample text" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
-                                        <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
-                                    </StackLayout>
-                                </StackLayout>
-                                <StackLayout Margin="0, 10, 0, 0">
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="Sample text" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
-                                        <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
-                                    </StackLayout>
-                                </StackLayout>
+                                </Frame>
                             </StackLayout>
-                        </Frame>
-                    </StackLayout>
-                    <StackLayout>
-                        <Frame CornerRadius="20" Padding="20, 30, 20, 30" BackgroundColor="black">
-                            <StackLayout>
-                                <StackLayout>
-                                    <Label TextColor="#ADAFAF" Text="HOW TO USE THE APP" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
-                                </StackLayout>
-                                <StackLayout Margin="0, 10, 0, 0">
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="Sample text" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
-                                        <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
-                                    </StackLayout>
-                                </StackLayout>
-                                <StackLayout Margin="0, 10, 0, 0">
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="Sample text" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
-                                        <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
-                                    </StackLayout>
-                                </StackLayout>
-                                <StackLayout Margin="0, 10, 0, 0">
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="Sample text" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
-                                        <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
-                                    </StackLayout>
-                                </StackLayout>
-                            </StackLayout>
-                        </Frame>
-                    </StackLayout>
-                    <StackLayout>
-                        <Frame CornerRadius="20" Padding="20, 30, 20, 30" BackgroundColor="black">
-                            <StackLayout>
-                                <StackLayout>
-                                    <Label TextColor="#ADAFAF" Text="HOW TO USE THE APP" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
-                                </StackLayout>
-                                <StackLayout Margin="0, 10, 0, 0">
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="Sample text" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
-                                        <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
-                                    </StackLayout>
-                                </StackLayout>
-                                <StackLayout Margin="0, 10, 0, 0">
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="Sample text" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
-                                        <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
-                                    </StackLayout>
-                                </StackLayout>
-                                <StackLayout Margin="0, 10, 0, 0">
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="Sample text" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
-                                        <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
-                                    </StackLayout>
-                                </StackLayout>
-                            </StackLayout>
-                        </Frame>
-                    </StackLayout>
-
-                    <StackLayout>
-                        <yummy:PancakeView CornerRadius="20, 20, 0, 0" BackgroundColor="black" Padding="20" VerticalOptions="EndAndExpand">
-                            <Button CornerRadius="15" Text="Log out" FontFamily="MontserratBold" BackgroundColor="#FE0034"/>
                         </yummy:PancakeView>
                     </StackLayout>
                 </StackLayout>

@@ -101,7 +101,7 @@
                                                 <Label Margin="5, 0, 0, 0" VerticalOptions="Center" Text="Parking" FontSize="12" FontFamily="MontserratBold" TextColor="white"/>
                                             </StackLayout>
                                             <StackLayout VerticalOptions="CenterAndExpand">
-                                                <Label Text="13/20" FontSize="20" FontFamily="MontserratRegular" TextColor="white"/>
+                                                <Label Text="13/20" HorizontalOptions="CenterAndExpand" FontSize="20" FontFamily="MontserratRegular" TextColor="white"/>
                                             </StackLayout>
                                         </StackLayout>
                                     </Frame>

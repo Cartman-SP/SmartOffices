@@ -27,8 +27,8 @@
                 </StackLayout>
             </yummy:PancakeView>
         </StackLayout>
-        <ScrollView VerticalScrollBarVisibility="Default">
-            <StackLayout VerticalOptions="StartAndExpand">
+        <ScrollView VerticalScrollBarVisibility="Default" BackgroundColor="Transparent" VerticalOptions="FillAndExpand">
+            <StackLayout>
                 <StackLayout>
                     <Frame CornerRadius="20" Padding="20, 30, 20, 30" BackgroundColor="black">
                         <StackLayout>
@@ -77,14 +77,54 @@
                         </StackLayout>
                     </Frame>
                 </StackLayout>
-                <StackLayout VerticalOptions="StartAndExpand" BackgroundColor="red">
-                    <yummy:PancakeView CornerRadius="20, 20, 0, 0" BackgroundColor="black" Padding="20, 20, 20, 20" VerticalOptions="FillAndExpand">
-                        <Button CornerRadius="15" Text="Log out" FontFamily="MontserratBold" BackgroundColor="#2C2F34"/>
+                <StackLayout>
+                    <Frame CornerRadius="20" Padding="20, 30, 20, 30" BackgroundColor="black">
+                        <StackLayout>
+                            <StackLayout>
+                                <Label TextColor="#ADAFAF" Text="APP SETTINGS" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Color theme" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Notifications" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame CornerRadius="20" Padding="20, 30, 20, 30" BackgroundColor="black">
+                        <StackLayout>
+                            <StackLayout>
+                                <Label TextColor="#ADAFAF" Text="APP SETTINGS" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Color theme" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Notifications" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout BackgroundColor="Transparent" VerticalOptions="FillAndExpand">
+                    <yummy:PancakeView VerticalOptions="FillAndExpand" CornerRadius="20, 20, 0, 0" BackgroundColor="black" Padding="20, 20, 20, 20">
+                        <Button CornerRadius="15" Text="Log out" FontFamily="MontserratBold" BackgroundColor="#2C2F34" VerticalOptions="Start"/>
                     </yummy:PancakeView>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
-        
     </StackLayout>
-    
 </ContentPage>
