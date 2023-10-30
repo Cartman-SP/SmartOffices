@@ -43,7 +43,7 @@ namespace SmartOffice.Views
             var json = JsonConvert.SerializeObject(requestData);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            var response = await client.PostAsync("http://192.168.1.127:800/api/authenticate", content);
+            var response = await client.PostAsync("http://hedgeoffice.ru/api/authenticate", content);
             Console.WriteLine(response.IsSuccessStatusCode);
             if (response.IsSuccessStatusCode)
             {
