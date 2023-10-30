@@ -23,18 +23,33 @@
                                 <StackLayout Orientation="Horizontal">
                                     <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
                                         <Image/>
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="onStories" NumberOfTapsRequired="1" />
+                                        </Frame.GestureRecognizers>
                                     </Frame>
                                     <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
                                         <Image/>
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="onStories" NumberOfTapsRequired="1" />
+                                        </Frame.GestureRecognizers>
                                     </Frame>
                                     <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
                                         <Image/>
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="onStories" NumberOfTapsRequired="1" />
+                                        </Frame.GestureRecognizers>
                                     </Frame>
                                     <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
                                         <Image/>
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="onStories" NumberOfTapsRequired="1" />
+                                        </Frame.GestureRecognizers>
                                     </Frame>
                                     <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
                                         <Image/>
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="onStories" NumberOfTapsRequired="1" />
+                                        </Frame.GestureRecognizers>
                                     </Frame>
                                 </StackLayout>
                             </ScrollView>
