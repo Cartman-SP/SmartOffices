@@ -83,35 +83,45 @@
                                 </StackLayout>
 
                                 <StackLayout Orientation="Horizontal" Padding="20, 20, 20, 0">
-                                    <Frame CornerRadius="20" Padding="0" BackgroundColor="#1C1F24" HeightRequest="125" HasShadow="False" HorizontalOptions="FillAndExpand">
+                                    <Frame CornerRadius="20" Padding="0" BackgroundColor="#1C1F24" HeightRequest="100" HasShadow="False" HorizontalOptions="FillAndExpand">
                                         <StackLayout Padding="15">
                                             <StackLayout Orientation="Horizontal">
                                                 <ImageButton CornerRadius="20" WidthRequest="30" HeightRequest="30" BackgroundColor="#22A546" Source="https://i.ibb.co/jhSJh2P/icon-planned.png" Padding="5"/>
                                                 <Label Margin="5, 0, 0, 0" VerticalOptions="Center" Text="Planned" FontSize="12" FontFamily="MontserratBold" TextColor="white"/>
                                             </StackLayout>
+                                            <StackLayout VerticalOptions="CenterAndExpand">
+                                                <Label Text="No events today" FontSize="20" FontFamily="MontserratRegular" TextColor="white"/>
+                                            </StackLayout>
                                         </StackLayout>
                                     </Frame>
-                                    <Frame CornerRadius="20" Padding="0" BackgroundColor="#1C1F24" HeightRequest="125" HasShadow="False">
+                                    <Frame CornerRadius="20" Padding="0" BackgroundColor="#1C1F24" HeightRequest="100" HasShadow="False">
                                         <StackLayout Padding="15">
                                             <StackLayout Orientation="Horizontal">
                                                 <ImageButton CornerRadius="20" WidthRequest="30" HeightRequest="30" BackgroundColor="#6A9DFF" Source="https://i.ibb.co/FKxKJ01/icon-parking.png" Padding="5"/>
                                                 <Label Margin="5, 0, 0, 0" VerticalOptions="Center" Text="Parking" FontSize="12" FontFamily="MontserratBold" TextColor="white"/>
                                             </StackLayout>
+                                            <StackLayout VerticalOptions="CenterAndExpand">
+                                                <Label Text="13/20" FontSize="20" FontFamily="MontserratRegular" TextColor="white"/>
+                                            </StackLayout>
                                         </StackLayout>
                                     </Frame>
                                 </StackLayout>
 
+                                <!--banner (нужно, чтобы подгружал текст и фон из базы)-->
                                 <StackLayout Padding="20, 20, 20, 0">
-                                    <Frame CornerRadius="20" Padding="0" BackgroundColor="black" HasShadow="False">
+                                    <Frame CornerRadius="20" Padding="0" BackgroundColor="black" HeightRequest="125" HasShadow="False">
                                         <StackLayout Padding="15">
-                                            <Label Text="Beta 3.0" FontSize="20" FontFamily="MontserratBold" TextColor="#ffffff"/>
-                                            <Label Text="New desgin added like MTS" FontSize="10" FontFamily="MontserratRegular" TextColor="#ffffff"/>
+                                            <Label Text="Coffee time" FontSize="20" FontFamily="MontserratBold" TextColor="#ffffff"/>
+                                            <Label Text="Order a coffee in app and pick it up" FontSize="10" FontFamily="MontserratRegular" TextColor="#ffffff"/>
+                                            <Frame BackgroundColor="white" Padding="0" HasShadow="False" CornerRadius="10" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand">
+                                                <Label Margin="20, 10, 20, 10" HorizontalOptions="Center" Text="Try it" FontFamily="MontserratBold" FontSize="10" TextColor="black"/>
+                                            </Frame>
                                         </StackLayout>
                                         <Frame.Background>
                                             <!-- StartPoint defaults to (0,0) -->
                                             <LinearGradientBrush EndPoint="1,0">
-                                                <GradientStop Color="#2892CE" Offset="0.1" />
-                                                <GradientStop Color="#FE636D" Offset="1.0" />
+                                                <GradientStop Color="#D3B293" Offset="0.3" />
+                                                <GradientStop Color="#664096" Offset="1.0" />
                                             </LinearGradientBrush>
                                         </Frame.Background>
                                     </Frame>
@@ -137,26 +147,24 @@
                                     </Frame>
                                 </StackLayout>
 
-                                <!--banner (нужно, чтобы подгружал текст и фон из базы)-->
-                                <StackLayout Padding="20">
-                                    <Frame CornerRadius="20" Padding="0" BackgroundColor="black" HeightRequest="125" HasShadow="False">
+                                <StackLayout Padding="20, 20, 20, 20">
+                                    <Frame CornerRadius="20" Padding="0" BackgroundColor="black" HasShadow="False">
                                         <StackLayout Padding="15">
-                                            <Label Text="Coffee time" FontSize="20" FontFamily="MontserratBold" TextColor="#ffffff"/>
-                                            <Label Text="Order a coffee in app and pick it up" FontSize="10" FontFamily="MontserratRegular" TextColor="#ffffff"/>
-                                            <Frame BackgroundColor="white" Padding="0" HasShadow="False" CornerRadius="10" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand">
-                                                <Label Margin="20, 10, 20, 10" HorizontalOptions="Center" Text="Try it" FontFamily="MontserratBold" FontSize="10" TextColor="black"/>
-                                            </Frame>
+                                            <Label Text="Beta 3.0" FontSize="20" FontFamily="MontserratBold" TextColor="#ffffff"/>
+                                            <Label Text="New desgin added like MTS" FontSize="10" FontFamily="MontserratRegular" TextColor="#ffffff"/>
                                         </StackLayout>
                                         <Frame.Background>
                                             <!-- StartPoint defaults to (0,0) -->
                                             <LinearGradientBrush EndPoint="1,0">
-                                                <GradientStop Color="#D3B293" Offset="0.3" />
-                                                <GradientStop Color="#664096" Offset="1.0" />
+                                                <GradientStop Color="#2892CE" Offset="0.1" />
+                                                <GradientStop Color="#FE636D" Offset="1.0" />
                                             </LinearGradientBrush>
                                         </Frame.Background>
                                     </Frame>
                                 </StackLayout>
                             </StackLayout>
+                            
+                            
                         </yummy:PancakeView>
                     </StackLayout>
 
