@@ -4,112 +4,18 @@
              xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Class="SmartOffice.Views.Location"
              NavigationPage.HasNavigationBar="False">
-    <ContentPage.Content>
 
-        <StackLayout BackgroundColor="#2C2F34">
+    <Grid BackgroundColor="#2C2F34">
+        <Image x:Name="movableImage" Source="https://yandex-images.clstorage.net/XJh50n182/3b09214XA2E/Rpmw-gzWwtGDHkM430LWEF-SrVaepxjFYc7Wy15lcmDBm9VUOn8yV4fZkskS6OmCfIQlw3cszCEUupL4_ZuYlNNKo-rcERQE01gTa96AlxeNVf9Wj2AMR6QIFkjOp-f2wZvPT3KjrMwZwJgBmHc7QuuFcJNw_l1ujX9MeyWNxg3HX7k1y8lH1E-GR72ZiBUdwdJukcPkRkNlVV7JwLBk5NkFCUS26m9KmUZQzV-3t4rgwfER6DsVJUNmxzqgjwFMzNTyvInJyxRPiAY-1gCeE8nTb5JOIUeNJRSfB4T4qK3cxgoDOqZnz5ZPkQuQsryE7A863KFxWuJO7M0w703ISgLWczSECIVVh0BGO5YClhIHVSZRD6DNhCobn8gEMu8q04vGhHHmJw6TjF4EEr2-wKGJdd3vd5XhiuTCdK4NBosPkjN4AQPLVM8JTDOZCR8VhNqm00BshQkiUFODyTRt79eCjgV3oyFOm81WA5r2N0LtSP3RLruT4M5rA7yizodIhhIxfgsNBJ4DDUg4EEJVHAga4lkE58-MKtDWxQC4JuNUxY3GuKouA5ZOWwFSt3yGroU7nm171WwAJMdzoQeERQSf_TTCA81dBoVGfphDmxOOWiXbAy4PRibQ3EqKMuktV8XKQHIn7gBehlIJk_a2AyzHM1Mq9hvjB68GPucGQUTDnbx1BMnMU8ZBAHrUgh3YxdOnlgsnDIphVFzPD3yvqJhKwQ03Z2BDk09ZwdY0NcNoyfleafMcJwEjjfqggo_FShb9MIoDCd0KyAD-mshVnE5V6d9MJsyD5l_aSYozJCedDojB9yfsy5eAUAHfNvSHaw5yFePwGWtGJIX7LkcHz8idu7qIhk0WhguPvRrLmxpO2q7RzSjNR-aYUEqMMOmn3UfKTjvqYk-TwVaG1721i2iN913gM1KjzqxEPCeBwMpL1nz9y0zFmcNBTzheSpcezxBoEYduTMwkXV9PTk">
+        </Image>
+        <yummy:PancakeView BackgroundColor="black" CornerRadius="0, 0, 20, 20" VerticalOptions="Start">
             <StackLayout>
-                <yummy:PancakeView BackgroundColor="black" CornerRadius="0, 0, 20, 20">
-                    <StackLayout>
-                        <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="20, 50, 20, 20">
-                            <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/fHMY1Yx/icon-cross.png"/>
-                            <Label Margin="0, 0, 0, 0" Text="Office map" HorizontalOptions="CenterAndExpand" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
-                        </Grid>
-                        <!--<StackLayout BackgroundColor="Transparent" Orientation="Horizontal" Margin="20, 25, 0, 20">
-                            <StackLayout>
-                                <Frame Padding="0" CornerRadius="25" WidthRequest="50" HeightRequest="50">
-                                    <Image Source="https://media.dayoftheshirt.com/images/shirts/WegKz/redbubble_mike-wazowski-sulivan-face-meme-redbubble_1612841384.large.png" BackgroundColor="#191A1C" Aspect="Fill"/>
-                                </Frame>
-                            </StackLayout>
-                            <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
-                                <Label Text="Daniil Shirkin" FontSize="15" FontFamily="MontserratBold" TextColor="#ffffff"/>
-                                <Label Text="Manager" FontSize="12" FontFamily="MontserratRegular" TextColor="#ADAFAF"/>
-                            </StackLayout>
-                        </StackLayout>-->
-                    </StackLayout>
-                </yummy:PancakeView>
+                <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="20, 50, 20, 20">
+                    <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/fHMY1Yx/icon-cross.png"/>
+                    <Label Margin="0, 0, 0, 0" Text="Office map" HorizontalOptions="CenterAndExpand" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
+                </Grid>
             </StackLayout>
-            <StackLayout>
-                <Button Text="нажми меня" Clicked="Button_Clicked"/>
-            </StackLayout>
-            <StackLayout VerticalOptions="EndAndExpand" x:Name="popuplayout" IsVisible="False" TranslationY="800">
-                <yummy:PancakeView CornerRadius="20, 20, 0, 0" Padding="25, 30, 25, 0" HeightRequest="500" BackgroundColor="black">
-                    <StackLayout>
-                        <StackLayout>
-                            <Label Text="Main room" FontSize="30" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="White"/>
-                        </StackLayout>
-                        <ScrollView Margin="0, 20, 0, 0" Padding="0, 0, 0, 10" VerticalOptions="StartAndExpand" VerticalScrollBarVisibility="Never">
-                            <StackLayout>
-                                <Frame CornerRadius="20" Padding="20" HasShadow="False" BackgroundColor="#2C2F34">
-                                    <StackLayout>
-                                        <StackLayout Orientation="Horizontal">
-                                            <Image WidthRequest="20" Source="https://inmeg.ru/wp-content/uploads/2019/07/svet.png"/>
-                                            <Label Text="Xiaomi Yeelight Smart LED" FontSize="13" VerticalTextAlignment="Center" FontFamily="MontserratRegular" TextColor="white"/>
-                                            <Switch HorizontalOptions="EndAndExpand" OnColor="#498C8A" ThumbColor="White"/>
-                                        </StackLayout>
-                                        <StackLayout Margin="0, 10, 0, 0">
-                                            <Label Text="28 %" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
-                                            <Slider ThumbColor="#ADAFAF" MinimumTrackColor="#ADAFAF" MaximumTrackColor="#ADAFAF"/>
-                                        </StackLayout>
-                                    </StackLayout>
-                                </Frame>
-                                <Frame CornerRadius="20" Padding="20" HasShadow="False" BackgroundColor="#2C2F34">
-                                    <StackLayout>
-                                        <StackLayout Orientation="Horizontal">
-                                            <Image WidthRequest="20" Source="https://inmeg.ru/wp-content/uploads/2019/07/svet.png"/>
-                                            <Label Text="Xiaomi Yeelight Smart LED" FontSize="13" VerticalTextAlignment="Center" FontFamily="MontserratRegular" TextColor="white"/>
-                                            <Switch HorizontalOptions="EndAndExpand" OnColor="#498C8A" ThumbColor="White"/>
-                                        </StackLayout>
-                                        <StackLayout Margin="0, 10, 0, 0">
-                                            <Label Text="28 %" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
-                                            <Slider ThumbColor="#ADAFAF" MinimumTrackColor="#ADAFAF" MaximumTrackColor="#ADAFAF"/>
-                                        </StackLayout>
-                                    </StackLayout>
-                                </Frame>
-                                <Frame CornerRadius="20" Padding="20" HasShadow="False" BackgroundColor="#2C2F34">
-                                    <StackLayout>
-                                        <StackLayout Orientation="Horizontal">
-                                            <Image WidthRequest="20" Source="https://inmeg.ru/wp-content/uploads/2019/07/svet.png"/>
-                                            <Label Text="Xiaomi Yeelight Smart LED" FontSize="13" VerticalTextAlignment="Center" FontFamily="MontserratRegular" TextColor="white"/>
-                                            <Switch HorizontalOptions="EndAndExpand" OnColor="#498C8A" ThumbColor="White"/>
-                                        </StackLayout>
-                                        <StackLayout Margin="0, 10, 0, 0">
-                                            <Label Text="28 %" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
-                                            <Slider ThumbColor="#ADAFAF" MinimumTrackColor="#ADAFAF" MaximumTrackColor="#ADAFAF"/>
-                                        </StackLayout>
-                                    </StackLayout>
-                                </Frame>
-                                <Frame CornerRadius="20" Padding="20" HasShadow="False" BackgroundColor="#2C2F34">
-                                    <StackLayout>
-                                        <StackLayout Orientation="Horizontal">
-                                            <Image WidthRequest="20" Source="https://inmeg.ru/wp-content/uploads/2019/07/svet.png"/>
-                                            <Label Text="Xiaomi Yeelight Smart LED" FontSize="13" VerticalTextAlignment="Center" FontFamily="MontserratRegular" TextColor="white"/>
-                                            <Switch HorizontalOptions="EndAndExpand" OnColor="#498C8A" ThumbColor="White"/>
-                                        </StackLayout>
-                                        <StackLayout Margin="0, 10, 0, 0">
-                                            <Label Text="28 %" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
-                                            <Slider ThumbColor="#ADAFAF" MinimumTrackColor="#ADAFAF" MaximumTrackColor="#ADAFAF"/>
-                                        </StackLayout>
-                                    </StackLayout>
-                                </Frame>
-                                <Frame CornerRadius="20" Padding="20" HasShadow="False" BackgroundColor="#2C2F34">
-                                    <StackLayout>
-                                        <StackLayout Orientation="Horizontal">
-                                            <Image WidthRequest="20" Source="https://inmeg.ru/wp-content/uploads/2019/07/svet.png"/>
-                                            <Label Text="Xiaomi Yeelight Smart LED" FontSize="13" VerticalTextAlignment="Center" FontFamily="MontserratRegular" TextColor="white"/>
-                                            <Switch HorizontalOptions="EndAndExpand" OnColor="#498C8A" ThumbColor="White"/>
-                                        </StackLayout>
-                                        <StackLayout Margin="0, 10, 0, 0">
-                                            <Label Text="28 %" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
-                                            <Slider ThumbColor="#ADAFAF" MinimumTrackColor="#ADAFAF" MaximumTrackColor="#ADAFAF"/>
-                                        </StackLayout>
-                                    </StackLayout>
-                                </Frame>
-                            </StackLayout>
-                        </ScrollView>
-                    </StackLayout>
-                </yummy:PancakeView>
-            </StackLayout>
-            
-        </StackLayout>
-    </ContentPage.Content>
+        </yummy:PancakeView>
+    </Grid>
+    
 </ContentPage>
