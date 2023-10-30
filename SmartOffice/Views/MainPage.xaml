@@ -69,7 +69,7 @@
                                         </StackLayout>
                                         <StackLayout HorizontalOptions="CenterAndExpand">
                                             <ImageButton Clicked="OnLocation" Padding="20" Source="https://i.ibb.co/8jjSBDz/icon-map.png" CornerRadius="30" BackgroundColor="#1C1F24" WidthRequest="70" HeightRequest="70"/>
-                                            <Label FontFamily="MontserratRegular" Text="Map" TextColor="#ADAFAF" FontSize="14" HorizontalTextAlignment="Center"/>
+                                            <Label FontFamily="MontserratRegular" Text="Office map" TextColor="#ADAFAF" FontSize="14" HorizontalTextAlignment="Center"/>
                                         </StackLayout>
                                         <StackLayout HorizontalOptions="CenterAndExpand">
                                             <ImageButton Clicked="OnRent" Padding="20" Source="https://i.ibb.co/7y4NnVj/icon-booking.png" CornerRadius="30" BackgroundColor="#1C1F24" WidthRequest="70" HeightRequest="70"/>
