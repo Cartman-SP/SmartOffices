@@ -8,6 +8,7 @@ using SmartOffice.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Newtonsoft.Json;
+using System.Runtime.InteropServices;
 
 namespace SmartOffice.Views
 {
@@ -41,10 +42,11 @@ namespace SmartOffice.Views
             var client = new HttpClient();
             var requestData = new { Username = username, Password = password };
             var json = JsonConvert.SerializeObject(requestData);
+            Console.WriteLine(json + '\n' + Convert.ToString(json));
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            var response = await client.PostAsync("http://192.168.1.127:800/api/authenticate", content);
-            Console.WriteLine(response.IsSuccessStatusCode);
+            var response = await client.PostAsync("http://daniilcv.beget.tech/authenticate/", content);
+            Console.WriteLine(Convert.ToString(response));
             if (response.IsSuccessStatusCode)
             {
                 var jsonResponse = await response.Content.ReadAsStringAsync();

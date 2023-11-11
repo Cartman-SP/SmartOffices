@@ -21,32 +21,32 @@
                         <StackLayout>
                             <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Margin="0, 0, 0, 0">
                                 <StackLayout Orientation="Horizontal">
-                                    <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                        <Image/>
+                                    <Frame BorderColor="red" Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
+                                        <Image Source="https://i.ibb.co/djkfJZm/history-1.jpg"/>
                                         <Frame.GestureRecognizers>
                                             <TapGestureRecognizer Tapped="onStories" NumberOfTapsRequired="1" />
                                         </Frame.GestureRecognizers>
                                     </Frame>
                                     <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                        <Image/>
+                                        <Image Source="https://i.ibb.co/BPDqrzw/history-2.jpg"/>
                                         <Frame.GestureRecognizers>
                                             <TapGestureRecognizer Tapped="onStories" NumberOfTapsRequired="1" />
                                         </Frame.GestureRecognizers>
                                     </Frame>
                                     <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                        <Image/>
+                                        <Image Source="https://i.ibb.co/2cz09gw/history-3.jpg"/>
                                         <Frame.GestureRecognizers>
                                             <TapGestureRecognizer Tapped="onStories" NumberOfTapsRequired="1" />
                                         </Frame.GestureRecognizers>
                                     </Frame>
                                     <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                        <Image/>
+                                        <Image Source="https://i.ibb.co/54F3DkK/history-4.jpg"/>
                                         <Frame.GestureRecognizers>
                                             <TapGestureRecognizer Tapped="onStories" NumberOfTapsRequired="1" />
                                         </Frame.GestureRecognizers>
                                     </Frame>
                                     <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                        <Image/>
+                                        <Image Source="https://i.ibb.co/t8NBqxd/history-5.jpg"/>
                                         <Frame.GestureRecognizers>
                                             <TapGestureRecognizer Tapped="onStories" NumberOfTapsRequired="1" />
                                         </Frame.GestureRecognizers>
@@ -57,7 +57,7 @@
                         <StackLayout BackgroundColor="Transparent" Orientation="Horizontal" Margin="0, 25, 0, 0">
                             <StackLayout>
                                 <Frame Padding="0" CornerRadius="25" WidthRequest="50" HeightRequest="50">
-                                    <Image Source="https://media.dayoftheshirt.com/images/shirts/WegKz/redbubble_mike-wazowski-sulivan-face-meme-redbubble_1612841384.large.png" BackgroundColor="#191A1C" Aspect="Fill"/>
+                                    <Image Source="https://cs2.gamemodding.com/images/06ddd58f702aaaa0d2989e4c48169633c2fd35d83f00f653c18da2a8e0006814.jpg" BackgroundColor="#191A1C" Aspect="AspectFill"/>
                                 </Frame>
                             </StackLayout>
                             <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
@@ -101,11 +101,11 @@
                                     <Frame CornerRadius="20" Padding="0" BackgroundColor="#1C1F24" HeightRequest="100" HasShadow="False" HorizontalOptions="FillAndExpand">
                                         <StackLayout Padding="15">
                                             <StackLayout Orientation="Horizontal">
-                                                <ImageButton CornerRadius="20" WidthRequest="30" HeightRequest="30" BackgroundColor="#22A546" Source="https://i.ibb.co/jhSJh2P/icon-planned.png" Padding="5"/>
-                                                <Label Margin="5, 0, 0, 0" VerticalOptions="Center" Text="Planned" FontSize="12" FontFamily="MontserratBold" TextColor="white"/>
+                                                <ImageButton CornerRadius="20" WidthRequest="30" HeightRequest="30" BackgroundColor="#22A546" Source="https://i.ibb.co/jhSJh2P/icon-planned.png" Padding="6"/>
+                                                <Label Margin="5, 0, 0, 0" VerticalOptions="Center" Text="Planned events" FontSize="12" FontFamily="MontserratBold" TextColor="White"/>
                                             </StackLayout>
                                             <StackLayout VerticalOptions="CenterAndExpand">
-                                                <Label Text="No events today" FontSize="20" FontFamily="MontserratRegular" TextColor="white"/>
+                                                <Label Text="No events today" FontSize="20" FontFamily="MontserratRegular" TextColor="Gray"/>
                                             </StackLayout>
                                         </StackLayout>
                                     </Frame>
@@ -113,10 +113,36 @@
                                         <StackLayout Padding="15">
                                             <StackLayout Orientation="Horizontal">
                                                 <ImageButton CornerRadius="20" WidthRequest="30" HeightRequest="30" BackgroundColor="#6A9DFF" Source="https://i.ibb.co/FKxKJ01/icon-parking.png" Padding="5"/>
-                                                <Label Margin="5, 0, 0, 0" VerticalOptions="Center" Text="Parking" FontSize="12" FontFamily="MontserratBold" TextColor="white"/>
+                                                <Label Margin="5, 0, 0, 0" VerticalOptions="Center" Text="Parking" FontSize="12" FontFamily="MontserratBold" TextColor="White"/>
                                             </StackLayout>
                                             <StackLayout VerticalOptions="CenterAndExpand">
-                                                <Label Text="13/20" HorizontalOptions="CenterAndExpand" FontSize="20" FontFamily="MontserratRegular" TextColor="white"/>
+                                                <Label Text="13/20" HorizontalOptions="CenterAndExpand" FontSize="20" FontFamily="MontserratRegular" TextColor="Gray"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Frame>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Padding="20, 0, 20, 0">
+                                    <Frame CornerRadius="20" Padding="0" BackgroundColor="#1C1F24" HeightRequest="100" HasShadow="False" HorizontalOptions="Start">
+                                        <StackLayout Padding="15">
+                                            <StackLayout Orientation="Horizontal">
+                                                <ImageButton CornerRadius="20" WidthRequest="30" HeightRequest="30" BackgroundColor="#946" Source="https://i.ibb.co/r3CkW43/icon-chart.png" Padding="7"/>
+                                                <Label Margin="5, 0, 0, 0" VerticalOptions="Center" Text="Statistics" FontSize="12" FontFamily="MontserratBold" TextColor="White"/>
+                                            </StackLayout>
+                                            <StackLayout VerticalOptions="CenterAndExpand" Orientation="Horizontal">
+                                                <Label Text="Show" FontSize="15" FontFamily="MontserratRegular" TextColor="White" VerticalOptions="Center"/>
+                                                <ImageButton Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="#191A1C" CornerRadius="30" WidthRequest="20" Padding="6" Margin="0, 10, 0, 10"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Frame>
+                                    <Frame CornerRadius="20" Padding="0" BackgroundColor="#1C1F24" HeightRequest="100" HasShadow="False" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Padding="15">
+                                            <StackLayout Orientation="Horizontal">
+                                                <ImageButton CornerRadius="20" WidthRequest="30" HeightRequest="30" BackgroundColor="Orange" Source="https://i.ibb.co/s3f68TX/icon-todo.png" Padding="7"/>
+                                                <Label Margin="5, 0, 0, 0" VerticalOptions="Center" Text="To Do list" FontSize="12" FontFamily="MontserratBold" TextColor="White"/>
+                                            </StackLayout>
+                                            <StackLayout VerticalOptions="CenterAndExpand" Orientation="Horizontal">
+                                                <Label Text="4 actions" FontSize="15" FontFamily="MontserratRegular" TextColor="White" VerticalOptions="Center"/>
+                                                <ImageButton Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="#191A1C" CornerRadius="30" WidthRequest="20" Padding="6" Margin="0, 10, 0, 10"/>
                                             </StackLayout>
                                         </StackLayout>
                                     </Frame>
@@ -151,11 +177,13 @@
                                                 <Label Margin="5, 0, 0, 0" VerticalOptions="Center" Text="Moscow, Mitinskaya st. 23." FontSize="12" FontFamily="MontserratBold" TextColor="white"/>
                                             </StackLayout>
                                             <StackLayout Orientation="Horizontal">
-                                                <StackLayout HorizontalOptions="Start">
-                                                    <Label Text="Employees"/>
+                                                <StackLayout HorizontalOptions="Center" Margin="0, 10, 0, 0">
+                                                    <Label Text="Employees in office" FontSize="12" FontFamily="MontserratBold" TextColor="white"/>
+                                                    <Label Text="18/30" FontSize="20" FontFamily="MontserratRegular" TextColor="white"/>
                                                 </StackLayout>
-                                                <StackLayout HorizontalOptions="CenterAndExpand">
-                                                    <Label Text="Managers"/>
+                                                <StackLayout HorizontalOptions="CenterAndExpand" Margin="0, 10, 0, 0">
+                                                    <Label Text="Managers in office" FontSize="12" FontFamily="MontserratBold" TextColor="white"/>
+                                                    <Label Text="4/10" FontSize="20" FontFamily="MontserratRegular" TextColor="white"/>
                                                 </StackLayout>
                                             </StackLayout>
                                         </StackLayout>
@@ -178,8 +206,6 @@
                                     </Frame>
                                 </StackLayout>
                             </StackLayout>
-                            
-                            
                         </yummy:PancakeView>
                     </StackLayout>
 
