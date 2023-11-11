@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace SmartOffice.Views
 {
-
-    public class FlyoutPage2FlyoutMenuItem
+    public class popupFlyoutMenuItem
     {
-        public FlyoutPage2FlyoutMenuItem()
+        public popupFlyoutMenuItem()
         {
-            TargetType = typeof(FlyoutPage2FlyoutMenuItem);
+            TargetType = typeof(popupFlyoutMenuItem);
         }
         public int Id { get; set; }
         public string Title { get; set; }
