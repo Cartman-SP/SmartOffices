@@ -43,7 +43,7 @@ namespace SmartOffice.Views
         public async Task<User> AuthenticateUser(string username1, string password1)
         {
             var client = new HttpClient();
-            var requestData = new { username = username, password = password };
+            var requestData = new { username = username1, password = password1 };
             var json = JsonConvert.SerializeObject(requestData);
             Console.WriteLine(json + '\n' + Convert.ToString(json));
             var content = new StringContent(json, Encoding.UTF8, "application/json");
