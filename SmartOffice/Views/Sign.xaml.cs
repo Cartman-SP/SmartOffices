@@ -40,20 +40,20 @@ namespace SmartOffice.Views
         public async Task<User> AuthenticateUser(string username, string password)
         {
             var client = new HttpClient();
-            var requestData = new { Username = username, Password = password };
+            var requestData = new { username = username, password = password };
             var json = JsonConvert.SerializeObject(requestData);
             Console.WriteLine(json + '\n' + Convert.ToString(json));
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            var response = await client.PostAsync("http://daniilcv.beget.tech/authenticate/", content);
+            var response = await client.PostAsync("http://hedgeoffice.ru/authenticate/", content);
             Console.WriteLine(Convert.ToString(response));
             if (response.IsSuccessStatusCode)
             {
                 var jsonResponse = await response.Content.ReadAsStringAsync();
                 var user = JsonConvert.DeserializeObject<User>(jsonResponse);
+                Console.WriteLine(response.Content);
                 return user;
             }
-
             return null;
         }
     }
