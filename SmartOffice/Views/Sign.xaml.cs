@@ -52,7 +52,7 @@ namespace SmartOffice.Views
             {
                 var jsonResponse = await response.Content.ReadAsStringAsync();
                 var user = JsonConvert.DeserializeObject<User>(jsonResponse);
-                Console.WriteLine(response.Content);
+                Console.WriteLine(jsonResponse);
                 return user;
             }
             return null;
