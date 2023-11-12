@@ -2,10 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartOffice.Views.Stories"
-             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#2C2F34">
-            <StackLayout>
+        <StackLayout BackgroundColor="black">
+            <Image Source="https://i.ibb.co/52QTyzf/history-example.jpg" Aspect="AspectFill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <!--<StackLayout>
                 <yummy:PancakeView BackgroundColor="black" CornerRadius="0, 0, 20, 20">
                     <StackLayout>
                         <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="20, 50, 20, 20">
@@ -19,7 +22,7 @@
                 <Button Text="нажми меня"/>
             </StackLayout>
             <AbsoluteLayout BackgroundColor="Azure" VerticalOptions="EndAndExpand" x:Name="popuplayout" IsVisible="true">
-                <!--TranslationY="800"-->
+                --><!--TranslationY="800"--><!--
                 <yummy:PancakeView CornerRadius="20, 20, 0, 0" Padding="25, 30, 25, 0" HeightRequest="500" BackgroundColor="black">
                     <StackLayout>
                         <StackLayout>
@@ -96,7 +99,7 @@
                         </ScrollView>
                     </StackLayout>
                 </yummy:PancakeView>
-            </AbsoluteLayout>
+            </AbsoluteLayout>-->
 
         </StackLayout>
         

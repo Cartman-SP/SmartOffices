@@ -3,19 +3,83 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Class="SmartOffice.Views.Rent"
-             NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
-    
-    <StackLayout BackgroundColor="White">
-        <StackLayout>
-            <yummy:PancakeView BackgroundColor="#FFD447" CornerRadius="0, 0, 50, 50" Padding="0, 0, 0, 20">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#2C2F34">
+            <StackLayout>
+                <yummy:PancakeView BackgroundColor="black" CornerRadius="0, 0, 20, 20">
+                    <StackLayout>
+                        <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="20, 50, 20, 20">
+                            <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/fHMY1Yx/icon-cross.png"/>
+                            <Label Margin="0, 0, 0, 0" Text="Booking" HorizontalOptions="CenterAndExpand" FontSize="20" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
+                        </Grid>
+                    </StackLayout>
+                </yummy:PancakeView>
+            </StackLayout>
+            <ScrollView VerticalScrollBarVisibility="Default">
                 <StackLayout>
-                    <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="25, 50, 25, 0">
-                        <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/t83tc15/icon-cross.png"/>
-                        <Label Margin="0, 0, 0, 0" Text="Booking" HorizontalOptions="CenterAndExpand" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
-                    </Grid>
+                    <Frame CornerRadius="20" Padding="20" BackgroundColor="black">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame Padding="0" HasShadow="False" CornerRadius="10">
+                                <Image Source="https://kartinki.pics/pics/uploads/posts/2022-08/1659822562_29-kartinkin-net-p-fon-dlya-zum-ofis-krasivo-30.jpg" WidthRequest="200"/>
+                            </Frame>
+                            <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand">
+                                <Label Text="201" FontFamily="MontserratBold" TextColor="white" HorizontalOptions="EndAndExpand"/>
+                                <Label Text="Workspace" FontFamily="MontserratRegular" TextColor="#ADAFAF"/>
+                            </StackLayout>
+                            <ImageButton Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" CornerRadius="30" WidthRequest="30" Padding="6"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="20" Padding="20" BackgroundColor="black">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame Padding="0" HasShadow="False" CornerRadius="10">
+                                <Image Source="https://kartinki.pics/pics/uploads/posts/2022-08/1659822562_29-kartinkin-net-p-fon-dlya-zum-ofis-krasivo-30.jpg" WidthRequest="200"/>
+                            </Frame>
+                            <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand">
+                                <Label Text="202" FontFamily="MontserratBold" TextColor="white" HorizontalOptions="EndAndExpand"/>
+                                <Label Text="Workspace" FontFamily="MontserratRegular" TextColor="#ADAFAF"/>
+                            </StackLayout>
+                            <ImageButton Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" CornerRadius="30" WidthRequest="30" Padding="6"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="20" Padding="20" BackgroundColor="black">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame Padding="0" HasShadow="False" CornerRadius="10">
+                                <Image Source="https://i.pinimg.com/originals/85/21/3e/85213e9e6175a563770c4e59d04d19e5.jpg" WidthRequest="200"/>
+                            </Frame>
+                            <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand">
+                                <Label Text="203" FontFamily="MontserratBold" TextColor="white" HorizontalOptions="EndAndExpand"/>
+                                <Label Text="Meeting room" FontFamily="MontserratRegular" TextColor="#ADAFAF"/>
+                            </StackLayout>
+                            <ImageButton Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" CornerRadius="30" WidthRequest="30" Padding="6"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="20" Padding="20" BackgroundColor="black">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame Padding="0" HasShadow="False" CornerRadius="10">
+                                <Image Source="http://mountainconst.com/wp-content/uploads/2017/09/96_BCRA-Tacoma-TI_030-e1609109671787.jpg" WidthRequest="200"/>
+                            </Frame>
+                            <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand">
+                                <Label Text="203-A" FontFamily="MontserratBold" TextColor="white" HorizontalOptions="EndAndExpand"/>
+                                <Label Text="Kitchen" FontFamily="MontserratRegular" TextColor="#ADAFAF"/>
+                            </StackLayout>
+                            <ImageButton Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" CornerRadius="30" WidthRequest="30" Padding="6"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="20" Padding="20" BackgroundColor="black">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame Padding="0" HasShadow="False" CornerRadius="10">
+                                <Image Source="https://kartinki.pics/pics/uploads/posts/2022-08/1659822562_29-kartinkin-net-p-fon-dlya-zum-ofis-krasivo-30.jpg" WidthRequest="200"/>
+                            </Frame>
+                            <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand">
+                                <Label Text="204" FontFamily="MontserratBold" TextColor="white" HorizontalOptions="EndAndExpand"/>
+                                <Label Text="Workspace" FontFamily="MontserratRegular" TextColor="#ADAFAF"/>
+                            </StackLayout>
+                            <ImageButton Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" CornerRadius="30" WidthRequest="30" Padding="6"/>
+                        </StackLayout>
+                    </Frame>
                 </StackLayout>
-            </yummy:PancakeView>
+            </ScrollView>
         </StackLayout>
-    </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

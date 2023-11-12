@@ -1,0 +1,155 @@
+@font-face {
+	font-family: 'MontserratBold'; 
+	src: url(fonts/Montserrat_Bold.ttf); 
+}
+
+@font-face {
+	font-family: 'MontserratRegular'; 
+	src: url(fonts/Montserrat_Regular.ttf); 
+}
+
+body{
+    background-color: white;
+    transition: 1.0s ease;
+}
+
+.container{
+    margin: 20px 40px 20px 40px;
+}
+
+.nav-bar{
+    display: flex;
+    align-self: center;
+}
+
+h1{
+    font-family: 'Montserratbold';
+}
+
+.menu{
+    font-size: 50px;
+    margin-left: 40px;
+    color: #1C1F24;
+}
+
+.menu button{
+    font-family: 'MontserratRegular';
+    background-color: transparent;
+    text-align: center;
+    vertical-align: center;
+    border: none;
+}
+
+.menu button:hover{
+    cursor: pointer;
+   text-decoration: underline;
+}
+
+.main-content{
+    margin-top: 20px;
+    display: flex;
+}
+
+.text-container{
+    margin-top: 180px;
+}
+
+.text-container h1{
+    font-family: 'Montserratbold';
+    font-size: 85px;
+    margin-bottom: 0px;
+}
+
+.text-container h2{
+    color: #2C2F34;
+    margin-top: 0px;
+    font-family: 'MontserratRegular';
+    font-size: 30px;
+}
+
+.text-container button{
+    padding: 15px;
+    font-family: 'MontserratRegular';
+    color: white;
+    background-color: #FE0034;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+}
+
+.text-container button img{
+    background-color: white;
+    width: 20px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.text-container button p{
+    align-self: center;
+    margin: 0px 20px 0px 20px;
+}
+
+.text-container button:hover{
+    cursor: pointer;
+    background-color: #c90028;
+}
+
+.banner{
+    background-color: transparent;
+    position: absolute;
+    right: 40px;
+}
+
+.banner img{
+    border-radius: 20px;
+    width: 300px;
+    margin-left: 20px;
+    filter: drop-shadow(rgb(152, 152, 152) 5px 5px 10px );
+}
+
+.new-user{
+    /* display: flex; */
+    font-family: 'MontserratRegular';
+    border: solid 1px #2C2F34;
+    border-radius: 0px;
+    padding: 20px;
+}
+
+.input-data h{
+    display: flex;
+    margin: 0px 20px 0px 0px;
+}
+
+.input-data{
+    margin-bottom: 20px;
+}
+
+.input-data input{
+    border: solid 1px #2C2F34;
+    border-radius: 10px;
+    height: 20px;
+    width: 300px;
+}
+
+.content h1{
+    font-size: 40px;
+}
+
+#apply{
+    background-color: #FE0034;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Montserratbold';
+}
+
+#apply:hover{
+    cursor: pointer;
+    background-color: #c90028;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Montserratbold';
+}

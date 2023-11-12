@@ -6,6 +6,8 @@ using Newtonsoft.Json;
 using SmartOffice.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Newtonsoft.Json;
+using System.Runtime.InteropServices;
 
 namespace SmartOffice.Views
 {
@@ -41,21 +43,18 @@ namespace SmartOffice.Views
         public async Task<User> AuthenticateUser(string username1, string password1)
         {
             var client = new HttpClient();
-            var requestData = new { username = username1, password = password1 };
+            var requestData = new { username = username, password = password };
             var json = JsonConvert.SerializeObject(requestData);
+            Console.WriteLine(json + '\n' + Convert.ToString(json));
             var content = new StringContent(json, Encoding.UTF8, "application/json");
-            Console.WriteLine("--------------------------------------");
-            Console.WriteLine(json);
-            var response = await client.PostAsync("https://hedgeoffice.ru/authenticate", content);
-            Console.WriteLine("--------------------------------------");
-            Console.WriteLine(response);
+            var response = await client.PostAsync("http://hedgeoffice.ru/authenticate/", content);
             if (response.IsSuccessStatusCode)
             {
                 var jsonResponse = await response.Content.ReadAsStringAsync();
                 var user = JsonConvert.DeserializeObject<User>(jsonResponse);
+                Console.WriteLine(response.Content);
                 return user;
             }
-
             return null;
         }
     }

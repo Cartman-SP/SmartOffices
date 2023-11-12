@@ -92,6 +92,14 @@ namespace SmartOffice.Views
         {
             await Navigation.PushAsync(new Stories());
         }
+        private async void onPlanned(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Planned());
+        }
+        private async void onStatistics(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Statistics());
+        }
 
 
     }
