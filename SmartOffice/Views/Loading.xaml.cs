@@ -15,11 +15,33 @@ namespace SmartOffice.Views
         public Loading()
         {
             InitializeComponent();
+            //FadeInImage(Hedge);
+            //PulseImage(Hedge);
         }
+        async void FadeInImage(Image Hedge)
+        {
+            
+            Hedge.Opacity = 0;
+
+            
+            await Hedge.FadeTo(1, 2800); 
+        }
+        async void PulseImage(Image Hedge)
+        {
+            await Task.Delay(2800);
+            while (true)
+            {
+                await Hedge.ScaleTo(1.1, 500);
+                await Hedge.ScaleTo(1.0, 500);
+
+            }
+        }
+
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
+            
             await Task.Delay(2000);
             /*
             if (Application.Current.Properties.ContainsKey("IsLoggedIn")&& (bool)Application.Current.Properties["IsLoggedIn"])

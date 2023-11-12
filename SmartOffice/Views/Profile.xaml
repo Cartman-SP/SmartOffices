@@ -1,34 +1,150 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Class="SmartOffice.Views.Profile"
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
-    <StackLayout BackgroundColor="#1b1b1b">
-        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="25, 50, 25, 0" BackgroundColor="Transparent">
-            <ImageButton Clicked="OnMain" HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://i.ibb.co/pQKNg93/icon-cross.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
+    <StackLayout BackgroundColor="#2C2F34">
+        <StackLayout>
+            <yummy:PancakeView BackgroundColor="black" CornerRadius="0, 0, 20, 20">
+                <StackLayout>
+                    <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="20, 50, 20, 0">
+                        <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/fHMY1Yx/icon-cross.png"/>
+                        <Label Margin="0, 0, 0, 0" Text="Profile" HorizontalOptions="CenterAndExpand" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
+                    </Grid>
+                    <StackLayout BackgroundColor="Transparent" Orientation="Horizontal" Margin="20, 25, 0, 20">
+                        <StackLayout>
+                            <Frame Padding="0" CornerRadius="25" WidthRequest="50" HeightRequest="50">
+                                <Image Source="https://media.dayoftheshirt.com/images/shirts/WegKz/redbubble_mike-wazowski-sulivan-face-meme-redbubble_1612841384.large.png" BackgroundColor="#191A1C" Aspect="Fill"/>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
+                            <Label Text="Daniil Shirkin" FontSize="15" FontFamily="MontserratBold" TextColor="#ffffff"/>
+                            <Label Text="Manager" FontSize="12" FontFamily="MontserratRegular" TextColor="#ADAFAF"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </yummy:PancakeView>
         </StackLayout>
-        <StackLayout Padding="25">
-            <Label FontFamily="MontserratBold" Text="Аккаунт" TextColor="White" FontSize="30"/>
-        </StackLayout>
-        <StackLayout HorizontalOptions="CenterAndExpand" Margin="0, 0, 0, 40">
-            <AbsoluteLayout HorizontalOptions="CenterAndExpand">
-                <Frame HorizontalOptions="CenterAndExpand" CornerRadius="20" Padding="0" HasShadow="False">
-                    <Image x:Name="UserProfileImage" Source="default_profile_image.png" BackgroundColor="AliceBlue" HeightRequest="105" WidthRequest="105"/>
-                </Frame>
-                <!--<ImageButton Source="https://cdn1.iconfinder.com/data/icons/graphic-design-app/65/pen-1024.png" Clicked="ChangeImage_Clicked" HeightRequest="20" WidthRequest="20" BackgroundColor="Transparent"/>-->
-            </AbsoluteLayout>
-            <Label HorizontalOptions="Center" FontSize="30" Text="Иван Мылов" FontFamily="MontserratRegular" TextColor="White"/>
-            <Label HorizontalOptions="Center" Text="Phone number" FontFamily="MontserratRegular" TextColor="#848484"/>
-        </StackLayout>
+        <ScrollView VerticalScrollBarVisibility="Never">
+            <StackLayout>
+                <StackLayout>
+                    <Frame CornerRadius="20" Padding="20, 30, 20, 30" BackgroundColor="black">
+                        <StackLayout>
+                            <StackLayout>
+                                <Label TextColor="#ADAFAF" Text="PROFILE SETTINGS" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Personal information" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Security" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Account management" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame CornerRadius="20" Padding="20, 30, 20, 30" BackgroundColor="black">
+                        <StackLayout>
+                            <StackLayout>
+                                <Label TextColor="#ADAFAF" Text="PROFILE SETTINGS" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Personal information" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Security" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Account management" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame CornerRadius="20" Padding="20, 30, 20, 30" BackgroundColor="black">
+                        <StackLayout>
+                            <StackLayout>
+                                <Label TextColor="#ADAFAF" Text="PROFILE SETTINGS" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Personal information" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Security" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Account management" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame CornerRadius="20" Padding="20, 30, 20, 30" BackgroundColor="black">
+                        <StackLayout>
+                            <StackLayout>
+                                <Label TextColor="#ADAFAF" Text="PROFILE SETTINGS" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Personal information" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Security" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout Margin="0, 10, 0, 0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Account management" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
+                                    <Image Source="https://i.ibb.co/SJDQsC1/icon-cross-reversed.png" BackgroundColor="Transparent" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <yummy:PancakeView CornerRadius="20, 20, 0, 0" BackgroundColor="black" Padding="20" VerticalOptions="EndAndExpand">
+                        <Button CornerRadius="15" Text="Log out" FontFamily="MontserratBold" BackgroundColor="#FE0034"/>
+                    </yummy:PancakeView>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
         
-        <Button Margin="25, 10, 25, 0" Text="Уведомления" FontFamily="MontserratRegular" BackgroundColor="#3A3A3A" CornerRadius="20" Padding="0" HorizontalOptions="FillAndExpand"/>
-        <Button Margin="25, 10, 25, 0" Text="Сменить пароль" FontFamily="MontserratRegular" BackgroundColor="#3A3A3A" CornerRadius="20" Padding="0" HorizontalOptions="FillAndExpand"/>
-        <Button Margin="25, 10, 25, 0" Text="Настройки" FontFamily="MontserratRegular" BackgroundColor="#3A3A3A" CornerRadius="20" Padding="0" HorizontalOptions="FillAndExpand"/>
-        <Button Margin="25, 10, 25, 0" Text="Выйти" FontFamily="MontserratRegular" BackgroundColor="#BB2D2D" CornerRadius="20" Padding="0" HorizontalOptions="FillAndExpand"/>
-
-        <!--<Entry Placeholder="Электронная почта" x:Name="emailEntry" />
-        <Entry Placeholder="Номер телефона" x:Name="phoneEntry" />
-        <Button Text="Сохранить" Clicked="SaveButton_Clicked" />-->
     </StackLayout>
+    
 </ContentPage>
