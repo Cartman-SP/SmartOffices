@@ -17,12 +17,12 @@ namespace SmartOffice.Views
         public QRauth()
         {
             InitializeComponent();
-            QRCodeView.BarcodeValue = "http://192.168.1.127:800/qr_scan/" + App.CurrentUser.Id + "/";
+            QRCodeView.BarcodeValue = "http://daniilcv.beget.tech/qr_scan/" + App.CurrentUser.Id + "/";
         }
 
         private async void OnMain(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PopAsync();
         }
     }
 }

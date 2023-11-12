@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Class="SmartOffice.Views.Location"
              NavigationPage.HasNavigationBar="False">
-    <ContentPage.Content>
 
-        <StackLayout BackgroundColor="#1b1b1b">
-            <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="25, 50, 25, 0" BackgroundColor="Transparent">
-                <ImageButton Clicked="OnMain" HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://ltdfoto.ru/images/2023/10/14/icon-cross.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
+    <Grid BackgroundColor="#2C2F34">
+        <Image x:Name="movableImage" Source="https://yandex-images.clstorage.net/XJh50n182/3b09214XA2E/Rpmw-gzWwtGDHkM430LWEF-SrVaepxjFYc7Wy15lcmDBm9VUOn8yV4fZkskS6OmCfIQlw3cszCEUupL4_ZuYlNNKo-rcERQE01gTa96AlxeNVf9Wj2AMR6QIFkjOp-f2wZvPT3KjrMwZwJgBmHc7QuuFcJNw_l1ujX9MeyWNxg3HX7k1y8lH1E-GR72ZiBUdwdJukcPkRkNlVV7JwLBk5NkFCUS26m9KmUZQzV-3t4rgwfER6DsVJUNmxzqgjwFMzNTyvInJyxRPiAY-1gCeE8nTb5JOIUeNJRSfB4T4qK3cxgoDOqZnz5ZPkQuQsryE7A863KFxWuJO7M0w703ISgLWczSECIVVh0BGO5YClhIHVSZRD6DNhCobn8gEMu8q04vGhHHmJw6TjF4EEr2-wKGJdd3vd5XhiuTCdK4NBosPkjN4AQPLVM8JTDOZCR8VhNqm00BshQkiUFODyTRt79eCjgV3oyFOm81WA5r2N0LtSP3RLruT4M5rA7yizodIhhIxfgsNBJ4DDUg4EEJVHAga4lkE58-MKtDWxQC4JuNUxY3GuKouA5ZOWwFSt3yGroU7nm171WwAJMdzoQeERQSf_TTCA81dBoVGfphDmxOOWiXbAy4PRibQ3EqKMuktV8XKQHIn7gBehlIJk_a2AyzHM1Mq9hvjB68GPucGQUTDnbx1BMnMU8ZBAHrUgh3YxdOnlgsnDIphVFzPD3yvqJhKwQ03Z2BDk09ZwdY0NcNoyfleafMcJwEjjfqggo_FShb9MIoDCd0KyAD-mshVnE5V6d9MJsyD5l_aSYozJCedDojB9yfsy5eAUAHfNvSHaw5yFePwGWtGJIX7LkcHz8idu7qIhk0WhguPvRrLmxpO2q7RzSjNR-aYUEqMMOmn3UfKTjvqYk-TwVaG1721i2iN913gM1KjzqxEPCeBwMpL1nz9y0zFmcNBTzheSpcezxBoEYduTMwkXV9PTk">
+        </Image>
+        <yummy:PancakeView BackgroundColor="black" CornerRadius="0, 0, 20, 20" VerticalOptions="Start">
+            <StackLayout>
+                <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="20, 50, 20, 20">
+                    <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/fHMY1Yx/icon-cross.png"/>
+                    <Label Margin="0, 0, 0, 0" Text="Office map" HorizontalOptions="CenterAndExpand" FontSize="25" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
+                </Grid>
             </StackLayout>
-            <StackLayout Padding="25">
-                <Label Text="Помещения" TextColor="White" FontSize="30"/>
-                <Label Text="Выберете помещение для изменения рабочей среды" TextColor="White" FontSize="20"/>
-            </StackLayout>
-
-            <Button CornerRadius="20" Margin="25, 0, 25, 10" FontSize="13" TextColor="white" Text="Кабинет 201" BackgroundColor="#3A3A3A" HeightRequest="83" WidthRequest="365"></Button>
-
-        </StackLayout>
-    </ContentPage.Content>
+        </yummy:PancakeView>
+    </Grid>
+    
 </ContentPage>

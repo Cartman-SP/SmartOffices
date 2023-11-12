@@ -1,8 +1,9 @@
 ﻿using SmartOffice.Models;
 using SmartOffice.Views;
-using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+
+[assembly: ExportFont("MTSText-Regular.ttf", Alias = "MontserratRegular")]
+[assembly: ExportFont("MTSText-Bold.ttf", Alias = "MontserratBold")]
 
 namespace SmartOffice
 {
@@ -12,6 +13,10 @@ namespace SmartOffice
         public App()
         {
             InitializeComponent();
+
+            var regularFont = Font.SystemFontOfSize(20);
+            var boldFont = Font.SystemFontOfSize(20, FontAttributes.Bold);
+
             MainPage = new NavigationPage(new Loading());
         }
 

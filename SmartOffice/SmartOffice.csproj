@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Новая папка1\**" />
+    <Compile Remove="Новая папка\**" />
+    <EmbeddedResource Remove="Новая папка1\**" />
+    <EmbeddedResource Remove="Новая папка\**" />
+    <None Remove="Новая папка1\**" />
+    <None Remove="Новая папка\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Views\FlyoutPage1.xaml.cs" />
     <Compile Remove="Views\FlyoutPage1Detail.xaml.cs" />
     <Compile Remove="Views\FlyoutPage1Flyout.xaml.cs" />
@@ -26,10 +35,27 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\Montserrat_Bold.ttf" />
+    <None Remove="Fonts\Montserrat_Regular.ttf" />
+    <None Remove="Fonts\MTSText-Bold.ttf" />
+    <None Remove="Fonts\MTSText-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\Montserrat_Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat_Regular.ttf" />
+    <EmbeddedResource Include="Fonts\MTSText-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\MTSText-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microcharts.Forms" Version="0.9.5.9" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.1.0" />
     <PackageReference Include="Xam.Plugin.Media" Version="6.0.2" />
     <PackageReference Include="Xamarin.Essentials" Version="1.8.0" />
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />  
     <PackageReference Include="ZXing.Net" Version="0.16.9" />
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />  
     <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
@@ -55,6 +81,9 @@
     <EmbeddedResource Update="Views\Notification.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\Stories.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Profile.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -74,5 +103,11 @@
     <Folder Include="ViewModels\" />
     <Folder Include="img\" />
     <Folder Include="Views\Новая папка\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\Stories.xaml.cs">
+      <DependentUpon>Stories.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

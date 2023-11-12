@@ -12,8 +12,8 @@
             <ImageButton Clicked="OnMain" HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://ltdfoto.ru/images/2023/10/14/icon-cross.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
         </StackLayout>
         <StackLayout Padding="25">
-            <Label Text="Вход" TextColor="White" FontSize="30"/>
-            <Label Text="Поднесите QR-код к сканеру на турнекете" TextColor="White" FontSize="20"/>
+            <Label FontFamily="MontserratBold" Text="Вход" TextColor="White" FontSize="30"/>
+            <Label FontFamily="MontserratRegular" Text="Поднесите QR-код к сканеру на турнекете" TextColor="White" FontSize="20"/>
             <zxing:ZXingBarcodeImageView
                 IsVisible="True"
                 x:Name="QRCodeView"
