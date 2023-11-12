@@ -5,25 +5,27 @@
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#FFD447" VerticalOptions="Fill">
-                <StackLayout Margin="80, 60, 60, 60" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
-                    <Image Source="https://gas-kvas.com/uploads/posts/2023-02/1677049871_gas-kvas-com-p-risunki-na-temu-ofis-37.png"/>
-                </StackLayout>
+        <StackLayout BackgroundColor="black" VerticalOptions="Fill">
+            <StackLayout Margin="80, 60, 60, 60" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+                <Image Source="https://gas-kvas.com/uploads/posts/2023-02/1677049871_gas-kvas-com-p-risunki-na-temu-ofis-37.png"/>
+            </StackLayout>
+            <StackLayout>
                 <StackLayout VerticalOptions="EndAndExpand">
-                    <Label Text="SMART OFFICE" HorizontalOptions="Center" FontSize="30" FontFamily="MontserratBold" TextColor="#1F1F1F"/>
-                    <Label Text="Every office can be smart!" HorizontalOptions="Center" FontSize="20" FontFamily="MontserratRegular" TextColor="#1F1F1F"/>
+                    <Label Text="SMART OFFICE" HorizontalOptions="Center" FontSize="30" FontFamily="MontserratBold" TextColor="white"/>
+                    <Label Text="Every office can be smart!" HorizontalOptions="Center" FontSize="20" FontFamily="MontserratRegular" TextColor="#ADAFAF"/>
                 </StackLayout>
                 <StackLayout VerticalOptions="End" Padding="40">
                     <StackLayout Orientation="Horizontal">
-                    <Image Source="https://cdn.onlinewebfonts.com/svg/img_568657.png" HeightRequest="18" WidthRequest="18" VerticalOptions="CenterAndExpand"/>
-                    <Entry HorizontalOptions="FillAndExpand" x:Name="usernameEntry" Placeholder="Login" FontFamily="MontserratRegular" PlaceholderColor="#1F1F1F" TextColor="Black"/>
+                        <Image Source="https://cdn.onlinewebfonts.com/svg/img_568657.png" HeightRequest="18" WidthRequest="18" VerticalOptions="CenterAndExpand"/>
+                        <Entry ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand" x:Name="usernameEntry" Placeholder="Login" FontFamily="MontserratRegular" PlaceholderColor="#2C2F34" BackgroundColor="Transparent" TextColor="white"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                    <Image Source="https://cdn1.iconfinder.com/data/icons/tools-65/100/tool-25-1024.png" HeightRequest="18" WidthRequest="18" VerticalOptions="CenterAndExpand"/>
-                    <Entry x:Name="passwordEntry" HorizontalOptions="FillAndExpand" Placeholder="Password" FontFamily="MontserratRegular" PlaceholderColor="#1F1F1F" IsPassword="True" TextColor="White"/>
+                        <Image Source="https://cdn1.iconfinder.com/data/icons/tools-65/100/tool-25-1024.png" HeightRequest="18" WidthRequest="18" VerticalOptions="CenterAndExpand"/>
+                        <Entry ClearButtonVisibility="WhileEditing" x:Name="passwordEntry" HorizontalOptions="FillAndExpand" Placeholder="Password" FontFamily="MontserratRegular" PlaceholderColor="#2C2F34" BackgroundColor="Transparent" IsPassword="True" TextColor="White"/>
                     </StackLayout>
-                <Button HorizontalOptions="CenterAndExpand" Text="Login" FontFamily="MontserratRegular" Clicked="OnLoginClicked" BackgroundColor="#1F1F1F" CornerRadius="25" HeightRequest="50" WidthRequest="166" Margin="0, 20, 0, 0"/>
+                    <Button HorizontalOptions="CenterAndExpand" Text="Login" FontFamily="MontserratRegular" Clicked="OnLoginClicked" BackgroundColor="#FE0034" CornerRadius="20" HeightRequest="50" WidthRequest="166" Margin="0, 20, 0, 0" FontSize="15"/>
                 </StackLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -88,6 +88,10 @@ namespace SmartOffice.Views
         {
             await Navigation.PushAsync(new Help());
         }
+        private async void onStories(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Stories());
+        }
 
 
     }

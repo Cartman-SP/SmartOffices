@@ -81,6 +81,9 @@
     <EmbeddedResource Update="Views\Notification.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\Stories.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Profile.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -100,5 +103,11 @@
     <Folder Include="ViewModels\" />
     <Folder Include="img\" />
     <Folder Include="Views\Новая папка\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\Stories.xaml.cs">
+      <DependentUpon>Stories.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
