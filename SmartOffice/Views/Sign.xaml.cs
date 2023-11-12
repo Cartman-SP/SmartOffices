@@ -6,7 +6,6 @@ using Newtonsoft.Json;
 using SmartOffice.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Newtonsoft.Json;
 using System.Runtime.InteropServices;
 
 namespace SmartOffice.Views
@@ -48,13 +47,25 @@ namespace SmartOffice.Views
             Console.WriteLine(json + '\n' + Convert.ToString(json));
             var content = new StringContent(json, Encoding.UTF8, "application/json");
             var response = await client.PostAsync("http://hedgeoffice.ru/authenticate/", content);
+
             if (response.IsSuccessStatusCode)
             {
                 var jsonResponse = await response.Content.ReadAsStringAsync();
-                var user = JsonConvert.DeserializeObject<User>(jsonResponse);
+
+                // Простая обработка вложенного JSON
+                var userTokenObject = JsonConvert.DeserializeAnonymousType(jsonResponse, new { user = new User(), token = "" });
+
+                // Теперь у вас есть доступ к объекту User и токену
+                Console.WriteLine($"ID пользователя: {userTokenObject.user.id}");
+                Console.WriteLine($"Имя пользователя: {userTokenObject.user.username}");
+
+                Console.WriteLine("----------------------------------------------------");
                 Console.WriteLine(jsonResponse);
-                return user;
+                Console.WriteLine("----------------------------------------------------");
+
+                return userTokenObject.user;
             }
+
             return null;
         }
     }

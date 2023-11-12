@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Microcharts;
 using SkiaSharp;
+using SmartOffice.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Entry = Microcharts.ChartEntry;
@@ -59,7 +60,11 @@ namespace SmartOffice.Views
         public MainPage()
         {
             InitializeComponent();
+            Console.WriteLine("----------------------------------------------------");
+            Console.WriteLine(App.CurrentUser.firstname + App.CurrentUser.secondname);
+            Console.WriteLine("----------------------------------------------------");
 
+            username.Text = App.CurrentUser.firstname + " " + App.CurrentUser.secondname;
             //NavigationPage.SetHasNavigationBar(this, false);
             //MainChart.Chart = new LineChart { Entries = now, LabelTextSize = 30, Typeface = SKTypeface.FromFamilyName("MontserratBold"), BackgroundColor = SKColor.Parse("#00000f00"), LineSize = 7, PointSize = 20, LabelColor = SKColor.Parse("#2C2F34"), LineAreaAlpha = 0 };
         }

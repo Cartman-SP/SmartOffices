@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,8 +14,8 @@ namespace SmartOffice.Models
         public string phonenumber { get; set; }
         public string username { get; set; }
 
+        [JsonIgnore]
+        public string password { get; set; }
 
-
-        
     }
 }
