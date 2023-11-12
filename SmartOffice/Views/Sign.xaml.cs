@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using SmartOffice.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Newtonsoft.Json;
 
 namespace SmartOffice.Views
 {
@@ -17,15 +15,14 @@ namespace SmartOffice.Views
         public Sign()
         {
             InitializeComponent();
-
         }
 
         private async void OnLoginClicked(object sender, EventArgs e)
         {
-            var username = usernameEntry.Text;
-            var password = passwordEntry.Text;
+            var username1 = usernameEntry.Text;
+            var password1 = passwordEntry.Text;
 
-            var user = await AuthenticateUser(username, password);
+            var user = await AuthenticateUser(username1, password1);
 
             if (user != null)
             {
@@ -34,17 +31,24 @@ namespace SmartOffice.Views
                 await Application.Current.SavePropertiesAsync();
                 await Navigation.PushAsync(new MainPage());
             }
-
+            else
+            {
+                // Отобразите сообщение об ошибке пользователю
+                await DisplayAlert("Ошибка", "Неверное имя пользователя или пароль", "OK");
+            }
         }
-        public async Task<User> AuthenticateUser(string username, string password)
+
+        public async Task<User> AuthenticateUser(string username1, string password1)
         {
             var client = new HttpClient();
-            var requestData = new { Username = username, Password = password };
+            var requestData = new { username = username1, password = password1 };
             var json = JsonConvert.SerializeObject(requestData);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-            var response = await client.PostAsync("http://hedgeoffice.ru/api/authenticate", content);
-            Console.WriteLine(response.IsSuccessStatusCode);
+            Console.WriteLine("--------------------------------------");
+            Console.WriteLine(json);
+            var response = await client.PostAsync("https://hedgeoffice.ru/authenticate", content);
+            Console.WriteLine("--------------------------------------");
+            Console.WriteLine(response);
             if (response.IsSuccessStatusCode)
             {
                 var jsonResponse = await response.Content.ReadAsStringAsync();

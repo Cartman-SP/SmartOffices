@@ -16,7 +16,7 @@ namespace SmartOffice.Views
         public QRauth()
         {
             InitializeComponent();
-            QRCodeView.BarcodeValue = "http://hedgeoffice.ru/qr_scan/" + App.CurrentUser.Id + "/";
+            QRCodeView.BarcodeValue = "http://daniilcv.beget.tech/qr_scan/" + App.CurrentUser.Id + "/";
 
         }
 
