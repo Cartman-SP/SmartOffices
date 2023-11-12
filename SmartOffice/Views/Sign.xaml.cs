@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using SmartOffice.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -18,15 +17,14 @@ namespace SmartOffice.Views
         public Sign()
         {
             InitializeComponent();
-
         }
 
         private async void OnLoginClicked(object sender, EventArgs e)
         {
-            var username = usernameEntry.Text;
-            var password = passwordEntry.Text;
+            var username1 = usernameEntry.Text;
+            var password1 = passwordEntry.Text;
 
-            var user = await AuthenticateUser(username, password);
+            var user = await AuthenticateUser(username1, password1);
 
             if (user != null)
             {
@@ -35,18 +33,21 @@ namespace SmartOffice.Views
                 await Application.Current.SavePropertiesAsync();
                 await Navigation.PushAsync(new MainPage());
             }
-
+            else
+            {
+                // Отобразите сообщение об ошибке пользователю
+                await DisplayAlert("Ошибка", "Неверное имя пользователя или пароль", "OK");
+            }
         }
-        public async Task<User> AuthenticateUser(string username, string password)
+
+        public async Task<User> AuthenticateUser(string username1, string password1)
         {
             var client = new HttpClient();
             var requestData = new { username = username, password = password };
             var json = JsonConvert.SerializeObject(requestData);
             Console.WriteLine(json + '\n' + Convert.ToString(json));
             var content = new StringContent(json, Encoding.UTF8, "application/json");
-
             var response = await client.PostAsync("http://hedgeoffice.ru/authenticate/", content);
-            Console.WriteLine(Convert.ToString(response));
             if (response.IsSuccessStatusCode)
             {
                 var jsonResponse = await response.Content.ReadAsStringAsync();

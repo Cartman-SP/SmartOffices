@@ -7,6 +7,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using ZXing.Mobile;
 using ZXing.Net.Mobile.Forms;
+using static System.Net.WebRequestMethods;
 
 namespace SmartOffice.Views
 {
@@ -16,8 +17,7 @@ namespace SmartOffice.Views
         public QRauth()
         {
             InitializeComponent();
-            QRCodeView.BarcodeValue = "http://192.168.1.127:800/" + App.CurrentUser.Id + "/";
-
+            QRCodeView.BarcodeValue = "http://daniilcv.beget.tech/qr_scan/" + App.CurrentUser.Id + "/";
         }
 
         private async void OnMain(object sender, EventArgs e)
