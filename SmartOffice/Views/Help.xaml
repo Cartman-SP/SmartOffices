@@ -9,15 +9,10 @@
             <StackLayout>
                 <yummy:PancakeView BackgroundColor="black" CornerRadius="0, 0, 20, 20">
                     <StackLayout>
-                        <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="20, 50, 20, 0">
+                        <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="20, 50, 20, 20">
                             <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/fHMY1Yx/icon-cross.png"/>
                             <Label Margin="0, 0, 0, 0" Text="Help" HorizontalOptions="CenterAndExpand" FontSize="20" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
                         </Grid>
-                        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="20, 25, 20, 20">
-                            <Frame Padding="5, -5, 5, -5" BackgroundColor="#2C2F34" HorizontalOptions="FillAndExpand" CornerRadius="20">
-                                <Entry TextColor="white" Placeholder="search" PlaceholderColor="#aaaaaa" BackgroundColor="Transparent" ClearButtonVisibility="WhileEditing"/>
-                            </Frame>
-                        </StackLayout>
                     </StackLayout>
                 </yummy:PancakeView>
             </StackLayout>

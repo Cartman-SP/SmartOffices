@@ -106,41 +106,89 @@
                                 </StackLayout>
                                 <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
                                     <StackLayout Orientation="Horizontal">
-                                        <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                            <Image Source="https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663751025_55-mykaleidoscope-ru-p-fast-fud-v-amerike-yeda-krasivo-62.jpg" Aspect="AspectFill"/>
-                                            <Frame.GestureRecognizers>
-                                                <TapGestureRecognizer NumberOfTapsRequired="1" />
-                                            </Frame.GestureRecognizers>
+                                        <Frame Padding="0, 0, 0, 5" HasShadow="False" BackgroundColor="#191A1C" CornerRadius="20">
+                                            <StackLayout>
+                                                <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
+                                                    <Image Source="https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663751025_55-mykaleidoscope-ru-p-fast-fud-v-amerike-yeda-krasivo-62.jpg" Aspect="AspectFill"/>
+                                                    <Frame.GestureRecognizers>
+                                                        <TapGestureRecognizer NumberOfTapsRequired="1" />
+                                                    </Frame.GestureRecognizers>
+                                                </Frame>
+                                                <StackLayout Orientation="Horizontal" Padding="5">
+                                                    <Label Text="Sandwich" TextColor="white" FontFamily="MontserratRegular"/>
+                                                    <Label Text="1$" TextColor="white" FontFamily="MontserratBold" HorizontalOptions="EndAndExpand"/>
+                                                </StackLayout>
+                                            </StackLayout>
                                         </Frame>
-                                        <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                            <Image Source="https://fikiwiki.com/uploads/posts/2022-02/1644997444_10-fikiwiki-com-p-krasivie-kartinki-chaya-14.jpg" Aspect="AspectFill"/>
-                                            <Frame.GestureRecognizers>
-                                                <TapGestureRecognizer NumberOfTapsRequired="1" />
-                                            </Frame.GestureRecognizers>
+                                        <Frame Padding="0, 0, 0, 5" HasShadow="False" BackgroundColor="#191A1C" CornerRadius="20">
+                                            <StackLayout>
+                                                <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
+                                                    <Image Source="https://fikiwiki.com/uploads/posts/2022-02/1644997444_10-fikiwiki-com-p-krasivie-kartinki-chaya-14.jpg" Aspect="AspectFill"/>
+                                                    <Frame.GestureRecognizers>
+                                                        <TapGestureRecognizer NumberOfTapsRequired="1" />
+                                                    </Frame.GestureRecognizers>
+                                                </Frame>
+                                                <StackLayout Orientation="Horizontal" Padding="5">
+                                                    <Label Text="Black tea" TextColor="white" FontFamily="MontserratRegular"/>
+                                                    <Label Text="0.5$" TextColor="white" FontFamily="MontserratBold" HorizontalOptions="EndAndExpand"/>
+                                                </StackLayout>
+                                            </StackLayout>
                                         </Frame>
-                                        <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                            <Image Source="https://kir.selhozproduct.ru/upload/usl/f_6249918c6935f.jpg" Aspect="AspectFill"/>
-                                            <Frame.GestureRecognizers>
-                                                <TapGestureRecognizer NumberOfTapsRequired="1" />
-                                            </Frame.GestureRecognizers>
+                                        <Frame Padding="0, 0, 0, 5" HasShadow="False" BackgroundColor="#191A1C" CornerRadius="20">
+                                            <StackLayout>
+                                                <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
+                                                    <Image Source="https://kir.selhozproduct.ru/upload/usl/f_6249918c6935f.jpg" Aspect="AspectFill"/>
+                                                    <Frame.GestureRecognizers>
+                                                        <TapGestureRecognizer NumberOfTapsRequired="1" />
+                                                    </Frame.GestureRecognizers>
+                                                </Frame>
+                                                <StackLayout Orientation="Horizontal" Padding="5">
+                                                    <Label Text="Chocolate" TextColor="white" FontFamily="MontserratRegular"/>
+                                                    <Label Text="2$" TextColor="white" FontFamily="MontserratBold" HorizontalOptions="EndAndExpand"/>
+                                                </StackLayout>
+                                            </StackLayout>
                                         </Frame>
-                                        <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                            <Image Source="https://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/1637897/NjYtvg6A2Ug8wrs5c8BMPg.jpeg" Aspect="AspectFill"/>
-                                            <Frame.GestureRecognizers>
-                                                <TapGestureRecognizer NumberOfTapsRequired="1" />
-                                            </Frame.GestureRecognizers>
+                                        <Frame Padding="0, 0, 0, 5" HasShadow="False" BackgroundColor="#191A1C" CornerRadius="20">
+                                            <StackLayout>
+                                                <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
+                                                    <Image Source="https://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/1637897/NjYtvg6A2Ug8wrs5c8BMPg.jpeg" Aspect="AspectFill"/>
+                                                    <Frame.GestureRecognizers>
+                                                        <TapGestureRecognizer NumberOfTapsRequired="1" />
+                                                    </Frame.GestureRecognizers>
+                                                </Frame>
+                                                <StackLayout Orientation="Horizontal" Padding="5">
+                                                    <Label Text="Protein bar" TextColor="white" FontFamily="MontserratRegular"/>
+                                                    <Label Text="1$" TextColor="white" FontFamily="MontserratBold" HorizontalOptions="EndAndExpand"/>
+                                                </StackLayout>
+                                            </StackLayout>
                                         </Frame>
-                                        <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                            <Image Source="https://i2.wp.com/uznayvse.ru/images/stories2015/uzn_1442398372.jpg" Aspect="AspectFill"/>
-                                            <Frame.GestureRecognizers>
-                                                <TapGestureRecognizer NumberOfTapsRequired="1" />
-                                            </Frame.GestureRecognizers>
+                                        <Frame Padding="0, 0, 0, 5" HasShadow="False" BackgroundColor="#191A1C" CornerRadius="20">
+                                            <StackLayout>
+                                                <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
+                                                    <Image Source="https://i2.wp.com/uznayvse.ru/images/stories2015/uzn_1442398372.jpg" Aspect="AspectFill"/>
+                                                    <Frame.GestureRecognizers>
+                                                        <TapGestureRecognizer NumberOfTapsRequired="1" />
+                                                    </Frame.GestureRecognizers>
+                                                </Frame>
+                                                <StackLayout Orientation="Horizontal" Padding="5">
+                                                    <Label Text="Pizza" TextColor="white" FontFamily="MontserratRegular"/>
+                                                    <Label Text="1.5$" TextColor="white" FontFamily="MontserratBold" HorizontalOptions="EndAndExpand"/>
+                                                </StackLayout>
+                                            </StackLayout>
                                         </Frame>
-                                        <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                            <Image Source="https://fikiwiki.com/uploads/posts/2022-02/1644997448_15-fikiwiki-com-p-krasivie-kartinki-chaya-20.jpg" Aspect="AspectFill"/>
-                                            <Frame.GestureRecognizers>
-                                                <TapGestureRecognizer NumberOfTapsRequired="1" />
-                                            </Frame.GestureRecognizers>
+                                        <Frame Padding="0, 0, 0, 5" HasShadow="False" BackgroundColor="#191A1C" CornerRadius="20">
+                                            <StackLayout>
+                                                <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
+                                                    <Image Source="https://fikiwiki.com/uploads/posts/2022-02/1644997448_15-fikiwiki-com-p-krasivie-kartinki-chaya-20.jpg" Aspect="AspectFill"/>
+                                                    <Frame.GestureRecognizers>
+                                                        <TapGestureRecognizer NumberOfTapsRequired="1" />
+                                                    </Frame.GestureRecognizers>
+                                                </Frame>
+                                                <StackLayout Orientation="Horizontal" Padding="5">
+                                                    <Label Text="Green tea" TextColor="white" FontFamily="MontserratRegular"/>
+                                                    <Label Text="1$" TextColor="white" FontFamily="MontserratBold" HorizontalOptions="EndAndExpand"/>
+                                                </StackLayout>
+                                            </StackLayout>
                                         </Frame>
                                     </StackLayout>
                                 </ScrollView>
