@@ -1,33 +1,94 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Main Page</title>
+        <link rel="stylesheet" href="{% static 'main.css' %}">
         <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
             <div class="nav-bar">
-                <div class="logo">
+                <!-- <div class="logo">
                     <h1>HEDGE CODE</h1>
-                </div>
+                </div> -->
                 <div class="menu">
-                    <a href="mainpage.html"><button href>Products</button></a>
-                    <a href="admins.html"><button>For admins</button></a>
+                    <a id="manu-active" href="http://hedgeoffice.ru/">Home</a>
+                    <a href="http://hedgeoffice.ru/register">For admins</a>
+                    <a href="http://hedgeoffice.ru/register">Contacts</a>
                 </div>
             </div>
             <div class="main-content">
-                <div class="text-container">
-                    <h1>SMART OFFICE</h1>
-                    <h2>Every office can be smart!</h2>
-                    <button>
-                        <img src="imgs/icon-download.png">
-                        <p>Download</p>
-                    </button>
-                </div>
                 <div class="banner">
-                    <img alt="banner" src="imgs/screen1.jpg">
-                    <img alt="banner" src="imgs/screen2.jpg">
+                    <div class="text-container">
+                        <h1>Весь офис в одном месте</h1>
+                        <p>Умные устройства, Натройка рабочего места, Безопасность, Todos, Запланированные задачи и многое другое!</p>
+                        <div class="activity">
+                            <a href="#" id="download">Скачать приложение</a>
+                            <a href="#more" id="about">Еще</a>
+                        </div>
+                    </div>
+                    <div class="banner-image">
+                        <img src="imgs/phone 2.png" id="up" alt="">
+                        <img src="imgs/phone 1.png" id="down" alt="">
+                    </div>
                 </div>
+                <div class="widgets-container">
+                    <div class="row">
+                        <div class="widget">
+                            <h1>11</h1>
+                            <p>Опрошенных Топ - менеджеров</p>
+                        </div><div class="widget">
+                            <h1>4+</h1>
+                            <p>Группы проблем, затронутых в опросе</p>
+                        </div>
+                        <div class="widget">
+                            <h1>15+</h1>
+                            <p>Технологических решений</p>
+                        </div><div class="widget">
+                            <h1>5</h1>
+                            <p>Крупных технологических компаний</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-content" id="more">
+                    <div>
+                        <h2>Экосистема -
+                            комплексное решение управления
+                            офисом
+                        </h2>
+                        <div class="feature-list">
+                            <div style="display: flex; margin-bottom: 20px;">
+                                <img src="https://img.icons8.com/fluency-systems-regular/96/888888/parking.png" alt="icon" style="margin-right: 20px;">
+                                <p style="margin: 0;">Бронирование парковки</p>
+                            </div>
+                            <div style="display: flex; margin-bottom: 20px;">
+                                <img src="https://img.icons8.com/fluency-systems-regular/96/888888/qr-code--v1.png" alt="icon" style="margin-right: 20px;">
+                                <p style="margin: 0;">Вход по QR</p>
+                            </div>
+                            <div style="display: flex; margin-bottom: 20px;">
+                                <img src="https://img.icons8.com/fluency-systems-regular/96/888888/under-computer.png" alt="icon" style="margin-right: 20px;">
+                                <p style="margin: 0;">Настройка рабочего места</p>
+                            </div>
+                            <div style="display: flex; margin-bottom: 20px;">
+                                <img src="https://img.icons8.com/ios-glyphs/96/888888/timetable.png" alt="icon" style="margin-right: 20px;">
+                                <p style="margin: 0;">Распланирование задач</p>
+                            </div>Ц
+                            <div style="display: flex; margin-bottom: 20px;">
+                                <img src="https://img.icons8.com/windows/32/888888/checklist.png" alt="icon" style="margin-right: 20px;">
+                                <p style="margin: 0;">Расписание переговорок</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="imgs/phone 3.png" id="right" alt="">
+                </div>
+            </div>
+            <div class="footer">
+                <p>© 2023 Hedge Code</p>
+                <p>Email - konkostenko08@gmail.com, General Manager</p>
             </div>
         </div>
     </body>

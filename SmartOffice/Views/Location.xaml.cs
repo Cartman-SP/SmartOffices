@@ -12,16 +12,10 @@ namespace SmartOffice.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Location : ContentPage
     {
-        private double startX, startY;
-        private double offsetX, offsetY;
-        private bool isMoving = false;
+        double x, y;
         public Location()
         {
             InitializeComponent();
-            // Добавляем обработчики жестов
-            var panGesture = new PanGestureRecognizer();
-            panGesture.PanUpdated += OnImagePanUpdated;
-            movableImage.GestureRecognizers.Add(panGesture);
         }
 
         private async void OnMain(object sender, EventArgs e)
@@ -33,36 +27,26 @@ namespace SmartOffice.Views
             await Navigation.PushAsync(new YeelightPage());
         }
 
-        private void OnImagePanUpdated(object sender, PanUpdatedEventArgs e)
+        private void OnPanUpdated(object sender, PanUpdatedEventArgs e)
         {
-            switch (e.StatusType)
-            {
-                case GestureStatus.Started:
-                    if (movableImage.Bounds.Contains(e.TotalX, e.TotalY))
-                    {
-                        isMoving = true;
-                        startX = e.TotalX;
-                        startY = e.TotalY;
-                        offsetX = movableImage.TranslationX;
-                        offsetY = movableImage.TranslationY;
-                    }
-                    break;
+            double x = movableImage.TranslationX + e.TotalX;
+            double y = movableImage.TranslationY + e.TotalY;
 
-                case GestureStatus.Running:
-                    if (isMoving)
-                    {
-                        movableImage.TranslationX = offsetX + e.TotalX - startX;
-                        movableImage.TranslationY = offsetY + e.TotalY - startY;
-                    }
-                    break;
+            // Ограничение перемещения по горизонтали до ±200 пикселей
+            if (x < -400)
+                x = -400;
+            else if (x > 200)
+                x = 200;
 
-                case GestureStatus.Completed:
-                case GestureStatus.Canceled:
-                    isMoving = false;
-                    break;
-            }
-            // Добавьте отладочный вывод для проверки
-            System.Diagnostics.Debug.WriteLine($"X: {movableImage.TranslationX}, Y: {movableImage.TranslationY}");
+            // Ограничение перемещения по вертикали до ±200 пикселей
+            if (y < -50)
+                y = -50;
+            else if (y > 50)
+                y = 50;
+
+            // Установка нового положения изображения
+            movableImage.TranslationX = x;
+            movableImage.TranslationY = y;
         }
 
         //private async void Button_Clicked(object sender, EventArgs e)

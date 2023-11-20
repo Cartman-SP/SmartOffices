@@ -5,9 +5,7 @@
              x:Class="SmartOffice.Views.Location"
              NavigationPage.HasNavigationBar="False">
 
-    <Grid BackgroundColor="#2C2F34">
-        <Image x:Name="movableImage" Source="https://yandex-images.clstorage.net/XJh50n182/3b09214XA2E/Rpmw-gzWwtGDHkM430LWEF-SrVaepxjFYc7Wy15lcmDBm9VUOn8yV4fZkskS6OmCfIQlw3cszCEUupL4_ZuYlNNKo-rcERQE01gTa96AlxeNVf9Wj2AMR6QIFkjOp-f2wZvPT3KjrMwZwJgBmHc7QuuFcJNw_l1ujX9MeyWNxg3HX7k1y8lH1E-GR72ZiBUdwdJukcPkRkNlVV7JwLBk5NkFCUS26m9KmUZQzV-3t4rgwfER6DsVJUNmxzqgjwFMzNTyvInJyxRPiAY-1gCeE8nTb5JOIUeNJRSfB4T4qK3cxgoDOqZnz5ZPkQuQsryE7A863KFxWuJO7M0w703ISgLWczSECIVVh0BGO5YClhIHVSZRD6DNhCobn8gEMu8q04vGhHHmJw6TjF4EEr2-wKGJdd3vd5XhiuTCdK4NBosPkjN4AQPLVM8JTDOZCR8VhNqm00BshQkiUFODyTRt79eCjgV3oyFOm81WA5r2N0LtSP3RLruT4M5rA7yizodIhhIxfgsNBJ4DDUg4EEJVHAga4lkE58-MKtDWxQC4JuNUxY3GuKouA5ZOWwFSt3yGroU7nm171WwAJMdzoQeERQSf_TTCA81dBoVGfphDmxOOWiXbAy4PRibQ3EqKMuktV8XKQHIn7gBehlIJk_a2AyzHM1Mq9hvjB68GPucGQUTDnbx1BMnMU8ZBAHrUgh3YxdOnlgsnDIphVFzPD3yvqJhKwQ03Z2BDk09ZwdY0NcNoyfleafMcJwEjjfqggo_FShb9MIoDCd0KyAD-mshVnE5V6d9MJsyD5l_aSYozJCedDojB9yfsy5eAUAHfNvSHaw5yFePwGWtGJIX7LkcHz8idu7qIhk0WhguPvRrLmxpO2q7RzSjNR-aYUEqMMOmn3UfKTjvqYk-TwVaG1721i2iN913gM1KjzqxEPCeBwMpL1nz9y0zFmcNBTzheSpcezxBoEYduTMwkXV9PTk">
-        </Image>
+    <StackLayout BackgroundColor="#2C2F34">
         <yummy:PancakeView BackgroundColor="black" CornerRadius="0, 0, 20, 20" VerticalOptions="Start">
             <StackLayout>
                 <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="20, 50, 20, 20">
@@ -16,6 +14,14 @@
                 </Grid>
             </StackLayout>
         </yummy:PancakeView>
-    </Grid>
-    
+        <AbsoluteLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent">
+            <Button Text="1" BackgroundColor="gray"/>
+            <Image x:Name="movableImage" Source="https://i.postimg.cc/ydTnxt9p/office-1.png" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="1000" HeightRequest="700" TranslationX="-300">
+                <Image.GestureRecognizers>
+                    <PanGestureRecognizer PanUpdated="OnPanUpdated" />
+                </Image.GestureRecognizers>
+            </Image>
+        </AbsoluteLayout>
+    </StackLayout>
+
 </ContentPage>

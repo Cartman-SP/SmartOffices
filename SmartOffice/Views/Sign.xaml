@@ -5,7 +5,7 @@
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="black" VerticalOptions="Fill">
+        <StackLayout BackgroundColor="black" VerticalOptions="FillAndExpand">
             <StackLayout Margin="60, 60, 60, 60" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
                 <Image Source="https://kartinki.pibig.info/uploads/posts/2023-04/1681440837_kartinki-pibig-info-p-ofis-vektornie-kartinki-arti-krasivo-1.png"/>
             </StackLayout>

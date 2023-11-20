@@ -21,7 +21,7 @@
                         <StackLayout>
                             <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Margin="0, 0, 0, 0">
                                 <StackLayout Orientation="Horizontal">
-                                    <Frame BorderColor="red" Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
+                                    <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
                                         <Image Source="https://i.ibb.co/djkfJZm/history-1.jpg"/>
                                         <Frame.GestureRecognizers>
                                             <TapGestureRecognizer Tapped="onStories" NumberOfTapsRequired="1" />
