@@ -105,7 +105,10 @@ namespace SmartOffice.Views
         {
             await Navigation.PushAsync(new Statistics());
         }
-
+        private async void onTodos(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Todos());
+        }
 
     }
 }

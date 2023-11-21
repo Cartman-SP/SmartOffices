@@ -7,27 +7,33 @@
              xmlns:zxcm="clr-namespace:ZXing.Common;assembly=zxing.portable"
              xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms">
 
-    <StackLayout BackgroundColor="#1B1B1B">
-        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Margin="25, 50, 25, 0" BackgroundColor="Transparent">
-            <ImageButton Clicked="OnMain" HorizontalOptions="EndAndExpand" Padding="10" WidthRequest="42" HeightRequest="42" Source="https://ltdfoto.ru/images/2023/10/14/icon-cross.png" BorderColor="#02DDAD" BackgroundColor="Transparent" BorderWidth="2" CornerRadius="10"/>
+
+    <StackLayout BackgroundColor="black">
+        <StackLayout>
+            <StackLayout>
+                <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="25, 50, 25, 0">
+                    <ImageButton BackgroundColor="Transparent" Clicked="OnMain" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/fHMY1Yx/icon-cross.png"/>
+                    <Label Margin="0, 0, 0, 0" Text="Enter" HorizontalOptions="CenterAndExpand" FontSize="20" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
+                </Grid>
+            </StackLayout>
         </StackLayout>
         <StackLayout Padding="25">
-            <Label FontFamily="MontserratBold" Text="Вход" TextColor="White" FontSize="30"/>
-            <Label FontFamily="MontserratRegular" Text="Поднесите QR-код к сканеру на турнекете" TextColor="White" FontSize="20"/>
+            <Label FontFamily="MontserratRegular" Text="Поднесите QR-код к сканеру на турнекете" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
             <zxing:ZXingBarcodeImageView
-                IsVisible="True"
-                x:Name="QRCodeView"
-                BarcodeFormat="QR_CODE"
-                HeightRequest="358"
-                WidthRequest="358"
-                BarcodeValue="лейс с крабом"
-                Margin="0, 20, 0, 0">
+                    IsVisible="True"
+                    x:Name="QRCodeView"
+                    BarcodeFormat="QR_CODE"
+                    HeightRequest="358"
+                    WidthRequest="358"
+                    BarcodeValue="лейс с крабом"
+                    Margin="0, 100, 0, 0"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">   
                 <zxing:ZXingBarcodeImageView.BarcodeOptions>
                     <zxcm:EncodingOptions Width="300" Height="300"/>
                 </zxing:ZXingBarcodeImageView.BarcodeOptions>
             </zxing:ZXingBarcodeImageView>
-            
+
         </StackLayout>
-        <Image></Image>
     </StackLayout>
 </ContentPage>
