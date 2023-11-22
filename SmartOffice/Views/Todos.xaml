@@ -11,7 +11,7 @@
                     <StackLayout>
                         <Grid BackgroundColor="Transparent" HorizontalOptions="Fill" Margin="20, 50, 20, 20">
                             <ImageButton Clicked="OnMain" BackgroundColor="Transparent" HorizontalOptions="Start" WidthRequest="30" Source="https://i.ibb.co/fHMY1Yx/icon-cross.png"/>
-                            <Label Margin="0, 0, 0, 0" Text="ToDos" HorizontalOptions="CenterAndExpand" FontSize="20" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
+                            <Label Margin="0, 0, 0, 0" Text=" My ToDos" HorizontalOptions="CenterAndExpand" FontSize="20" VerticalTextAlignment="Center" FontFamily="MontserratBold" TextColor="white"/>
                         </Grid>
                     </StackLayout>
                 </yummy:PancakeView>
@@ -22,7 +22,7 @@
                         <StackLayout Orientation="Horizontal">
                             <Label TextColor="#ADAFAF" Text="From" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
                             <StackLayout Orientation="Horizontal">
-                                <Frame Padding="0" CornerRadius="25" WidthRequest="40" HeightRequest="40" Margin="0, 0, 0, 20">
+                                <Frame Padding="0" CornerRadius="25" WidthRequest="40" HeightRequest="40" Margin="20, 0, 0, 0">
                                     <Image Source="https://cs2.gamemodding.com/images/06ddd58f702aaaa0d2989e4c48169633c2fd35d83f00f653c18da2a8e0006814.jpg" BackgroundColor="#191A1C" Aspect="AspectFill"/>
                                 </Frame>
                                 <Label TextColor="white" Text="John Doe" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
@@ -45,7 +45,7 @@
                         <StackLayout Orientation="Horizontal">
                             <Label TextColor="#ADAFAF" Text="From" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
                             <StackLayout Orientation="Horizontal">
-                                <Frame Padding="0" CornerRadius="25" WidthRequest="40" HeightRequest="40" Margin="0, 0, 0, 20">
+                                <Frame Padding="0" CornerRadius="25" WidthRequest="40" HeightRequest="40" Margin="20, 0, 0, 0">
                                     <Image Source="https://i.pinimg.com/originals/a7/6b/64/a76b6404c6296b32ed0a85dcf334d188.png" BackgroundColor="#191A1C" Aspect="AspectFill"/>
                                 </Frame>
                                 <Label TextColor="white" Text="Elon Musk" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>

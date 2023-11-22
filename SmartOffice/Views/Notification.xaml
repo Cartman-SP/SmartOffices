@@ -14,6 +14,9 @@
                     </Grid>
                 </StackLayout>
             </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Label Text="No notifications" FontSize="15" TextColor="Gray" FontFamily="MontserratRegular"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
