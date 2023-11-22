@@ -22,7 +22,7 @@
                         <StackLayout Orientation="Horizontal">
                             <Label TextColor="#ADAFAF" Text="From" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
                             <StackLayout Orientation="Horizontal">
-                                <Frame Padding="0" CornerRadius="25" WidthRequest="40" HeightRequest="40" Margin="0 0 0 20">
+                                <Frame Padding="0" CornerRadius="25" WidthRequest="40" HeightRequest="40" Margin="0, 0, 0, 20">
                                     <Image Source="https://cs2.gamemodding.com/images/06ddd58f702aaaa0d2989e4c48169633c2fd35d83f00f653c18da2a8e0006814.jpg" BackgroundColor="#191A1C" Aspect="AspectFill"/>
                                 </Frame>
                                 <Label TextColor="white" Text="John Doe" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
@@ -31,11 +31,11 @@
                         <StackLayout Margin="0, 10, 0, 0">
                             <StackLayout Orientation="Horizontal">
                                 <Label VerticalOptions="CenterAndExpand" Text="Send analitics data to my Email" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
-                                <CheckBox HorizontalOptions="EndAndExpand" Margin="0 -10 0 0" Color="#FE0034"/>
+                                <CheckBox HorizontalOptions="EndAndExpand" Margin="0, -10, 0, 0" Color="#FE0034"/>
                             </StackLayout>
                             <StackLayout Orientation="Horizontal">
                                 <Label VerticalOptions="CenterAndExpand" Text="Change the design of user page in our app" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
-                                <CheckBox HorizontalOptions="EndAndExpand" Margin="0 -10 0 0" Color="#FE0034"/>
+                                <CheckBox HorizontalOptions="EndAndExpand" Margin="0, -10, 0, 0" Color="#FE0034"/>
                             </StackLayout>
                         </StackLayout>
                     </StackLayout>
@@ -45,7 +45,7 @@
                         <StackLayout Orientation="Horizontal">
                             <Label TextColor="#ADAFAF" Text="From" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
                             <StackLayout Orientation="Horizontal">
-                                <Frame Padding="0" CornerRadius="25" WidthRequest="40" HeightRequest="40" Margin="0 0 0 20">
+                                <Frame Padding="0" CornerRadius="25" WidthRequest="40" HeightRequest="40" Margin="0, 0, 0, 20">
                                     <Image Source="https://i.pinimg.com/originals/a7/6b/64/a76b6404c6296b32ed0a85dcf334d188.png" BackgroundColor="#191A1C" Aspect="AspectFill"/>
                                 </Frame>
                                 <Label TextColor="white" Text="Elon Musk" FontSize="15" VerticalTextAlignment="Center" FontFamily="MontserratBold"/>
@@ -54,7 +54,7 @@
                         <StackLayout Margin="0, 10, 0, 0">
                             <StackLayout Orientation="Horizontal">
                                 <Label VerticalOptions="CenterAndExpand" Text="Buy me a coffee please" FontFamily="MontserratRegular" TextColor="white" FontSize="15"/>
-                                <CheckBox HorizontalOptions="EndAndExpand" Margin="0 -10 0 0" Color="#FE0034"/>
+                                <CheckBox HorizontalOptions="EndAndExpand" Margin="0, -10, 0, 0" Color="#FE0034"/>
                             </StackLayout>
                         </StackLayout>
                     </StackLayout>

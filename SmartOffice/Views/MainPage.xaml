@@ -168,7 +168,7 @@
                                                     <Label Margin="20, 10, 20, 10" HorizontalOptions="Center" Text="Try it" FontFamily="MontserratBold" FontSize="10" TextColor="black"/>
                                                 </Frame>
                                             </StackLayout>
-                                            <Image Source="https://i.ibb.co/WkkNH1M/coffee.png" WidthRequest="140" HeightRequest="100" HorizontalOptions="EndAndExpand" Margin="0 20 10 0"/>
+                                            <Image Source="https://i.ibb.co/WkkNH1M/coffee.png" WidthRequest="140" HeightRequest="100" HorizontalOptions="EndAndExpand" Margin="0, 20, 10, 0"/>
                                         </StackLayout>
                                         
                                         <Frame.Background>
