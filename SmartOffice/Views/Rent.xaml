@@ -57,37 +57,37 @@
                                 <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
                                     <StackLayout Orientation="Horizontal">
                                         <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                            <Image Source="https://klike.net/uploads/posts/2023-03/1679031548_3-24.jpg" Aspect="AspectFill"/>
+                                            <Image Source="https://i.ibb.co/vXP23xS/2023-11-24-23-30-54.jpg" Aspect="AspectFill"/>
                                             <Frame.GestureRecognizers>
                                                 <TapGestureRecognizer NumberOfTapsRequired="1" />
                                             </Frame.GestureRecognizers>
                                         </Frame>
                                         <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                            <Image Source="https://i.pinimg.com/originals/26/5e/46/265e46d58623711067477e1a1c7fcb76.jpg" Aspect="AspectFill"/>
+                                            <Image Source="https://i.ibb.co/TRVPpmQ/2023-11-24-23-31-48.jpg" Aspect="AspectFill"/>
                                             <Frame.GestureRecognizers>
                                                 <TapGestureRecognizer NumberOfTapsRequired="1" />
                                             </Frame.GestureRecognizers>
                                         </Frame>
                                         <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                            <Image Source="https://ir.ozone.ru/s3/multimedia-s/6359889112.jpg" Aspect="AspectFill"/>
+                                            <Image Source="https://i.ibb.co/TwYG69P/2023-11-24-23-31-53.jpg" Aspect="AspectFill"/>
                                             <Frame.GestureRecognizers>
                                                 <TapGestureRecognizer NumberOfTapsRequired="1" />
                                             </Frame.GestureRecognizers>
                                         </Frame>
                                         <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                            <Image Source="https://berkem.ru/wp-content/uploads/2019/08/latte-harakteristika-napitka-i-sekrety-ego-prigotovleniya.jpg" Aspect="AspectFill"/>
+                                            <Image Source="https://i.ibb.co/hHtrjhC/2023-11-24-23-31-57.jpg" Aspect="AspectFill"/>
                                             <Frame.GestureRecognizers>
                                                 <TapGestureRecognizer NumberOfTapsRequired="1" />
                                             </Frame.GestureRecognizers>
                                         </Frame>
                                         <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                            <Image Source="https://klike.net/uploads/posts/2023-03/1679031495_3-52.jpg" Aspect="AspectFill"/>
+                                            <Image Source="https://i.ibb.co/8jXKqtB/2023-11-24-23-32-00.jpg" Aspect="AspectFill"/>
                                             <Frame.GestureRecognizers>
                                                 <TapGestureRecognizer NumberOfTapsRequired="1" />
                                             </Frame.GestureRecognizers>
                                         </Frame>
                                         <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                            <Image Source="https://ivanchau.ru/wp-content/uploads/posts/109c7dca6efc112bf12dd355d47699ad.jpg" Aspect="AspectFill"/>
+                                            <Image Source="https://i.ibb.co/VmGNXGc/2023-11-24-23-32-06.jpg" Aspect="AspectFill"/>
                                             <Frame.GestureRecognizers>
                                                 <TapGestureRecognizer NumberOfTapsRequired="1" />
                                             </Frame.GestureRecognizers>
@@ -109,7 +109,7 @@
                                         <Frame Padding="0, 0, 0, 5" HasShadow="False" BackgroundColor="#191A1C" CornerRadius="20">
                                             <StackLayout>
                                                 <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                                    <Image Source="https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663751025_55-mykaleidoscope-ru-p-fast-fud-v-amerike-yeda-krasivo-62.jpg" Aspect="AspectFill"/>
+                                                    <Image Source="https://i.ibb.co/RTCB1Mh/2023-11-24-23-52-35.jpg" Aspect="AspectFill"/>
                                                     <Frame.GestureRecognizers>
                                                         <TapGestureRecognizer NumberOfTapsRequired="1" />
                                                     </Frame.GestureRecognizers>
@@ -123,7 +123,7 @@
                                         <Frame Padding="0, 0, 0, 5" HasShadow="False" BackgroundColor="#191A1C" CornerRadius="20">
                                             <StackLayout>
                                                 <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                                    <Image Source="https://fikiwiki.com/uploads/posts/2022-02/1644997444_10-fikiwiki-com-p-krasivie-kartinki-chaya-14.jpg" Aspect="AspectFill"/>
+                                                    <Image Source="https://i.ibb.co/jLP91QW/sunmag-3-chernyy-chay.jpg" Aspect="AspectFill"/>
                                                     <Frame.GestureRecognizers>
                                                         <TapGestureRecognizer NumberOfTapsRequired="1" />
                                                     </Frame.GestureRecognizers>
@@ -137,7 +137,7 @@
                                         <Frame Padding="0, 0, 0, 5" HasShadow="False" BackgroundColor="#191A1C" CornerRadius="20">
                                             <StackLayout>
                                                 <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                                    <Image Source="https://kir.selhozproduct.ru/upload/usl/f_6249918c6935f.jpg" Aspect="AspectFill"/>
+                                                    <Image Source="https://i.ibb.co/7KK0xTV/a14de3c1921214a3a42bc320f231e17e-custom-chocolate-chocolate-bark.jpg" Aspect="AspectFill"/>
                                                     <Frame.GestureRecognizers>
                                                         <TapGestureRecognizer NumberOfTapsRequired="1" />
                                                     </Frame.GestureRecognizers>
@@ -151,7 +151,7 @@
                                         <Frame Padding="0, 0, 0, 5" HasShadow="False" BackgroundColor="#191A1C" CornerRadius="20">
                                             <StackLayout>
                                                 <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                                    <Image Source="https://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/1637897/NjYtvg6A2Ug8wrs5c8BMPg.jpeg" Aspect="AspectFill"/>
+                                                    <Image Source="https://i.ibb.co/6Z8DfJz/1-Au-ASot-NUxfnd-YZx-Jo-HBPf-Q.jpg" Aspect="AspectFill"/>
                                                     <Frame.GestureRecognizers>
                                                         <TapGestureRecognizer NumberOfTapsRequired="1" />
                                                     </Frame.GestureRecognizers>
@@ -165,7 +165,7 @@
                                         <Frame Padding="0, 0, 0, 5" HasShadow="False" BackgroundColor="#191A1C" CornerRadius="20">
                                             <StackLayout>
                                                 <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                                    <Image Source="https://i2.wp.com/uznayvse.ru/images/stories2015/uzn_1442398372.jpg" Aspect="AspectFill"/>
+                                                    <Image Source="https://i.ibb.co/Dk2WnG6/174-A9-E1-B-22-BD-49-B7-AA96-496460-F84026-600x600.jpg" Aspect="AspectFill"/>
                                                     <Frame.GestureRecognizers>
                                                         <TapGestureRecognizer NumberOfTapsRequired="1" />
                                                     </Frame.GestureRecognizers>
@@ -179,7 +179,7 @@
                                         <Frame Padding="0, 0, 0, 5" HasShadow="False" BackgroundColor="#191A1C" CornerRadius="20">
                                             <StackLayout>
                                                 <Frame Padding="0" CornerRadius="20" HeightRequest="100" WidthRequest="100" BackgroundColor="#191A1C">
-                                                    <Image Source="https://fikiwiki.com/uploads/posts/2022-02/1644997448_15-fikiwiki-com-p-krasivie-kartinki-chaya-20.jpg" Aspect="AspectFill"/>
+                                                    <Image Source="https://i.ibb.co/pr0mL27/2271c310.jpg" Aspect="AspectFill"/>
                                                     <Frame.GestureRecognizers>
                                                         <TapGestureRecognizer NumberOfTapsRequired="1" />
                                                     </Frame.GestureRecognizers>
