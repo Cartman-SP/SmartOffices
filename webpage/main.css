@@ -155,11 +155,8 @@ body{
     
 }
 
-.widgets-container{
-    padding: 8% 15% 8% 15%;
-}
-
 .row{
+    padding: 8% 15% 8% 15%;
     justify-content: center;
     display: flex;
     text-align: center;
@@ -224,6 +221,52 @@ body{
     width: 2vw;
     height: 2vw;
 }
+
+.documents{
+    padding: 3% 15% 3% 15%;
+}
+
+.documents h1{
+    font-family: 'Montserrat';
+    font-size: 2vw;
+    color: white;
+}
+
+.pack{
+    display: flex;
+    background-color: transparent;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.pack p{
+    font-family: 'Montserrat';
+    font-size: 1vw;
+    color: white;
+    margin: 0;
+}
+
+.pack a{
+    margin-left: 30px;
+    color: #474747;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 1vw;
+    transition: all .3s;
+}
+
+.pack a:hover{
+    color: #fd4141;
+}
+
+
+.line{
+    height: 1px;
+    background-color: #474747;
+    width: 100%;
+}
+
 
 @media (max-width: 1000px){
     body{
@@ -438,4 +481,51 @@ body{
         height: 5vw;
     }
 
+
+    .documents{
+        padding: 50% 5% 3% 5%;
+    }
+    
+    .documents h1{
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 7vw;
+        color: white;
+    }
+    
+    .pack{
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .pack p{
+        font-family: 'Montserrat';
+        font-size: 4vw;
+        color: white;
+        margin: 0;
+    }
+    
+    .pack a{
+        color: #474747;
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-weight: 900;
+        font-size: 4vw;
+        transition: all .3s;
+
+    }
+    
+    .pack a:hover{
+        color: #fd4141;
+    }
+    
+    
+    .line{
+        height: 1px;
+        background-color: #474747;
+        width: 100%;
+    }
 }
