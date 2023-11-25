@@ -1,0 +1,91 @@
+body{
+    background-color: #0e0f12;
+    transition: 0.3s ease;
+    margin: 0;
+}
+
+.nav-bar{
+    background-color: transparent;
+    padding: 35px 15% 35px 15%;
+}
+
+.logo{
+    color: white;
+}
+
+#manu-active{
+    font-weight: 900;
+}
+
+.menu a{
+    margin-right: 60px;
+    font-size: 1vw;
+    font-family: 'Montserrat';
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    cursor: pointer;
+    color: rgb(178, 178, 178);
+}
+
+.content{
+    position: relative;
+    /* overflow: hidden; */
+    margin: 0 2% 0 2%;
+    background-color: #1f2023;
+    border-radius: 50px;
+    padding: 2vw 13% 2vw 13%;
+    z-index: 1;
+    height: auto;
+}
+
+.content h1{
+    font-size: 3vw;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+p{
+    display: flex;
+    font-size: 1.5vw;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+input{
+    color: white;
+    margin-left: 30px; 
+    background-color: #48494d;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+button{
+    background-color: #48494d;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    color: #9b9b9c;
+    font-size: 1vw;
+    font-family: 'Montserrat';
+}
+
+label{
+    width: 2vw;
+}

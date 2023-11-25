@@ -52,6 +52,7 @@
     <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
     <BundleAssemblies>false</BundleAssemblies>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <Debugger>Xamarin</Debugger>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -117,6 +118,9 @@
       <Project>{4AEA2653-B223-4A3B-AA3B-2DB3D4914303}</Project>
       <Name>SmartOffice</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LOGO.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

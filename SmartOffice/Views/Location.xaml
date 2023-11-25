@@ -14,14 +14,55 @@
                 </Grid>
             </StackLayout>
         </yummy:PancakeView>
+
+        <StackLayout x:Name="popuplayout" BackgroundColor="Transparent" IsVisible="false">
+            <Frame Margin="25, 0, 25, 0" CornerRadius="20" Padding="0">
+                <StackLayout>
+                    <StackLayout BackgroundColor="#3A3A3A" Padding="15">
+                        <StackLayout Orientation="Horizontal">
+                            <Image HeightRequest="15" Source="https://ltdfoto.ru/images/2023/10/15/icon-sun.png"/>
+                            <Label TextColor="White" Margin="10, 0, 0, 0" VerticalOptions="Center" FontFamily="MontserratRegular" FontSize="13" Text="Xiaomi Yeelight Smart LED"/>
+                            <Switch HorizontalOptions="EndAndExpand" x:Name="PowerSwitch" Toggled="PowerSwitch_Toggled"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="Яркость:" FontSize="15" FontFamily="MonserrtaRegular" TextColor="white"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Button VerticalOptions="Center" BackgroundColor="#4F4F4F" FontFamily="MontserratRegular" FontSize="10" CornerRadius="20" HeightRequest="30" WidthRequest="55" Text="20%" Clicked="SetBrightness20_Clicked" />
+                                <Button VerticalOptions="Center" BackgroundColor="#4F4F4F" FontFamily="MontserratRegular" FontSize="10" CornerRadius="20" HeightRequest="30" WidthRequest="55" Text="40%" Clicked="SetBrightness40_Clicked" />
+                                <Button VerticalOptions="Center" BackgroundColor="#4F4F4F" FontFamily="MontserratRegular" FontSize="10" CornerRadius="20" HeightRequest="30" WidthRequest="55" Text="60%" Clicked="SetBrightness60_Clicked" />
+                                <Button VerticalOptions="Center" BackgroundColor="#4F4F4F" FontFamily="MontserratRegular" FontSize="10" CornerRadius="20" HeightRequest="30" WidthRequest="55" Text="80%" Clicked="SetBrightness80_Clicked" />
+                                <Button VerticalOptions="Center" BackgroundColor="#4F4F4F" FontFamily="MontserratRegular" FontSize="10" CornerRadius="20" HeightRequest="30" WidthRequest="55" Text="100%" Clicked="SetBrightness100_Clicked" />
+                            </StackLayout>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Label Text="Цвет:" FontSize="15" FontFamily="MonserrtaRegular" TextColor="white"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Button Clicked="SetColorRed_Clicked" BackgroundColor="red" HeightRequest="20" WidthRequest="20" CornerRadius="20"/>
+                                <Button Clicked="SetColorYellow_Clicked" BackgroundColor="Yellow" HeightRequest="20" WidthRequest="20" CornerRadius="20"/>
+                                <Button Clicked="SetColorOrange_Clicked" BackgroundColor="Orange" HeightRequest="20" WidthRequest="20" CornerRadius="20"/>
+                                <Button Clicked="SetColorGreen_Clicked" BackgroundColor="LightGreen" HeightRequest="20" WidthRequest="20" CornerRadius="20"/>
+                                <Button Clicked="SetColorPurple_Clicked" BackgroundColor="Purple" HeightRequest="20" WidthRequest="20" CornerRadius="20"/>
+                                <Button Clicked="SetColorBlue_Clicked" BackgroundColor="Blue" HeightRequest="20" WidthRequest="20" CornerRadius="20"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <Label TextColor="Gray" Text="IP-адрес Yeelight ленты:" />
+                        <Entry x:Name="IPAddressEntry" Placeholder="Введите IP-адрес" />
+                    </StackLayout>
+                    
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+
         <AbsoluteLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent">
-            <Button Text="1" BackgroundColor="gray"/>
             <Image x:Name="movableImage" Source="https://i.postimg.cc/ydTnxt9p/office-1.png" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="1000" HeightRequest="700" TranslationX="-300">
                 <Image.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="OnPanUpdated" />
+                    <TapGestureRecognizer Tapped="Button_Clicked" NumberOfTapsRequired="2" />
                 </Image.GestureRecognizers>
             </Image>
         </AbsoluteLayout>
+        
     </StackLayout>
 
 </ContentPage>

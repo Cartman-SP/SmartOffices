@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.smartoffice" android:installLocation="auto">
-	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33" />
-	<application android:label="jopa" android:usesCleartextTraffic="true" android:theme="@style/MainTheme" android:icon="@mipmap/icon"></application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="beta" package="com.companyname.smartoffice" android:installLocation="internalOnly">
+	<uses-sdk android:minSdkVersion="18" android:targetSdkVersion="33" />
+	<application android:label="Smart Office BETA" android:usesCleartextTraffic="true" android:theme="@style/MainTheme" android:icon="@drawable/icon_about"></application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>
